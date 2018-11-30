@@ -1,0 +1,20 @@
+18:35:01 **** Incremental Build of configuration Release for project SEcubeDevBoard ****
+make all 
+Building file: /Users/Nico/Documents/SeCube_Project/Code/Optimized_APIs_Firmware_NonBlockingLogin_newDebug/SEcube_SDK/Development/Environment/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f429xx.s
+Invoking: MCU GCC Assembler
+/Users/Nico/Documents/SeCube_Project/Code/Optimized_APIs_Firmware_NonBlockingLogin_newDebug/SEcube_SDK/Development/Environment/ws/SEcubeDevBoard/Release
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "Application/SW4STM32/startup_stm32f429xx.o" "/Users/Nico/Documents/SeCube_Project/Code/Optimized_APIs_Firmware_NonBlockingLogin_newDebug/SEcube_SDK/Development/Environment/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f429xx.s"
+Finished building: /Users/Nico/Documents/SeCube_Project/Code/Optimized_APIs_Firmware_NonBlockingLogin_newDebug/SEcube_SDK/Development/Environment/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f429xx.s
+ 
+Building target: SEcubeDevBoard.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F429NIHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "SEcubeDevBoard.elf" @"objects.list"  
+Finished building target: SEcubeDevBoard.elf
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "SEcubeDevBoard.elf" "SEcubeDevBoard.bin"
+arm-none-eabi-size "SEcubeDevBoard.elf"
+   text	   data	    bss	    dec	    hex	filename
+  75264	    984	  56456	 132704	  20660	SEcubeDevBoard.elf
+ 

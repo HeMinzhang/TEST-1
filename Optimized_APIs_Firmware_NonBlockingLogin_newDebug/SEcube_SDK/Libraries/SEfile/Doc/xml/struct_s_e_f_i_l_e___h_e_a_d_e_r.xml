@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_s_e_f_i_l_e___h_e_a_d_e_r" kind="struct" prot="public">
+    <compoundname>SEFILE_HEADER</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_e_a_d_e_r_1a7ebb6ac2da3fc9384e1ed12cdbbeb03c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SEFILE_HEADER::nonce_pbkdf2[SEFILE_NONCE_LEN]</definition>
+        <argsstring>[SEFILE_NONCE_LEN]</argsstring>
+        <name>nonce_pbkdf2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>32 random bytes storing the IV for generating a different key </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="49" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_e_a_d_e_r_1adcb7b8a5fc9e93d1fbf348b144883bf9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SEFILE_HEADER::nonce_ctr[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>nonce_ctr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>16 random bytes storing the IV for next sectors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="50" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_e_a_d_e_r_1a552830c2eab29ca1ce93f18cf8aff306" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t SEFILE_HEADER::magic</definition>
+        <argsstring></argsstring>
+        <name>magic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>4 bytes used to represent file type (not used yet) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="51" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_e_a_d_e_r_1a243bb9ed827d6f802720231425ee240c" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SEFILE_HEADER::ver</definition>
+        <argsstring></argsstring>
+        <name>ver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>2 bytes used to represent current filesystem version (not used yet) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="52" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_e_a_d_e_r_1a3c573cee7709f63a385460ad21637ec1" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t SEFILE_HEADER::uid</definition>
+        <argsstring></argsstring>
+        <name>uid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>4 bytes not used yet </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="53" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_e_a_d_e_r_1ae10c6516ac00e694db72a45ef16a214c" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t SEFILE_HEADER::uid_cnt</definition>
+        <argsstring></argsstring>
+        <name>uid_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>4 bytes not used yet </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="54" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_e_a_d_e_r_1a6ef79b4f4b76a57b2610bda99f34afdc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SEFILE_HEADER::fname_len</definition>
+        <argsstring></argsstring>
+        <name>fname_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1 byte to express how long is the filename. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="55" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="struct_s_e_f_i_l_e___h_e_a_d_e_r" kindref="compound">SEFILE_HEADER</ref> struct. </para>    </briefdescription>
+    <detaileddescription>
+<para>This data struct is used to define a 31 bytes field inside a sector while taking care of its inner composition. </para>    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="48" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="48" bodyend="56"/>
+    <listofallmembers>
+      <member refid="struct_s_e_f_i_l_e___h_e_a_d_e_r_1a6ef79b4f4b76a57b2610bda99f34afdc" prot="public" virt="non-virtual"><scope>SEFILE_HEADER</scope><name>fname_len</name></member>
+      <member refid="struct_s_e_f_i_l_e___h_e_a_d_e_r_1a552830c2eab29ca1ce93f18cf8aff306" prot="public" virt="non-virtual"><scope>SEFILE_HEADER</scope><name>magic</name></member>
+      <member refid="struct_s_e_f_i_l_e___h_e_a_d_e_r_1adcb7b8a5fc9e93d1fbf348b144883bf9" prot="public" virt="non-virtual"><scope>SEFILE_HEADER</scope><name>nonce_ctr</name></member>
+      <member refid="struct_s_e_f_i_l_e___h_e_a_d_e_r_1a7ebb6ac2da3fc9384e1ed12cdbbeb03c" prot="public" virt="non-virtual"><scope>SEFILE_HEADER</scope><name>nonce_pbkdf2</name></member>
+      <member refid="struct_s_e_f_i_l_e___h_e_a_d_e_r_1a3c573cee7709f63a385460ad21637ec1" prot="public" virt="non-virtual"><scope>SEFILE_HEADER</scope><name>uid</name></member>
+      <member refid="struct_s_e_f_i_l_e___h_e_a_d_e_r_1ae10c6516ac00e694db72a45ef16a214c" prot="public" virt="non-virtual"><scope>SEFILE_HEADER</scope><name>uid_cnt</name></member>
+      <member refid="struct_s_e_f_i_l_e___h_e_a_d_e_r_1a243bb9ed827d6f802720231425ee240c" prot="public" virt="non-virtual"><scope>SEFILE_HEADER</scope><name>ver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

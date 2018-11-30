@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group__sha_size" kind="group">
+    <compoundname>shaSize</compoundname>
+    <title>SHA256 digest and block sizes</title>
+      <sectiondef kind="user-defined">
+      <header>SHA256 digest and block sizes</header>
+      <memberdef kind="define" id="group__sha_size_1gae5dc0a994edcc288f44190752f534788" prot="public" static="no">
+        <name>B5_SHA256_DIGEST_SIZE</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="30" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__sha_size_1ga1997723ab4346f3d6e6c4b4113c75626" prot="public" static="no">
+        <name>B5_SHA256_BLOCK_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="31" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

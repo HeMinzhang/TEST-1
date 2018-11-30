@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structse3__device__info__" kind="struct" prot="public">
+    <compoundname>se3_device_info_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structse3__device__info___1a7092b941574a64dceba10b2b89588d05" prot="public" static="no" mutable="no">
+        <type>se3_char</type>
+        <definition>se3_char se3_device_info_::path[SE3_MAX_PATH]</definition>
+        <argsstring>[SE3_MAX_PATH]</argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="13" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__device__info___1a9c9bfad5e10f46d13e8b5024fef49415" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t se3_device_info_::serialno[SE3_SN_SIZE]</definition>
+        <argsstring>[SE3_SN_SIZE]</argsstring>
+        <name>serialno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="14" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__device__info___1a612c837c7faddcc7b368c4e7986bc0ce" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t se3_device_info_::hello_msg[SE3_HELLO_SIZE]</definition>
+        <argsstring>[SE3_HELLO_SIZE]</argsstring>
+        <name>hello_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="15" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__device__info___1af3fa48c2b57a28d9f382b7cd371cf56f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_device_info_::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="16" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="12" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="12" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structse3__device__info___1a612c837c7faddcc7b368c4e7986bc0ce" prot="public" virt="non-virtual"><scope>se3_device_info_</scope><name>hello_msg</name></member>
+      <member refid="structse3__device__info___1a7092b941574a64dceba10b2b89588d05" prot="public" virt="non-virtual"><scope>se3_device_info_</scope><name>path</name></member>
+      <member refid="structse3__device__info___1a9c9bfad5e10f46d13e8b5024fef49415" prot="public" virt="non-virtual"><scope>se3_device_info_</scope><name>serialno</name></member>
+      <member refid="structse3__device__info___1af3fa48c2b57a28d9f382b7cd371cf56f" prot="public" virt="non-virtual"><scope>se3_device_info_</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

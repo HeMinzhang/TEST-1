@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_8a081a9e3f3a6bbfbccc04278aa7bf71" kind="dir">
+    <compoundname>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3</compoundname>
+    <innerfile refid="aes256_8c">aes256.c</innerfile>
+    <innerfile refid="aes256_8h">aes256.h</innerfile>
+    <innerfile refid="crc16_8c">crc16.c</innerfile>
+    <innerfile refid="crc16_8h">crc16.h</innerfile>
+    <innerfile refid="_c_r_c_s_w_8c">CRCSW.c</innerfile>
+    <innerfile refid="_c_r_c_s_w_8h">CRCSW.h</innerfile>
+    <innerfile refid="_l0_8c">L0.c</innerfile>
+    <innerfile refid="_l0_8h">L0.h</innerfile>
+    <innerfile refid="_l1_8c">L1.c</innerfile>
+    <innerfile refid="_l1_8h">L1.h</innerfile>
+    <innerfile refid="pbkdf2_8c">pbkdf2.c</innerfile>
+    <innerfile refid="pbkdf2_8h">pbkdf2.h</innerfile>
+    <innerfile refid="se3__common_8c">se3_common.c</innerfile>
+    <innerfile refid="se3__common_8h">se3_common.h</innerfile>
+    <innerfile refid="se3c0def_8h">se3c0def.h</innerfile>
+    <innerfile refid="se3c1def_8h">se3c1def.h</innerfile>
+    <innerfile refid="se3comm_8c">se3comm.c</innerfile>
+    <innerfile refid="se3comm_8h">se3comm.h</innerfile>
+    <innerfile refid="sha256_8c">sha256.c</innerfile>
+    <innerfile refid="sha256_8h">sha256.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="_l1_8h" kind="file">
+    <compoundname>L1.h</compoundname>
+    <includes refid="_l0_8h" local="yes">L0.h</includes>
+    <includes refid="se3c1def_8h" local="yes">se3c1def.h</includes>
+    <includedby refid="_l1_8c" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c</includedby>
+    <includedby refid="_s_efile_8h" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h</includedby>
+    <incdepgraph>
+      <node id="96">
+        <label>stdbool.h</label>
+      </node>
+      <node id="92">
+        <label>se3c0def.h</label>
+        <link refid="se3c0def_8h_source"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>se3comm.h</label>
+        <link refid="se3comm_8h_source"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>se3_common.h</label>
+        <link refid="se3__common_8h_source"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>sha256.h</label>
+        <link refid="sha256_8h_source"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>stdint.h</label>
+      </node>
+      <node id="93">
+        <label>stdlib.h</label>
+      </node>
+      <node id="102">
+        <label>Windows.h</label>
+      </node>
+      <node id="105">
+        <label>se3c1def.h</label>
+        <link refid="se3c1def_8h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>pbkdf2.h</label>
+        <link refid="pbkdf2_8h_source"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>stddef.h</label>
+      </node>
+      <node id="89">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h</label>
+        <link refid="L1.h"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>string.h</label>
+      </node>
+      <node id="90">
+        <label>L0.h</label>
+        <link refid="_l0_8h_source"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>time.h</label>
+      </node>
+      <node id="104">
+        <label>crc16.h</label>
+        <link refid="crc16_8h_source"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>aes256.h</label>
+        <link refid="aes256_8h_source"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="106">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h</label>
+        <link refid="L1.h"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c</label>
+        <link refid="_s_efile_8c"/>
+      </node>
+      <node id="107">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h</label>
+        <link refid="_s_efile_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structse3__session__" prot="public">se3_session_</innerclass>
+    <innerclass refid="structse3__key__" prot="public">se3_key_</innerclass>
+    <innerclass refid="structse3__algo__" prot="public">se3_algo_</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_l1_8h_1ac2d97fa6ad5455c54503ccf619782206" prot="public" static="no">
+        <name>SE3_REQ_CHALLENGE_SIZE</name>
+        <initializer>(96+16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="7" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l1_8h_1a0a7df4c64e1fb6b0aab8e77430624c22" prot="public" static="no">
+        <name>SE3_REQ_CHALLENGE_IV_OFFSET</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="8" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l1_8h_1aa73aa12ddaa85f6ae27ef96163aa07e3" prot="public" static="no">
+        <name>SE3_REQ_CHALLENGE_TOKEN_OFFSET</name>
+        <initializer>(16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="9" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l1_8h_1a7fb2cbbc69f6190f534bf462a0257c7a" prot="public" static="no">
+        <name>SE3_REQ_CHALLENGE_CC_OFFSET</name>
+        <initializer>(32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="10" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l1_8h_1a689b036634af137a3e5d1fe4b3e602c1" prot="public" static="no">
+        <name>SE3_REQ_CHALLENGE_CC2_OFFSET</name>
+        <initializer>(64)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="11" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l1_8h_1a4bc8647e420a74b7b2522e6ec2043410" prot="public" static="no">
+        <name>SE3_REQ_CHALLENGE_ACCESS_OFFSET</name>
+        <initializer>(96)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="12" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l1_8h_1a526131346e4b6787693ce1fc1238c6f6" prot="public" static="no">
+        <name>SE3_RESP_CHALLENGE_SC_OFFSET</name>
+        <initializer>(32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="14" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l1_8h_1a1c07d11b962254bb61b2a1ac4fc9c04c" prot="public" static="no">
+        <name>SE3_RESP_LOGIN_TOKEN_OFFSET</name>
+        <initializer>(32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="15" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_l1_8h_1aa9e36b722a4329b71d561936cf0697a5" prot="public" static="no">
+        <type>struct <ref refid="structse3__session__" kindref="compound">se3_session_</ref></type>
+        <definition>typedef struct se3_session_  se3_session</definition>
+        <argsstring></argsstring>
+        <name>se3_session</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_l1_8h_1a1cd696f9c0d0ccbf1e7b69d5f25f3663" prot="public" static="no">
+        <type>struct <ref refid="structse3__key__" kindref="compound">se3_key_</ref></type>
+        <definition>typedef struct se3_key_  se3_key</definition>
+        <argsstring></argsstring>
+        <name>se3_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_l1_8h_1a83dc56795cb846f3c71601bfcedde222" prot="public" static="no">
+        <type>struct <ref refid="structse3__algo__" kindref="compound">se3_algo_</ref></type>
+        <definition>typedef struct se3_algo_  se3_algo</definition>
+        <argsstring></argsstring>
+        <name>se3_algo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_l1_8h_1a93504249c7bab5446e5775829141e1c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_login</definition>
+        <argsstring>(se3_session *s, se3_device *dev, const uint8_t *pin, uint16_t access)</argsstring>
+        <name>L1_login</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="structse3__device__" kindref="compound">se3_device</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>access</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to let a user/admin login on the device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an already allocated se3_session object where to store current logged in session </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device you want to login to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password to login </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">access</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>see <ref refid="group___access_login" kindref="compound">AccessLogin</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>It returns SE3_OK on success, otherwise see <ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref></para></simplesect>
+Before issueing any command to the device, you need to login. Some operations are allowed only to the admin user. After a flash erase, the admin pin and the user pin are both a sequence of 32 0s, please use L1_set_admin_PIN or L1_set_user_PIN to change them. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="77" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="98" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1ad53de0ebefe5373659c119c8113b3657" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_set_admin_PIN</definition>
+        <argsstring>(se3_session *s, uint8_t *pin)</argsstring>
+        <name>L1_set_admin_PIN</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to change the current admin pin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current se3_session, you must be logged in as admin to issue this command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New pin to be set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>It returns SE3_OK on success, otherwise see <ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="87" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="224" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1ae84071f8782d369bc1b01859d9bcea2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_set_user_PIN</definition>
+        <argsstring>(se3_session *s, uint8_t *pin)</argsstring>
+        <name>L1_set_user_PIN</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to change the current user pin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current se3_session, you must be logged in as admin to issue this command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New pin to be set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>It returns SE3_OK on success, otherwise see <ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="97" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="233" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1a56139e0c341bea51092338a52b598508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_logout</definition>
+        <argsstring>(se3_session *s)</argsstring>
+        <name>L1_logout</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to logout from the device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current session you want to end </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>It returns SE3_OK on success, otherwise see <ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref></para></simplesect>
+After issueing this function, you will be forbidden to perform any command on the device. This can also be used to free the allocated resources, such as cryptographic sessions, with just one call. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="109" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="174" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1af490fb52610e090f43b931968a5756bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_key_list</definition>
+        <argsstring>(se3_session *s, uint16_t skip, uint16_t max_keys, se3_key *key_array, uint16_t *count)</argsstring>
+        <name>L1_key_list</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>skip</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>max_keys</declname>
+        </param>
+        <param>
+          <type><ref refid="structse3__key__" kindref="compound">se3_key</ref> *</type>
+          <declname>key_array</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>This function is used get the list of the already of the already available keys on the device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current se3_session, you must be logged in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">skip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many keys you want to skip from the beginning of the list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many keys you want to retrieve from the device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">key_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the already allocated array where to store the keys </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Effective number of retrieved keys </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>It returns SE3_OK on success, otherwise see <ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="121" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="308" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1a944f523188210030c46310bb4f9c07a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_key_edit</definition>
+        <argsstring>(se3_session *s, uint16_t op, se3_key *k)</argsstring>
+        <name>L1_key_edit</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="structse3__key__" kindref="compound">se3_key</ref> *</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to edit the keys data on the device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current se3_session, you must be logged in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">op</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>see <ref refid="group___key_op_edit" kindref="compound">KeyOpEdit</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key value you want to add/update/delete </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>It returns SE3_OK on success, otherwise see <ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="131" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="242" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1a3fb7a8969bf38ea35627226eb56887aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool L1_find_key</definition>
+        <argsstring>(se3_session *s, uint32_t key_id)</argsstring>
+        <name>L1_find_key</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>key_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="133" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="320" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1aa8dde528e912915caf05aa0b9f322afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_crypto_init</definition>
+        <argsstring>(se3_session *s, uint16_t algorithm, uint16_t mode, uint32_t key_id, uint32_t *sess_id)</argsstring>
+        <name>L1_crypto_init</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>algorithm</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>key_id</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>sess_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="135" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="338" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1a52e3abef5c0b45895419819a84584aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_crypto_update</definition>
+        <argsstring>(se3_session *s, uint32_t sess_id, uint16_t flags, uint16_t data1_len, uint8_t *data1, uint16_t data2_len, uint8_t *data2, uint16_t *dataout_len, uint8_t *data_out)</argsstring>
+        <name>L1_crypto_update</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>sess_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data1_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data1</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data2_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data2</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>dataout_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="136" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="365" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1ade253360037f15a7cd51641baf12b392" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_crypto_set_time</definition>
+        <argsstring>(se3_session *s, uint32_t devtime)</argsstring>
+        <name>L1_crypto_set_time</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>devtime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="138" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="480" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1a9b18eb68bc75fbe22a42d8e8dd859fc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_encrypt</definition>
+        <argsstring>(se3_session *s, uint16_t algorithm, uint16_t mode, uint32_t key_id, size_t datain_len, int8_t *data_in, size_t *dataout_len, uint8_t *data_out)</argsstring>
+        <name>L1_encrypt</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>algorithm</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>key_id</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>datain_len</declname>
+        </param>
+        <param>
+          <type>int8_t *</type>
+          <declname>data_in</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>dataout_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data_out</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to encrypt a buffer of data given the algorithm, the encryption mode, the buffer size, and where to store the encrypted data. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current se3_session, you must be logged in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which algorithm to use, see <ref refid="group___algorithm_avail" kindref="compound">AlgorithmAvail</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter strictly depends on the which algorithm is chosen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">key_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which key ID to use for encryption </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">datain_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How long is the buffer you want to encrypt </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dataout_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many data were actually encrypted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pre-allocated buffer where to store the cipher text </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>It returns SE3_OK on success, otherwise see <ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="156" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="493" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1a86fb9f1580f1c96bf8db75d050517a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_decrypt</definition>
+        <argsstring>(se3_session *s, uint16_t algorithm, uint16_t mode, uint32_t key_id, size_t datain_len, int8_t *data_in, size_t *dataout_len, uint8_t *data_out)</argsstring>
+        <name>L1_decrypt</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>algorithm</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>key_id</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>datain_len</declname>
+        </param>
+        <param>
+          <type>int8_t *</type>
+          <declname>data_in</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>dataout_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data_out</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to decrypt a buffer of data given the algorithm, the decryption mode, the buffer size, and where to store the decrypted data. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current se3_session, you must be logged in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which algorithm to use, see <ref refid="group___algorithm_avail" kindref="compound">AlgorithmAvail</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter strictly depends on the which algorithm is chosen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">key_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which key ID to use for decryption </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">datain_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How long is the buffer you want to decrypt </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dataout_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many data were actually decrypted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pre-allocated buffer where to store the clear text </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>It returns SE3_OK on success, otherwise see <ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="173" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="539" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1af0b86eb7c3525996587063f924e0acce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_digest</definition>
+        <argsstring>(se3_session *s, uint16_t algorithm, size_t datain_len, int8_t *data_in, size_t *dataout_len, uint8_t *data_out)</argsstring>
+        <name>L1_digest</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>algorithm</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>datain_len</declname>
+        </param>
+        <param>
+          <type>int8_t *</type>
+          <declname>data_in</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>dataout_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data_out</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to sign a buffer of data given the algorithm, the amount of data to sign and where to store them. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current se3_session, you must be logged in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which algorithm to use, see <ref refid="group___algorithm_avail" kindref="compound">AlgorithmAvail</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">datain_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How long is the buffer you want to sign </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dataout_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many data were actually signed (can be NULL) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pre-allocated buffer where to store the digest </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>It returns SE3_OK on success, otherwise see <ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="187" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="544" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="_l1_8h_1a9305776deffb86003c13d34e1663b38d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t L1_get_algorithms</definition>
+        <argsstring>(se3_session *s, uint16_t skip, uint16_t max_algorithms, se3_algo *algorithms_array, uint16_t *count)</argsstring>
+        <name>L1_get_algorithms</name>
+        <param>
+          <type><ref refid="structse3__session__" kindref="compound">se3_session</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>skip</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>max_algorithms</declname>
+        </param>
+        <param>
+          <type><ref refid="structse3__algo__" kindref="compound">se3_algo</ref> *</type>
+          <declname>algorithms_array</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to retrieve a list from the device of available algorithms. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current se3_session, you must be logged in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">skip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many algorithms you want to skip from the beginning of the device list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_algorithms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many algorithms you want to retrieve from the device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">algorithms_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the already allocated array where to store the algorithms </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Effective number of retrieved keys </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>It returns SE3_OK on success, otherwise see <ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="201" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c" bodystart="426" bodyend="466"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;L0.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="se3c1def_8h" kindref="compound">se3c1def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SE3_REQ_CHALLENGE_SIZE<sp/><sp/><sp/>(96+16)</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_REQ_CHALLENGE_IV_OFFSET<sp/><sp/><sp/>(0)</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_REQ_CHALLENGE_TOKEN_OFFSET<sp/><sp/><sp/>(16)</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_REQ_CHALLENGE_CC_OFFSET<sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_REQ_CHALLENGE_CC2_OFFSET<sp/><sp/><sp/>(64)</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_REQ_CHALLENGE_ACCESS_OFFSET<sp/><sp/><sp/>(96)</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SE3_RESP_CHALLENGE_SC_OFFSET<sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_RESP_LOGIN_TOKEN_OFFSET<sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>END<sp/>-<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>struct<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structse3__session__" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structse3__session__" kindref="compound">se3_session_</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structse3__device__" kindref="compound">se3_device</ref><sp/>device;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>token[SE3_L1_TOKEN_SIZE];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>key[SE3_L1_KEY_SIZE];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>buf[SE3_COMM_N<sp/>*<sp/>SE3_COMM_BLOCK];</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>locked;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>logged_in;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>timeout;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structse3__file" kindref="compound">se3_file</ref><sp/>hfile;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref><sp/>cryptoctx;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cryptoctx_initialized;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Add<sp/>flag<sp/>for<sp/>type<sp/>of<sp/>user<sp/>logged<sp/>(see<sp/>set_{admin,user}_PIN)<sp/>or<sp/>change<sp/>type<sp/>for<sp/>logged_in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/><ref refid="structse3__session__" kindref="compound">se3_session</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structse3__key__" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structse3__key__" kindref="compound">se3_key_</ref><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>id;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>validity;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>data_size;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>name_size;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/>data;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>name[SE3_KEY_NAME_MAX];</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/><ref refid="structse3__key__" kindref="compound">se3_key</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structse3__algo__" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structse3__algo__" kindref="compound">se3_algo_</ref><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>name[SE3_CMD1_CRYPTO_ALGOINFO_NAME_SIZE];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>type;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>block_size;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>key_size;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/><ref refid="structse3__algo__" kindref="compound">se3_algo</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>END<sp/>-<sp/>struct<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">uint16_t<sp/>L1_login(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/><ref refid="structse3__device__" kindref="compound">se3_device</ref>*<sp/>dev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>pin,<sp/>uint16_t<sp/>access);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">uint16_t<sp/>L1_set_admin_PIN(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint8_t*<sp/>pin);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">uint16_t<sp/>L1_set_user_PIN(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint8_t*<sp/>pin);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">uint16_t<sp/>L1_logout(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">uint16_t<sp/>L1_key_list(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint16_t<sp/>skip,<sp/>uint16_t<sp/>max_keys,<sp/><ref refid="structse3__key__" kindref="compound">se3_key</ref>*<sp/>key_array,<sp/>uint16_t*<sp/>count);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">uint16_t<sp/>L1_key_edit(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint16_t<sp/>op,<sp/><ref refid="structse3__key__" kindref="compound">se3_key</ref>*<sp/>k);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>L1_find_key(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint32_t<sp/>key_id);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">uint16_t<sp/>L1_crypto_init(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint16_t<sp/>algorithm,<sp/>uint16_t<sp/>mode,<sp/>uint32_t<sp/>key_id,<sp/>uint32_t*<sp/>sess_id);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">uint16_t<sp/>L1_crypto_update(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint32_t<sp/>sess_id,<sp/>uint16_t<sp/>flags,<sp/>uint16_t<sp/>data1_len,<sp/>uint8_t*<sp/>data1,<sp/>uint16_t<sp/>data2_len,<sp/>uint8_t*<sp/>data2,<sp/>uint16_t*<sp/>dataout_len,<sp/>uint8_t*<sp/>data_out);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">uint16_t<sp/>L1_crypto_set_time(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint32_t<sp/>devtime);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">uint16_t<sp/>L1_encrypt(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint16_t<sp/>algorithm,<sp/>uint16_t<sp/>mode,<sp/>uint32_t<sp/>key_id,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>datain_len,<sp/>int8_t*<sp/>data_in,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">*<sp/>dataout_len,<sp/>uint8_t*<sp/>data_out);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">uint16_t<sp/>L1_decrypt(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint16_t<sp/>algorithm,<sp/>uint16_t<sp/>mode,<sp/>uint32_t<sp/>key_id,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>datain_len,<sp/>int8_t*<sp/>data_in,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">*<sp/>dataout_len,<sp/>uint8_t*<sp/>data_out);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">uint16_t<sp/>L1_digest(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint16_t<sp/>algorithm,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>datain_len,<sp/>int8_t*<sp/>data_in,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">*<sp/>dataout_len,<sp/>uint8_t*<sp/>data_out);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">uint16_t<sp/>L1_get_algorithms(<ref refid="structse3__session__" kindref="compound">se3_session</ref>*<sp/>s,<sp/>uint16_t<sp/>skip,<sp/>uint16_t<sp/>max_algorithms,<sp/><ref refid="structse3__algo__" kindref="compound">se3_algo</ref>*<sp/>algorithms_array,<sp/>uint16_t*<sp/>count);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="se3__common_8h" kind="file">
+    <compoundname>se3_common.h</compoundname>
+    <includes refid="se3c0def_8h" local="yes">se3c0def.h</includes>
+    <includes refid="aes256_8h" local="yes">aes256.h</includes>
+    <includes refid="sha256_8h" local="yes">sha256.h</includes>
+    <includes refid="pbkdf2_8h" local="yes">pbkdf2.h</includes>
+    <includedby refid="_l0_8h" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h</includedby>
+    <includedby refid="se3__common_8c" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c</includedby>
+    <includedby refid="se3comm_8c" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.c</includedby>
+    <incdepgraph>
+      <node id="142">
+        <label>stdbool.h</label>
+      </node>
+      <node id="138">
+        <label>se3c0def.h</label>
+        <link refid="se3c0def_8h_source"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h</label>
+        <link refid="se3_common.h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>sha256.h</label>
+        <link refid="sha256_8h_source"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>stdint.h</label>
+      </node>
+      <node id="139">
+        <label>stdlib.h</label>
+      </node>
+      <node id="146">
+        <label>pbkdf2.h</label>
+        <link refid="pbkdf2_8h_source"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>stddef.h</label>
+      </node>
+      <node id="144">
+        <label>string.h</label>
+      </node>
+      <node id="143">
+        <label>aes256.h</label>
+        <link refid="aes256_8h_source"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="147">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h</label>
+        <link refid="se3_common.h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h</label>
+        <link refid="_l1_8h_source"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h</label>
+        <link refid="_l0_8h_source"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c</label>
+        <link refid="_s_efile_8c"/>
+      </node>
+      <node id="150">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h</label>
+        <link refid="_s_efile_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structse3__payload__cryptoctx__" prot="public">se3_payload_cryptoctx_</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="se3__common_8h_1af54563c70e10456fa14d077071491d82" prot="public" static="no">
+        <type>struct <ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx_</ref></type>
+        <definition>typedef struct se3_payload_cryptoctx_  se3_payload_cryptoctx</definition>
+        <argsstring></argsstring>
+        <name>se3_payload_cryptoctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="30" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="se3__common_8h_1aa201786ad97096944ab1032aca5db043" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t se3_magic[SE3_MAGIC_SIZE]</definition>
+        <argsstring>[SE3_MAGIC_SIZE]</argsstring>
+        <name>se3_magic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="8" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="se3__common_8h_1a30a11413f918c02acbf92d9b92f105f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_req_len_data</definition>
+        <argsstring>(uint16_t len_data_and_headers)</argsstring>
+        <name>se3_req_len_data</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>len_data_and_headers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="11" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="10" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8h_1a31051c8df3db3079664208d08a0b98be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_req_len_data_and_headers</definition>
+        <argsstring>(uint16_t len_data)</argsstring>
+        <name>se3_req_len_data_and_headers</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>len_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="12" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="24" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8h_1a966b6970e793c6362327a5938aaecc6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_resp_len_data</definition>
+        <argsstring>(uint16_t len_data_and_headers)</argsstring>
+        <name>se3_resp_len_data</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>len_data_and_headers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="13" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="38" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8h_1aeff812903773900833b9f1e84dbac2cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_resp_len_data_and_headers</definition>
+        <argsstring>(uint16_t len_data)</argsstring>
+        <name>se3_resp_len_data_and_headers</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>len_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="14" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="52" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8h_1a70bb843b91e1a75a8976cfbb6eaa64f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_nblocks</definition>
+        <argsstring>(uint16_t len)</argsstring>
+        <name>se3_nblocks</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="15" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8h_1aa88c08d19a2b7a6bcb1ed6c843c1db93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void se3_payload_cryptoinit</definition>
+        <argsstring>(se3_payload_cryptoctx *ctx, const uint8_t *key)</argsstring>
+        <name>se3_payload_cryptoinit</name>
+        <param>
+          <type><ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="31" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="75" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8h_1a7d33099409d45dfaa5bf9bcb9ca6b71a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void se3_payload_encrypt</definition>
+        <argsstring>(se3_payload_cryptoctx *ctx, uint8_t *auth, uint8_t *iv, uint8_t *data, uint16_t nblocks, uint16_t flags)</argsstring>
+        <name>se3_payload_encrypt</name>
+        <param>
+          <type><ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>auth</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>nblocks</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="32" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="84" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8h_1a34cd2751f16c6d63915d7043a20d8de1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool se3_payload_decrypt</definition>
+        <argsstring>(se3_payload_cryptoctx *ctx, const uint8_t *auth, const uint8_t *iv, uint8_t *data, uint16_t nblocks, uint16_t flags)</argsstring>
+        <name>se3_payload_decrypt</name>
+        <param>
+          <type><ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>auth</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>nblocks</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="33" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="103" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;se3c0def.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;aes256.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sha256.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pbkdf2.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>se3_magic[SE3_MAGIC_SIZE];</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">uint16_t<sp/>se3_req_len_data(uint16_t<sp/>len_data_and_headers);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">uint16_t<sp/>se3_req_len_data_and_headers(uint16_t<sp/>len_data);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">uint16_t<sp/>se3_resp_len_data(uint16_t<sp/>len_data_and_headers);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">uint16_t<sp/>se3_resp_len_data_and_headers(uint16_t<sp/>len_data);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">uint16_t<sp/>se3_nblocks(uint16_t<sp/>len);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">enum<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>SE3_PAYL_CRYPTO<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>SE3_PAYL_SIGN<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>SE3_PAYL_CRYPTO_SIGN<sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">};*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structse3__payload__cryptoctx__" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx_</ref><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref><sp/>aesenc;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref><sp/>aesdec;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_b5__t_hmac_sha256_ctx" kindref="compound">B5_tHmacSha256Ctx</ref><sp/>hmac;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>hmac_key[<ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>auth[B5_SHA256_DIGEST_SIZE];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/><ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>se3_payload_cryptoinit(<ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref>*<sp/>ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>key);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>se3_payload_encrypt(<ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref>*<sp/>ctx,<sp/>uint8_t*<sp/>auth,<sp/>uint8_t*<sp/>iv,<sp/>uint8_t*<sp/>data,<sp/>uint16_t<sp/>nblocks,<sp/>uint16_t<sp/>flags);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>se3_payload_decrypt(<ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref>*<sp/>ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>auth,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>iv,<sp/>uint8_t*<sp/>data,<sp/>uint16_t<sp/>nblocks,<sp/>uint16_t<sp/>flags);</highlight></codeline>
+    </programlisting>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h"/>
+  </compounddef>
+</doxygen>

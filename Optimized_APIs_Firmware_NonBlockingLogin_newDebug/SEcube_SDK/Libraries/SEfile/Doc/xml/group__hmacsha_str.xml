@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group__hmacsha_str" kind="group">
+    <compoundname>hmacshaStr</compoundname>
+    <title>HMAC-SHA256 data structures</title>
+    <innerclass refid="struct_b5__t_hmac_sha256_ctx" prot="public">B5_tHmacSha256Ctx</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

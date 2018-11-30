@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group__cmacaes_func" kind="group">
+    <compoundname>cmacaesFunc</compoundname>
+    <title>CMAC-AES functions</title>
+      <sectiondef kind="user-defined">
+      <header>CMAC-AES functions</header>
+      <memberdef kind="function" id="group__cmacaes_func_1gae6f89895e340f9aecab79db450e4a185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_CmacAes256_Init</definition>
+        <argsstring>(B5_tCmacAesCtx *ctx, const uint8_t *Key, int16_t keySize)</argsstring>
+        <name>B5_CmacAes256_Init</name>
+        <param>
+          <type><ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>keySize</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the CMAC-AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the CMAC-AES data structure to be initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Key that must be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keySize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key size. See <ref refid="group__cmacaes_keys" kindref="compound">CMAC-AES Key, Blk Sizes</ref> for supported sizes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__cmacaes_return" kindref="compound">CMAC-AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="208" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1565" bodyend="1615"/>
+      </memberdef>
+      <memberdef kind="function" id="group__cmacaes_func_1ga4c80b95f59e134548b2a3c678df533f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_CmacAes256_Update</definition>
+        <argsstring>(B5_tCmacAesCtx *ctx, const uint8_t *data, int32_t dataLen)</argsstring>
+        <name>B5_CmacAes256_Update</name>
+        <param>
+          <type><ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dataLen</declname>
+        </param>
+        <briefdescription>
+<para>Compute the CMAC-AES algorithm on input data depending on the current status of the CMAC-AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the current CMAC-AES context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the input data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes to be processed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__cmacaes_return" kindref="compound">CMAC-AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="218" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1621" bodyend="1676"/>
+      </memberdef>
+      <memberdef kind="function" id="group__cmacaes_func_1ga5507419d1c00777a9c3c942d13636178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_CmacAes256_Finit</definition>
+        <argsstring>(B5_tCmacAesCtx *ctx, uint8_t *rSignature)</argsstring>
+        <name>B5_CmacAes256_Finit</name>
+        <param>
+          <type><ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rSignature</declname>
+        </param>
+        <briefdescription>
+<para>De-initialize the current CMAC-AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the CMAC-AES context to de-initialize. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rSignature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a blank memory area that can store the computed output signature. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__cmacaes_return" kindref="compound">CMAC-AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="227" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1682" bodyend="1719"/>
+      </memberdef>
+      <memberdef kind="function" id="group__cmacaes_func_1gaa939a0bb0cf5bb09d83d1d08163b346e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_CmacAes256_Reset</definition>
+        <argsstring>(B5_tCmacAesCtx *ctx)</argsstring>
+        <name>B5_CmacAes256_Reset</name>
+        <param>
+          <type><ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>Reset the current CMAC-AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the CMAC-AES context to reset. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__cmacaes_return" kindref="compound">CMAC-AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="235" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1725" bodyend="1734"/>
+      </memberdef>
+      <memberdef kind="function" id="group__cmacaes_func_1ga4df2c9dc0b4f5d54ebc023fc791632ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_CmacAes256_Sign</definition>
+        <argsstring>(const uint8_t *data, int32_t dataLen, const uint8_t *Key, int16_t keySize, uint8_t *rSignature)</argsstring>
+        <name>B5_CmacAes256_Sign</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dataLen</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>keySize</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rSignature</declname>
+        </param>
+        <briefdescription>
+<para>Compute the signature through the CMAC-AES algorithm. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the input data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input data length (in Bytes). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Key that must be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keySize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key size. See <ref refid="group__cmacaes_keys" kindref="compound">CMAC-AES Key, Blk Sizes</ref> for supported sizes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rSignature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a blank memory area that can store the computed output signature. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__cmacaes_return" kindref="compound">CMAC-AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="247" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1473" bodyend="1559"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

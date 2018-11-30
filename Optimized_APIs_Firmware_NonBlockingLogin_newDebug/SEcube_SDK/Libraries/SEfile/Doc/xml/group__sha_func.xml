@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group__sha_func" kind="group">
+    <compoundname>shaFunc</compoundname>
+    <title>SHA256 functions</title>
+      <sectiondef kind="user-defined">
+      <header>SHA256 functions</header>
+      <memberdef kind="function" id="group__sha_func_1gaf3507913b8ba5c90d7aecaa26456082e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Sha256_Init</definition>
+        <argsstring>(B5_tSha256Ctx *ctx)</argsstring>
+        <name>B5_Sha256_Init</name>
+        <param>
+          <type><ref refid="struct_b5__t_sha256_ctx" kindref="compound">B5_tSha256Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the SHA256 context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the SHA256 data structure to be initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__sha_return" kindref="compound">SHA256 return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="62" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.c" bodystart="181" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sha_func_1gafedcaa9cc6241df89b13d1533ab7583c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Sha256_Update</definition>
+        <argsstring>(B5_tSha256Ctx *ctx, const uint8_t *data, int32_t dataLen)</argsstring>
+        <name>B5_Sha256_Update</name>
+        <param>
+          <type><ref refid="struct_b5__t_sha256_ctx" kindref="compound">B5_tSha256Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dataLen</declname>
+        </param>
+        <briefdescription>
+<para>Compute the SHA256 algorithm on input data depending on the current status of the SHA256 context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the current SHA context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the input data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes to be processed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__sha_return" kindref="compound">SHA256 return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="71" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.c" bodystart="210" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sha_func_1ga481d39b16dccfa2e85d4ad8962c1de3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Sha256_Finit</definition>
+        <argsstring>(B5_tSha256Ctx *ctx, uint8_t *rDigest)</argsstring>
+        <name>B5_Sha256_Finit</name>
+        <param>
+          <type><ref refid="struct_b5__t_sha256_ctx" kindref="compound">B5_tSha256Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rDigest</declname>
+        </param>
+        <briefdescription>
+<para>De-initialize the current SHA256 context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the SHA context to de-initialize. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rDigest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a blank memory area that can store the computed output digest. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__sha_return" kindref="compound">SHA256 return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="79" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.c" bodystart="262" bodyend="308"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

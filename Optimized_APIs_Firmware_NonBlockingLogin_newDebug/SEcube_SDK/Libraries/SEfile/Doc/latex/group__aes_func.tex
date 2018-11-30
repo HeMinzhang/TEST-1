@@ -1,0 +1,117 @@
+\hypertarget{group__aes_func}{\section{A\-E\-S functions}
+\label{group__aes_func}\index{A\-E\-S functions@{A\-E\-S functions}}
+}
+\subsection*{A\-E\-S functions}
+\begin{DoxyCompactItemize}
+\item 
+int32\-\_\-t \hyperlink{group__aes_func_ga53e5e4bce089a65bb66b3ba172d12804}{B5\-\_\-\-Aes256\-\_\-\-Init} (\hyperlink{struct_b5__t_aes_ctx}{B5\-\_\-t\-Aes\-Ctx} $\ast$ctx, const uint8\-\_\-t $\ast$Key, int16\-\_\-t key\-Size, uint8\-\_\-t aes\-Mode)
+\begin{DoxyCompactList}\small\item\em Initialize the A\-E\-S context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__aes_func_gac2f5c3921592486df230fec302629a41}{B5\-\_\-\-Aes256\-\_\-\-Set\-I\-V} (\hyperlink{struct_b5__t_aes_ctx}{B5\-\_\-t\-Aes\-Ctx} $\ast$ctx, const uint8\-\_\-t $\ast$I\-V)
+\begin{DoxyCompactList}\small\item\em Set the I\-V for the current A\-E\-S context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__aes_func_ga5fd1cd91caa7b0dfccb7f735d120a5e9}{B5\-\_\-\-Aes256\-\_\-\-Update} (\hyperlink{struct_b5__t_aes_ctx}{B5\-\_\-t\-Aes\-Ctx} $\ast$ctx, uint8\-\_\-t $\ast$enc\-Data, uint8\-\_\-t $\ast$clr\-Data, int16\-\_\-t n\-Blk)
+\begin{DoxyCompactList}\small\item\em Encrypt/\-Decrypt data based on the status of current A\-E\-S context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__aes_func_ga6d6ad2c832065507fd0d106f8c919623}{B5\-\_\-\-Aes256\-\_\-\-Finit} (\hyperlink{struct_b5__t_aes_ctx}{B5\-\_\-t\-Aes\-Ctx} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em De-\/initialize the current A\-E\-S context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__aes_func_ga6d6ad2c832065507fd0d106f8c919623}{\index{A\-E\-S functions@{A\-E\-S functions}!B5\-\_\-\-Aes256\-\_\-\-Finit@{B5\-\_\-\-Aes256\-\_\-\-Finit}}
+\index{B5\-\_\-\-Aes256\-\_\-\-Finit@{B5\-\_\-\-Aes256\-\_\-\-Finit}!AES functions@{A\-E\-S functions}}
+\subsubsection[{B5\-\_\-\-Aes256\-\_\-\-Finit}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Aes256\-\_\-\-Finit (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Aes\-Ctx} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{group__aes_func_ga6d6ad2c832065507fd0d106f8c919623}
+
+
+De-\/initialize the current A\-E\-S context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the A\-E\-S context to de-\/initialize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__aes_return}{A\-E\-S return values} . 
+\end{DoxyReturn}
+\hypertarget{group__aes_func_ga53e5e4bce089a65bb66b3ba172d12804}{\index{A\-E\-S functions@{A\-E\-S functions}!B5\-\_\-\-Aes256\-\_\-\-Init@{B5\-\_\-\-Aes256\-\_\-\-Init}}
+\index{B5\-\_\-\-Aes256\-\_\-\-Init@{B5\-\_\-\-Aes256\-\_\-\-Init}!AES functions@{A\-E\-S functions}}
+\subsubsection[{B5\-\_\-\-Aes256\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Aes256\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Aes\-Ctx} $\ast$}]{ctx, }
+\item[{const uint8\-\_\-t $\ast$}]{Key, }
+\item[{int16\-\_\-t}]{key\-Size, }
+\item[{uint8\-\_\-t}]{aes\-Mode}
+\end{DoxyParamCaption}
+)}}\label{group__aes_func_ga53e5e4bce089a65bb66b3ba172d12804}
+
+
+Initialize the A\-E\-S context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the A\-E\-S data structure to be initialized. \\
+\hline
+{\em Key} & Pointer to the Key that must be used for encryption/decryption. \\
+\hline
+{\em key\-Size} & Key size. See \hyperlink{group__aes_keys}{A\-E\-S Key, I\-V, Block Sizes} for supported sizes. \\
+\hline
+{\em aes\-Mode} & A\-E\-S mode. See \hyperlink{group__aes_modes}{A\-E\-S modes} for supported modes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__aes_return}{A\-E\-S return values} . 
+\end{DoxyReturn}
+\hypertarget{group__aes_func_gac2f5c3921592486df230fec302629a41}{\index{A\-E\-S functions@{A\-E\-S functions}!B5\-\_\-\-Aes256\-\_\-\-Set\-I\-V@{B5\-\_\-\-Aes256\-\_\-\-Set\-I\-V}}
+\index{B5\-\_\-\-Aes256\-\_\-\-Set\-I\-V@{B5\-\_\-\-Aes256\-\_\-\-Set\-I\-V}!AES functions@{A\-E\-S functions}}
+\subsubsection[{B5\-\_\-\-Aes256\-\_\-\-Set\-I\-V}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Aes256\-\_\-\-Set\-I\-V (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Aes\-Ctx} $\ast$}]{ctx, }
+\item[{const uint8\-\_\-t $\ast$}]{I\-V}
+\end{DoxyParamCaption}
+)}}\label{group__aes_func_gac2f5c3921592486df230fec302629a41}
+
+
+Set the I\-V for the current A\-E\-S context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the A\-E\-S data structure to be initialized. \\
+\hline
+{\em I\-V} & Pointer to the I\-V. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__aes_return}{A\-E\-S return values} . 
+\end{DoxyReturn}
+\hypertarget{group__aes_func_ga5fd1cd91caa7b0dfccb7f735d120a5e9}{\index{A\-E\-S functions@{A\-E\-S functions}!B5\-\_\-\-Aes256\-\_\-\-Update@{B5\-\_\-\-Aes256\-\_\-\-Update}}
+\index{B5\-\_\-\-Aes256\-\_\-\-Update@{B5\-\_\-\-Aes256\-\_\-\-Update}!AES functions@{A\-E\-S functions}}
+\subsubsection[{B5\-\_\-\-Aes256\-\_\-\-Update}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Aes256\-\_\-\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Aes\-Ctx} $\ast$}]{ctx, }
+\item[{uint8\-\_\-t $\ast$}]{enc\-Data, }
+\item[{uint8\-\_\-t $\ast$}]{clr\-Data, }
+\item[{int16\-\_\-t}]{n\-Blk}
+\end{DoxyParamCaption}
+)}}\label{group__aes_func_ga5fd1cd91caa7b0dfccb7f735d120a5e9}
+
+
+Encrypt/\-Decrypt data based on the status of current A\-E\-S context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the current A\-E\-S context. \\
+\hline
+{\em enc\-Data} & Encrypted data. \\
+\hline
+{\em clr\-Data} & Clear data. \\
+\hline
+{\em n\-Blk} & Number of A\-E\-S blocks to process. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__aes_return}{A\-E\-S return values} . 
+\end{DoxyReturn}

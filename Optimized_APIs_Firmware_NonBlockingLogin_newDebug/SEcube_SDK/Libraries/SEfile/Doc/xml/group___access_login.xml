@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group___access_login" kind="group">
+    <compoundname>AccessLogin</compoundname>
+    <title>AccessLogin</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___access_login_1gab04a0655cd1e3bcac5e8f48c18df1a57" prot="public" static="no">
+        <name>@9</name>
+        <enumvalue id="group___access_login_1ggab04a0655cd1e3bcac5e8f48c18df1a57aa0e04b3f30d594486abbab6fea02dcd1" prot="public">
+          <name>SE3_ACCESS_USER</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___access_login_1ggab04a0655cd1e3bcac5e8f48c18df1a57a1e36d0fc2f56e0e20aa68002aaf6fd12" prot="public">
+          <name>SE3_ACCESS_ADMIN</name>
+          <initializer>= 1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___access_login_1ggab04a0655cd1e3bcac5e8f48c18df1a57ad1205803d65f97fd21aa0b02f8dcb48c" prot="public">
+          <name>SE3_ACCESS_MAX</name>
+          <initializer>= 0xFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c1def.h" line="25" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c1def.h" bodystart="25" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Use this values as access parameter when using L1_login. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

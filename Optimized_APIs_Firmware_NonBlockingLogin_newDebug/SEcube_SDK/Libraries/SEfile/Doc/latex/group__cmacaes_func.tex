@@ -1,0 +1,144 @@
+\hypertarget{group__cmacaes_func}{\section{C\-M\-A\-C-\/\-A\-E\-S functions}
+\label{group__cmacaes_func}\index{C\-M\-A\-C-\/\-A\-E\-S functions@{C\-M\-A\-C-\/\-A\-E\-S functions}}
+}
+\subsection*{C\-M\-A\-C-\/\-A\-E\-S functions}
+\begin{DoxyCompactItemize}
+\item 
+int32\-\_\-t \hyperlink{group__cmacaes_func_gae6f89895e340f9aecab79db450e4a185}{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Init} (\hyperlink{struct_b5__t_cmac_aes_ctx}{B5\-\_\-t\-Cmac\-Aes\-Ctx} $\ast$ctx, const uint8\-\_\-t $\ast$Key, int16\-\_\-t key\-Size)
+\begin{DoxyCompactList}\small\item\em Initialize the C\-M\-A\-C-\/\-A\-E\-S context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__cmacaes_func_ga4c80b95f59e134548b2a3c678df533f4}{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Update} (\hyperlink{struct_b5__t_cmac_aes_ctx}{B5\-\_\-t\-Cmac\-Aes\-Ctx} $\ast$ctx, const uint8\-\_\-t $\ast$data, int32\-\_\-t data\-Len)
+\begin{DoxyCompactList}\small\item\em Compute the C\-M\-A\-C-\/\-A\-E\-S algorithm on input data depending on the current status of the C\-M\-A\-C-\/\-A\-E\-S context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__cmacaes_func_ga5507419d1c00777a9c3c942d13636178}{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Finit} (\hyperlink{struct_b5__t_cmac_aes_ctx}{B5\-\_\-t\-Cmac\-Aes\-Ctx} $\ast$ctx, uint8\-\_\-t $\ast$r\-Signature)
+\begin{DoxyCompactList}\small\item\em De-\/initialize the current C\-M\-A\-C-\/\-A\-E\-S context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__cmacaes_func_gaa939a0bb0cf5bb09d83d1d08163b346e}{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Reset} (\hyperlink{struct_b5__t_cmac_aes_ctx}{B5\-\_\-t\-Cmac\-Aes\-Ctx} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Reset the current C\-M\-A\-C-\/\-A\-E\-S context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__cmacaes_func_ga4df2c9dc0b4f5d54ebc023fc791632ba}{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Sign} (const uint8\-\_\-t $\ast$data, int32\-\_\-t data\-Len, const uint8\-\_\-t $\ast$Key, int16\-\_\-t key\-Size, uint8\-\_\-t $\ast$r\-Signature)
+\begin{DoxyCompactList}\small\item\em Compute the signature through the C\-M\-A\-C-\/\-A\-E\-S algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__cmacaes_func_ga5507419d1c00777a9c3c942d13636178}{\index{C\-M\-A\-C-\/\-A\-E\-S functions@{C\-M\-A\-C-\/\-A\-E\-S functions}!B5\-\_\-\-Cmac\-Aes256\-\_\-\-Finit@{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Finit}}
+\index{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Finit@{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Finit}!CMAC-AES functions@{C\-M\-A\-C-\/\-A\-E\-S functions}}
+\subsubsection[{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Finit}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Cmac\-Aes256\-\_\-\-Finit (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Cmac\-Aes\-Ctx} $\ast$}]{ctx, }
+\item[{uint8\-\_\-t $\ast$}]{r\-Signature}
+\end{DoxyParamCaption}
+)}}\label{group__cmacaes_func_ga5507419d1c00777a9c3c942d13636178}
+
+
+De-\/initialize the current C\-M\-A\-C-\/\-A\-E\-S context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the C\-M\-A\-C-\/\-A\-E\-S context to de-\/initialize. \\
+\hline
+{\em r\-Signature} & Pointer to a blank memory area that can store the computed output signature. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__cmacaes_return}{C\-M\-A\-C-\/\-A\-E\-S return values} . 
+\end{DoxyReturn}
+\hypertarget{group__cmacaes_func_gae6f89895e340f9aecab79db450e4a185}{\index{C\-M\-A\-C-\/\-A\-E\-S functions@{C\-M\-A\-C-\/\-A\-E\-S functions}!B5\-\_\-\-Cmac\-Aes256\-\_\-\-Init@{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Init}}
+\index{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Init@{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Init}!CMAC-AES functions@{C\-M\-A\-C-\/\-A\-E\-S functions}}
+\subsubsection[{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Cmac\-Aes256\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Cmac\-Aes\-Ctx} $\ast$}]{ctx, }
+\item[{const uint8\-\_\-t $\ast$}]{Key, }
+\item[{int16\-\_\-t}]{key\-Size}
+\end{DoxyParamCaption}
+)}}\label{group__cmacaes_func_gae6f89895e340f9aecab79db450e4a185}
+
+
+Initialize the C\-M\-A\-C-\/\-A\-E\-S context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the C\-M\-A\-C-\/\-A\-E\-S data structure to be initialized. \\
+\hline
+{\em Key} & Pointer to the Key that must be used. \\
+\hline
+{\em key\-Size} & Key size. See \hyperlink{group__cmacaes_keys}{C\-M\-A\-C-\/\-A\-E\-S Key, Blk Sizes} for supported sizes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__cmacaes_return}{C\-M\-A\-C-\/\-A\-E\-S return values} . 
+\end{DoxyReturn}
+\hypertarget{group__cmacaes_func_gaa939a0bb0cf5bb09d83d1d08163b346e}{\index{C\-M\-A\-C-\/\-A\-E\-S functions@{C\-M\-A\-C-\/\-A\-E\-S functions}!B5\-\_\-\-Cmac\-Aes256\-\_\-\-Reset@{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Reset}}
+\index{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Reset@{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Reset}!CMAC-AES functions@{C\-M\-A\-C-\/\-A\-E\-S functions}}
+\subsubsection[{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Cmac\-Aes256\-\_\-\-Reset (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Cmac\-Aes\-Ctx} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{group__cmacaes_func_gaa939a0bb0cf5bb09d83d1d08163b346e}
+
+
+Reset the current C\-M\-A\-C-\/\-A\-E\-S context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the C\-M\-A\-C-\/\-A\-E\-S context to reset. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__cmacaes_return}{C\-M\-A\-C-\/\-A\-E\-S return values} . 
+\end{DoxyReturn}
+\hypertarget{group__cmacaes_func_ga4df2c9dc0b4f5d54ebc023fc791632ba}{\index{C\-M\-A\-C-\/\-A\-E\-S functions@{C\-M\-A\-C-\/\-A\-E\-S functions}!B5\-\_\-\-Cmac\-Aes256\-\_\-\-Sign@{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Sign}}
+\index{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Sign@{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Sign}!CMAC-AES functions@{C\-M\-A\-C-\/\-A\-E\-S functions}}
+\subsubsection[{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Sign}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Cmac\-Aes256\-\_\-\-Sign (
+\begin{DoxyParamCaption}
+\item[{const uint8\-\_\-t $\ast$}]{data, }
+\item[{int32\-\_\-t}]{data\-Len, }
+\item[{const uint8\-\_\-t $\ast$}]{Key, }
+\item[{int16\-\_\-t}]{key\-Size, }
+\item[{uint8\-\_\-t $\ast$}]{r\-Signature}
+\end{DoxyParamCaption}
+)}}\label{group__cmacaes_func_ga4df2c9dc0b4f5d54ebc023fc791632ba}
+
+
+Compute the signature through the C\-M\-A\-C-\/\-A\-E\-S algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the input data. \\
+\hline
+{\em data\-Len} & Input data length (in Bytes). \\
+\hline
+{\em Key} & Pointer to the Key that must be used. \\
+\hline
+{\em key\-Size} & Key size. See \hyperlink{group__cmacaes_keys}{C\-M\-A\-C-\/\-A\-E\-S Key, Blk Sizes} for supported sizes. \\
+\hline
+{\em r\-Signature} & Pointer to a blank memory area that can store the computed output signature. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__cmacaes_return}{C\-M\-A\-C-\/\-A\-E\-S return values} . 
+\end{DoxyReturn}
+\hypertarget{group__cmacaes_func_ga4c80b95f59e134548b2a3c678df533f4}{\index{C\-M\-A\-C-\/\-A\-E\-S functions@{C\-M\-A\-C-\/\-A\-E\-S functions}!B5\-\_\-\-Cmac\-Aes256\-\_\-\-Update@{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Update}}
+\index{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Update@{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Update}!CMAC-AES functions@{C\-M\-A\-C-\/\-A\-E\-S functions}}
+\subsubsection[{B5\-\_\-\-Cmac\-Aes256\-\_\-\-Update}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Cmac\-Aes256\-\_\-\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Cmac\-Aes\-Ctx} $\ast$}]{ctx, }
+\item[{const uint8\-\_\-t $\ast$}]{data, }
+\item[{int32\-\_\-t}]{data\-Len}
+\end{DoxyParamCaption}
+)}}\label{group__cmacaes_func_ga4c80b95f59e134548b2a3c678df533f4}
+
+
+Compute the C\-M\-A\-C-\/\-A\-E\-S algorithm on input data depending on the current status of the C\-M\-A\-C-\/\-A\-E\-S context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the current C\-M\-A\-C-\/\-A\-E\-S context. \\
+\hline
+{\em data} & Pointer to the input data. \\
+\hline
+{\em data\-Len} & Bytes to be processed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__cmacaes_return}{C\-M\-A\-C-\/\-A\-E\-S return values} . 
+\end{DoxyReturn}

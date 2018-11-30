@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structse3__file" kind="struct" prot="public">
+    <compoundname>se3_file</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structse3__file_1a9c5b0958cf31e525f4245b6aff394713" prot="public" static="no" mutable="no">
+        <type>OVERLAPPED</type>
+        <definition>OVERLAPPED se3_file::ol</definition>
+        <argsstring></argsstring>
+        <name>ol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" line="38" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__file_1ab8b97e53c056cd8549914f6de3296d6f" prot="public" static="no" mutable="no">
+        <type>HANDLE</type>
+        <definition>HANDLE se3_file::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" line="39" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" line="37" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" bodystart="37" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structse3__file_1ab8b97e53c056cd8549914f6de3296d6f" prot="public" virt="non-virtual"><scope>se3_file</scope><name>h</name></member>
+      <member refid="structse3__file_1a9c5b0958cf31e525f4245b6aff394713" prot="public" virt="non-virtual"><scope>se3_file</scope><name>ol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

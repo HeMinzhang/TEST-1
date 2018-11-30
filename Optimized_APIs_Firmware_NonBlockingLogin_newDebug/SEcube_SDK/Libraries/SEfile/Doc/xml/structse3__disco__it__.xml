@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structse3__disco__it__" kind="struct" prot="public">
+    <compoundname>se3_disco_it_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structse3__disco__it___1acab44529361f40d6b06a6075b501c88c" prot="public" static="no" mutable="no">
+        <type><ref refid="structse3__device__info__" kindref="compound">se3_device_info</ref></type>
+        <definition>se3_device_info se3_disco_it_::device_info</definition>
+        <argsstring></argsstring>
+        <name>device_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="28" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__disco__it___1ae6e1e2bf6d543d5795d293e440716492" prot="public" static="no" mutable="no">
+        <type><ref refid="structse3__drive__it__" kindref="compound">se3_drive_it</ref></type>
+        <definition>se3_drive_it se3_disco_it_::_drive_it</definition>
+        <argsstring></argsstring>
+        <name>_drive_it</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="29" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="22">
+        <label>se3_drive_it_</label>
+        <link refid="structse3__drive__it__"/>
+      </node>
+      <node id="23">
+        <label>se3_device_info_</label>
+        <link refid="structse3__device__info__"/>
+      </node>
+      <node id="21">
+        <label>se3_disco_it_</label>
+        <link refid="structse3__disco__it__"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>_drive_it</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>device_info</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="27" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="27" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structse3__disco__it___1ae6e1e2bf6d543d5795d293e440716492" prot="public" virt="non-virtual"><scope>se3_disco_it_</scope><name>_drive_it</name></member>
+      <member refid="structse3__disco__it___1acab44529361f40d6b06a6075b501c88c" prot="public" virt="non-virtual"><scope>se3_disco_it_</scope><name>device_info</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,8 @@
+{
+    "rules" : [
+        {
+            "description": "Default",
+            "action": "allow"
+        } 
+    ]
+}

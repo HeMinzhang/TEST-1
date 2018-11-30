@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structse3__drive__it__" kind="struct" prot="public">
+    <compoundname>se3_drive_it_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structse3__drive__it___1a79a2c5c080ef46f7a81d6b05a3d23bd9" prot="public" static="no" mutable="no">
+        <type>se3_char *</type>
+        <definition>se3_char* se3_drive_it_::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" line="69" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__drive__it___1a8e864013c4f593abb1d801cdbeb336b2" prot="public" static="no" mutable="no">
+        <type>se3_char</type>
+        <definition>se3_char se3_drive_it_::buf_[SE3_DRIVE_BUF_MAX+1]</definition>
+        <argsstring>[SE3_DRIVE_BUF_MAX+1]</argsstring>
+        <name>buf_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" line="71" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__drive__it___1a1733d235b0f5b5a649d767f2f4f7ea5f" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t se3_drive_it_::buf_len_</definition>
+        <argsstring></argsstring>
+        <name>buf_len_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" line="72" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__drive__it___1a171fa05ba77bf4553093f3ce8c88df07" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t se3_drive_it_::pos_</definition>
+        <argsstring></argsstring>
+        <name>pos_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" line="74" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" line="68" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h" bodystart="68" bodyend="78"/>
+    <listofallmembers>
+      <member refid="structse3__drive__it___1a8e864013c4f593abb1d801cdbeb336b2" prot="public" virt="non-virtual"><scope>se3_drive_it_</scope><name>buf_</name></member>
+      <member refid="structse3__drive__it___1a1733d235b0f5b5a649d767f2f4f7ea5f" prot="public" virt="non-virtual"><scope>se3_drive_it_</scope><name>buf_len_</name></member>
+      <member refid="structse3__drive__it___1a79a2c5c080ef46f7a81d6b05a3d23bd9" prot="public" virt="non-virtual"><scope>se3_drive_it_</scope><name>path</name></member>
+      <member refid="structse3__drive__it___1a171fa05ba77bf4553093f3ce8c88df07" prot="public" virt="non-virtual"><scope>se3_drive_it_</scope><name>pos_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

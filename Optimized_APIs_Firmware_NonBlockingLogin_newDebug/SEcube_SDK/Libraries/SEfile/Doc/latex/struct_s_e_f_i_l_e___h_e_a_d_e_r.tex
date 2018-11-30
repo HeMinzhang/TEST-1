@@ -1,0 +1,59 @@
+\hypertarget{struct_s_e_f_i_l_e___h_e_a_d_e_r}{\section{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R Struct Reference}
+\label{struct_s_e_f_i_l_e___h_e_a_d_e_r}\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}}
+}
+
+
+The \hyperlink{struct_s_e_f_i_l_e___h_e_a_d_e_r}{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R} struct.  
+
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_e_a_d_e_r_a7ebb6ac2da3fc9384e1ed12cdbbeb03c}{nonce\-\_\-pbkdf2} \mbox{[}S\-E\-F\-I\-L\-E\-\_\-\-N\-O\-N\-C\-E\-\_\-\-L\-E\-N\mbox{]}
+\item 
+uint8\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_e_a_d_e_r_adcb7b8a5fc9e93d1fbf348b144883bf9}{nonce\-\_\-ctr} \mbox{[}16\mbox{]}
+\item 
+int32\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_e_a_d_e_r_a552830c2eab29ca1ce93f18cf8aff306}{magic}
+\item 
+int16\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_e_a_d_e_r_a243bb9ed827d6f802720231425ee240c}{ver}
+\item 
+int32\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_e_a_d_e_r_a3c573cee7709f63a385460ad21637ec1}{uid}
+\item 
+int32\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_e_a_d_e_r_ae10c6516ac00e694db72a45ef16a214c}{uid\-\_\-cnt}
+\item 
+uint8\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_e_a_d_e_r_a6ef79b4f4b76a57b2610bda99f34afdc}{fname\-\_\-len}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{struct_s_e_f_i_l_e___h_e_a_d_e_r}{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R} struct. 
+
+This data struct is used to define a 31 bytes field inside a sector while taking care of its inner composition. 
+
+\subsection{Field Documentation}
+\hypertarget{struct_s_e_f_i_l_e___h_e_a_d_e_r_a6ef79b4f4b76a57b2610bda99f34afdc}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}!fname\-\_\-len@{fname\-\_\-len}}
+\index{fname\-\_\-len@{fname\-\_\-len}!SEFILE_HEADER@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}}
+\subsubsection[{fname\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R\-::fname\-\_\-len}}\label{struct_s_e_f_i_l_e___h_e_a_d_e_r_a6ef79b4f4b76a57b2610bda99f34afdc}
+1 byte to express how long is the filename. \hypertarget{struct_s_e_f_i_l_e___h_e_a_d_e_r_a552830c2eab29ca1ce93f18cf8aff306}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}!magic@{magic}}
+\index{magic@{magic}!SEFILE_HEADER@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}}
+\subsubsection[{magic}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R\-::magic}}\label{struct_s_e_f_i_l_e___h_e_a_d_e_r_a552830c2eab29ca1ce93f18cf8aff306}
+4 bytes used to represent file type (not used yet) \hypertarget{struct_s_e_f_i_l_e___h_e_a_d_e_r_adcb7b8a5fc9e93d1fbf348b144883bf9}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}!nonce\-\_\-ctr@{nonce\-\_\-ctr}}
+\index{nonce\-\_\-ctr@{nonce\-\_\-ctr}!SEFILE_HEADER@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}}
+\subsubsection[{nonce\-\_\-ctr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R\-::nonce\-\_\-ctr\mbox{[}16\mbox{]}}}\label{struct_s_e_f_i_l_e___h_e_a_d_e_r_adcb7b8a5fc9e93d1fbf348b144883bf9}
+16 random bytes storing the I\-V for next sectors \hypertarget{struct_s_e_f_i_l_e___h_e_a_d_e_r_a7ebb6ac2da3fc9384e1ed12cdbbeb03c}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}!nonce\-\_\-pbkdf2@{nonce\-\_\-pbkdf2}}
+\index{nonce\-\_\-pbkdf2@{nonce\-\_\-pbkdf2}!SEFILE_HEADER@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}}
+\subsubsection[{nonce\-\_\-pbkdf2}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R\-::nonce\-\_\-pbkdf2\mbox{[}S\-E\-F\-I\-L\-E\-\_\-\-N\-O\-N\-C\-E\-\_\-\-L\-E\-N\mbox{]}}}\label{struct_s_e_f_i_l_e___h_e_a_d_e_r_a7ebb6ac2da3fc9384e1ed12cdbbeb03c}
+32 random bytes storing the I\-V for generating a different key \hypertarget{struct_s_e_f_i_l_e___h_e_a_d_e_r_a3c573cee7709f63a385460ad21637ec1}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}!uid@{uid}}
+\index{uid@{uid}!SEFILE_HEADER@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}}
+\subsubsection[{uid}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R\-::uid}}\label{struct_s_e_f_i_l_e___h_e_a_d_e_r_a3c573cee7709f63a385460ad21637ec1}
+4 bytes not used yet \hypertarget{struct_s_e_f_i_l_e___h_e_a_d_e_r_ae10c6516ac00e694db72a45ef16a214c}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}!uid\-\_\-cnt@{uid\-\_\-cnt}}
+\index{uid\-\_\-cnt@{uid\-\_\-cnt}!SEFILE_HEADER@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}}
+\subsubsection[{uid\-\_\-cnt}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R\-::uid\-\_\-cnt}}\label{struct_s_e_f_i_l_e___h_e_a_d_e_r_ae10c6516ac00e694db72a45ef16a214c}
+4 bytes not used yet \hypertarget{struct_s_e_f_i_l_e___h_e_a_d_e_r_a243bb9ed827d6f802720231425ee240c}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}!ver@{ver}}
+\index{ver@{ver}!SEFILE_HEADER@{S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R}}
+\subsubsection[{ver}]{\setlength{\rightskip}{0pt plus 5cm}int16\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-E\-A\-D\-E\-R\-::ver}}\label{struct_s_e_f_i_l_e___h_e_a_d_e_r_a243bb9ed827d6f802720231425ee240c}
+2 bytes used to represent current filesystem version (not used yet) 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/run/media/scaglia/5\-B106\-C33792\-E4440/polito/\-M\-A\-G\-I\-S\-T\-R\-A\-L\-E/current/tesi/\-S\-Efile\-\_\-library/\hyperlink{_s_efile_8c}{S\-Efile.\-c}\end{DoxyCompactItemize}

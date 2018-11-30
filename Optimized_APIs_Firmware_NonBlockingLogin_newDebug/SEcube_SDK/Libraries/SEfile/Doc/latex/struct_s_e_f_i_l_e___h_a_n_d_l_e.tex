@@ -1,0 +1,44 @@
+\hypertarget{struct_s_e_f_i_l_e___h_a_n_d_l_e}{\section{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E Struct Reference}
+\label{struct_s_e_f_i_l_e___h_a_n_d_l_e}\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E@{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E}}
+}
+
+
+The \hyperlink{struct_s_e_f_i_l_e___h_a_n_d_l_e}{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E} struct.  
+
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_a_n_d_l_e_a507fef27d36d8ad4550276f9abf84ebb}{log\-\_\-offset}
+\item 
+int32\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_a_n_d_l_e_a17bc7f2e296f61d7758cb18e68d41375}{fd}
+\item 
+uint8\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_a_n_d_l_e_a37935da2e79760bd04e32e05e5922975}{nonce\-\_\-ctr} \mbox{[}16\mbox{]}
+\item 
+uint8\-\_\-t \hyperlink{struct_s_e_f_i_l_e___h_a_n_d_l_e_a6d2cb56237e6a99def8f9e9e54a46489}{nonce\-\_\-pbkdf2} \mbox{[}S\-E\-F\-I\-L\-E\-\_\-\-N\-O\-N\-C\-E\-\_\-\-L\-E\-N\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{struct_s_e_f_i_l_e___h_a_n_d_l_e}{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E} struct. 
+
+This abstract data type is used to hide from higher level of abstraction its implementation. The data stored in here are the current physical file pointer position and the file descriptor O\-S-\/dependent data type. 
+
+\subsection{Field Documentation}
+\hypertarget{struct_s_e_f_i_l_e___h_a_n_d_l_e_a17bc7f2e296f61d7758cb18e68d41375}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E@{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E}!fd@{fd}}
+\index{fd@{fd}!SEFILE_HANDLE@{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E}}
+\subsubsection[{fd}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E\-::fd}}\label{struct_s_e_f_i_l_e___h_a_n_d_l_e_a17bc7f2e296f61d7758cb18e68d41375}
+File descriptor in Unix environment \hypertarget{struct_s_e_f_i_l_e___h_a_n_d_l_e_a507fef27d36d8ad4550276f9abf84ebb}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E@{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E}!log\-\_\-offset@{log\-\_\-offset}}
+\index{log\-\_\-offset@{log\-\_\-offset}!SEFILE_HANDLE@{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E}}
+\subsubsection[{log\-\_\-offset}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E\-::log\-\_\-offset}}\label{struct_s_e_f_i_l_e___h_a_n_d_l_e_a507fef27d36d8ad4550276f9abf84ebb}
+Actual pointer position in bytes \hypertarget{struct_s_e_f_i_l_e___h_a_n_d_l_e_a37935da2e79760bd04e32e05e5922975}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E@{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E}!nonce\-\_\-ctr@{nonce\-\_\-ctr}}
+\index{nonce\-\_\-ctr@{nonce\-\_\-ctr}!SEFILE_HANDLE@{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E}}
+\subsubsection[{nonce\-\_\-ctr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E\-::nonce\-\_\-ctr\mbox{[}16\mbox{]}}}\label{struct_s_e_f_i_l_e___h_a_n_d_l_e_a37935da2e79760bd04e32e05e5922975}
+Nonce used for the C\-T\-R feedback \hypertarget{struct_s_e_f_i_l_e___h_a_n_d_l_e_a6d2cb56237e6a99def8f9e9e54a46489}{\index{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E@{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E}!nonce\-\_\-pbkdf2@{nonce\-\_\-pbkdf2}}
+\index{nonce\-\_\-pbkdf2@{nonce\-\_\-pbkdf2}!SEFILE_HANDLE@{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E}}
+\subsubsection[{nonce\-\_\-pbkdf2}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E\-::nonce\-\_\-pbkdf2\mbox{[}S\-E\-F\-I\-L\-E\-\_\-\-N\-O\-N\-C\-E\-\_\-\-L\-E\-N\mbox{]}}}\label{struct_s_e_f_i_l_e___h_a_n_d_l_e_a6d2cb56237e6a99def8f9e9e54a46489}
+Nonce used for the P\-B\-K\-D\-F2 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/run/media/scaglia/5\-B106\-C33792\-E4440/polito/\-M\-A\-G\-I\-S\-T\-R\-A\-L\-E/current/tesi/\-S\-Efile\-\_\-library/\hyperlink{_s_efile_8c}{S\-Efile.\-c}\end{DoxyCompactItemize}

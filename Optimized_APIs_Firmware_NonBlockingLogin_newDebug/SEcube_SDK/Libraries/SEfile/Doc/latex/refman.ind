@@ -1,0 +1,390 @@
+\begin{theindex}
+
+  \item {access parameter for secure\discretionary {-}{}{}\_\discretionary {-}{}{}open}, 
+		\hyperpage{10}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}W\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E}, 
+		\hyperpage{10}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}N}, 
+		\hyperpage{10}
+
+  \indexspace
+
+  \item {check\discretionary {-}{}{}\_\discretionary {-}{}{}env}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{21}
+  \item {crypt\discretionary {-}{}{}\_\discretionary {-}{}{}dirname}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{21}
+  \item {crypt\discretionary {-}{}{}\_\discretionary {-}{}{}header}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{22}
+  \item {crypt\discretionary {-}{}{}\_\discretionary {-}{}{}sectors}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{22}
+  \item {crypto\discretionary {-}{}{}\_\discretionary {-}{}{}filename}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{22}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{32}
+
+  \indexspace
+
+  \item {data}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
+		\hyperpage{17}
+  \item {decrypt\discretionary {-}{}{}\_\discretionary {-}{}{}dirname}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{23}
+  \item {decrypt\discretionary {-}{}{}\_\discretionary {-}{}{}filehandle}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{23}
+  \item {decrypt\discretionary {-}{}{}\_\discretionary {-}{}{}filename}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{23}
+  \item {decrypt\discretionary {-}{}{}\_\discretionary {-}{}{}sectors}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{23}
+
+  \indexspace
+
+  \item {Env\discretionary {-}{}{}Crypto}
+    \subitem {Environmental\discretionary {-}{}{}Vars}, \hyperpage{8}
+  \item {Env\discretionary {-}{}{}Key\discretionary {-}{}{}I\discretionary {-}{}{}D}
+    \subitem {Environmental\discretionary {-}{}{}Vars}, \hyperpage{8}
+  \item {Env\discretionary {-}{}{}Session}
+    \subitem {Environmental\discretionary {-}{}{}Vars}, \hyperpage{8}
+  \item {Environmental\discretionary {-}{}{}Vars}, \hyperpage{8}
+    \subitem {Env\discretionary {-}{}{}Crypto}, \hyperpage{8}
+    \subitem {Env\discretionary {-}{}{}Key\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
+		\hyperpage{8}
+    \subitem {Env\discretionary {-}{}{}Session}, \hyperpage{8}
+  \item {error values}, \hyperpage{12}
+
+  \indexspace
+
+  \item {fd}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}L\discretionary {-}{}{}E}, 
+		\hyperpage{15}
+  \item {fname\discretionary {-}{}{}\_\discretionary {-}{}{}len}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}filename}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{24}
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}filesize}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{24}
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}path}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{24}
+
+  \indexspace
+
+  \item {header}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {len}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
+		\hyperpage{17}
+  \item {log\discretionary {-}{}{}\_\discretionary {-}{}{}offset}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}L\discretionary {-}{}{}E}, 
+		\hyperpage{15}
+
+  \indexspace
+
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}M\discretionary {-}{}{}E}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{32}
+  \item {magic}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{16}
+  \item {mode parameter for secure\discretionary {-}{}{}\_\discretionary {-}{}{}open}, 
+		\hyperpage{9}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D}, 
+		\hyperpage{9}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E}, 
+		\hyperpage{9}
+
+  \indexspace
+
+  \item {nonce\discretionary {-}{}{}\_\discretionary {-}{}{}ctr}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}L\discretionary {-}{}{}E}, 
+		\hyperpage{15}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{16}
+  \item {nonce\discretionary {-}{}{}\_\discretionary {-}{}{}pbkdf2}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}L\discretionary {-}{}{}E}, 
+		\hyperpage{15}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}E\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}N}
+    \subitem {whence parameter for secure\discretionary {-}{}{}\_\discretionary {-}{}{}seek}, 
+		\hyperpage{11}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}
+    \subitem {Sector\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Defines}, 
+		\hyperpage{13}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}T}
+    \subitem {whence parameter for secure\discretionary {-}{}{}\_\discretionary {-}{}{}seek}, 
+		\hyperpage{11}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}D}
+    \subitem {whence parameter for secure\discretionary {-}{}{}\_\discretionary {-}{}{}seek}, 
+		\hyperpage{11}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}L\discretionary {-}{}{}E}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{32}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}L\discretionary {-}{}{}E}, 
+		\hyperpage{15}
+    \subitem {fd}, \hyperpage{15}
+    \subitem {log\discretionary {-}{}{}\_\discretionary {-}{}{}offset}, 
+		\hyperpage{15}
+    \subitem {nonce\discretionary {-}{}{}\_\discretionary {-}{}{}ctr}, 
+		\hyperpage{15}
+    \subitem {nonce\discretionary {-}{}{}\_\discretionary {-}{}{}pbkdf2}, 
+		\hyperpage{15}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{16}
+    \subitem {fname\discretionary {-}{}{}\_\discretionary {-}{}{}len}, 
+		\hyperpage{16}
+    \subitem {magic}, \hyperpage{16}
+    \subitem {nonce\discretionary {-}{}{}\_\discretionary {-}{}{}ctr}, 
+		\hyperpage{16}
+    \subitem {nonce\discretionary {-}{}{}\_\discretionary {-}{}{}pbkdf2}, 
+		\hyperpage{16}
+    \subitem {uid}, \hyperpage{16}
+    \subitem {uid\discretionary {-}{}{}\_\discretionary {-}{}{}cnt}, 
+		\hyperpage{16}
+    \subitem {ver}, \hyperpage{16}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}D\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}A}
+    \subitem {Sector\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Defines}, 
+		\hyperpage{13}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}W\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E}
+    \subitem {access parameter for secure\discretionary {-}{}{}\_\discretionary {-}{}{}open}, 
+		\hyperpage{10}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}N}
+    \subitem {access parameter for secure\discretionary {-}{}{}\_\discretionary {-}{}{}open}, 
+		\hyperpage{10}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D}
+    \subitem {mode parameter for secure\discretionary {-}{}{}\_\discretionary {-}{}{}open}, 
+		\hyperpage{9}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
+		\hyperpage{17}
+    \subitem {data}, \hyperpage{17}
+    \subitem {header}, \hyperpage{17}
+    \subitem {len}, \hyperpage{17}
+    \subitem {signature}, \hyperpage{17}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}
+    \subitem {Sector\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Defines}, 
+		\hyperpage{13}
+  \item {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E}
+    \subitem {mode parameter for secure\discretionary {-}{}{}\_\discretionary {-}{}{}open}, 
+		\hyperpage{9}
+  \item {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}
+    \subitem {check\discretionary {-}{}{}\_\discretionary {-}{}{}env}, 
+		\hyperpage{21}
+    \subitem {crypt\discretionary {-}{}{}\_\discretionary {-}{}{}dirname}, 
+		\hyperpage{21}
+    \subitem {crypt\discretionary {-}{}{}\_\discretionary {-}{}{}header}, 
+		\hyperpage{22}
+    \subitem {crypt\discretionary {-}{}{}\_\discretionary {-}{}{}sectors}, 
+		\hyperpage{22}
+    \subitem {crypto\discretionary {-}{}{}\_\discretionary {-}{}{}filename}, 
+		\hyperpage{22}
+    \subitem {decrypt\discretionary {-}{}{}\_\discretionary {-}{}{}dirname}, 
+		\hyperpage{23}
+    \subitem {decrypt\discretionary {-}{}{}\_\discretionary {-}{}{}filehandle}, 
+		\hyperpage{23}
+    \subitem {decrypt\discretionary {-}{}{}\_\discretionary {-}{}{}filename}, 
+		\hyperpage{23}
+    \subitem {decrypt\discretionary {-}{}{}\_\discretionary {-}{}{}sectors}, 
+		\hyperpage{23}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}filename}, 
+		\hyperpage{24}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}filesize}, 
+		\hyperpage{24}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}path}, 
+		\hyperpage{24}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}close}, 
+		\hyperpage{24}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}create}, 
+		\hyperpage{25}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}finit}, 
+		\hyperpage{25}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}getfilesize}, 
+		\hyperpage{25}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}init}, 
+		\hyperpage{25}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}ls}, 
+		\hyperpage{26}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}mkdir}, 
+		\hyperpage{26}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}open}, 
+		\hyperpage{26}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}read}, 
+		\hyperpage{27}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}seek}, 
+		\hyperpage{27}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}sync}, 
+		\hyperpage{27}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}truncate}, 
+		\hyperpage{27}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}update}, 
+		\hyperpage{29}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}write}, 
+		\hyperpage{29}
+    \subitem {valid\discretionary {-}{}{}\_\discretionary {-}{}{}name}, 
+		\hyperpage{29}
+  \item {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}
+    \subitem {crypto\discretionary {-}{}{}\_\discretionary {-}{}{}filename}, 
+		\hyperpage{32}
+    \subitem {M\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}M\discretionary {-}{}{}E}, 
+		\hyperpage{32}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}L\discretionary {-}{}{}E}, 
+		\hyperpage{32}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}close}, 
+		\hyperpage{33}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}create}, 
+		\hyperpage{33}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}finit}, 
+		\hyperpage{33}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}getfilesize}, 
+		\hyperpage{33}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}init}, 
+		\hyperpage{34}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}ls}, 
+		\hyperpage{34}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}mkdir}, 
+		\hyperpage{34}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}open}, 
+		\hyperpage{34}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}read}, 
+		\hyperpage{36}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}seek}, 
+		\hyperpage{36}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}sync}, 
+		\hyperpage{36}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}truncate}, 
+		\hyperpage{37}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}update}, 
+		\hyperpage{37}
+    \subitem {secure\discretionary {-}{}{}\_\discretionary {-}{}{}write}, 
+		\hyperpage{37}
+  \item {Sector\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Defines}, 
+		\hyperpage{13}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}, 
+		\hyperpage{13}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}D\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}A}, 
+		\hyperpage{13}
+  \item {Sector\discretionary {-}{}{}Struct}, \hyperpage{7}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}close}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{24}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{33}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}create}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{25}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{33}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}finit}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{25}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{33}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}getfilesize}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{25}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{33}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}init}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{25}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{34}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}ls}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{26}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{34}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}mkdir}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{26}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{34}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}open}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{26}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{34}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}read}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{27}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{36}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}seek}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{27}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{36}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}sync}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{27}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{36}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}truncate}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{27}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{37}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}update}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{29}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{37}
+  \item {secure\discretionary {-}{}{}\_\discretionary {-}{}{}write}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{29}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}h}, 
+		\hyperpage{37}
+  \item {signature}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {uid}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{16}
+  \item {uid\discretionary {-}{}{}\_\discretionary {-}{}{}cnt}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {valid\discretionary {-}{}{}\_\discretionary {-}{}{}name}
+    \subitem {S\discretionary {-}{}{}Efile.\discretionary {-}{}{}c}, 
+		\hyperpage{29}
+  \item {ver}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {whence parameter for secure\discretionary {-}{}{}\_\discretionary {-}{}{}seek}, 
+		\hyperpage{11}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}E\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}N}, 
+		\hyperpage{11}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}T}, 
+		\hyperpage{11}
+    \subitem {S\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}D}, 
+		\hyperpage{11}
+
+\end{theindex}

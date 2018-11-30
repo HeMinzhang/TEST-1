@@ -1,0 +1,18 @@
+{
+    "map": [
+        {
+            "description": "test",
+            "key-id": 1,
+            "redirect-host": "127.0.0.1",
+            "listen-port": 8080,
+            "redirect-port": 8889
+        },
+        {
+            "description": "nginx",
+            "key-id": 1,
+            "redirect-host": "127.0.0.1",
+            "listen-port": 8888,
+            "redirect-port": 80
+        }
+    ]
+}

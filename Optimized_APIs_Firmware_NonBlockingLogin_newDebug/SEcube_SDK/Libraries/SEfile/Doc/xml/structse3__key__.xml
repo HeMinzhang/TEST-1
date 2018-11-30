@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structse3__key__" kind="struct" prot="public">
+    <compoundname>se3_key_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structse3__key___1ae87042442f75508344dec9065bafa5bc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t se3_key_::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="42" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__key___1a81d3b415864c58f25429fa89abc6df36" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t se3_key_::validity</definition>
+        <argsstring></argsstring>
+        <name>validity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="43" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__key___1a9252864c398c0452f070fd516e00ac02" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_key_::data_size</definition>
+        <argsstring></argsstring>
+        <name>data_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="44" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__key___1adc22b95114211635b01efc5a4feea75e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_key_::name_size</definition>
+        <argsstring></argsstring>
+        <name>name_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="45" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__key___1a0f0b23403bfbafae02563ba7a86ebfe4" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* se3_key_::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="46" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__key___1abfb492c26074cbe23ba84d671b05a7c7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t se3_key_::name[SE3_KEY_NAME_MAX]</definition>
+        <argsstring>[SE3_KEY_NAME_MAX]</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="47" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="41" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="41" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structse3__key___1a0f0b23403bfbafae02563ba7a86ebfe4" prot="public" virt="non-virtual"><scope>se3_key_</scope><name>data</name></member>
+      <member refid="structse3__key___1a9252864c398c0452f070fd516e00ac02" prot="public" virt="non-virtual"><scope>se3_key_</scope><name>data_size</name></member>
+      <member refid="structse3__key___1ae87042442f75508344dec9065bafa5bc" prot="public" virt="non-virtual"><scope>se3_key_</scope><name>id</name></member>
+      <member refid="structse3__key___1abfb492c26074cbe23ba84d671b05a7c7" prot="public" virt="non-virtual"><scope>se3_key_</scope><name>name</name></member>
+      <member refid="structse3__key___1adc22b95114211635b01efc5a4feea75e" prot="public" virt="non-virtual"><scope>se3_key_</scope><name>name_size</name></member>
+      <member refid="structse3__key___1a81d3b415864c58f25429fa89abc6df36" prot="public" virt="non-virtual"><scope>se3_key_</scope><name>validity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

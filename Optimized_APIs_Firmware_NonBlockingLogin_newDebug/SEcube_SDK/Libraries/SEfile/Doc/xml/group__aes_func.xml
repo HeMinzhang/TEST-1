@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group__aes_func" kind="group">
+    <compoundname>aesFunc</compoundname>
+    <title>AES functions</title>
+      <sectiondef kind="user-defined">
+      <header>AES functions</header>
+      <memberdef kind="function" id="group__aes_func_1ga53e5e4bce089a65bb66b3ba172d12804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Aes256_Init</definition>
+        <argsstring>(B5_tAesCtx *ctx, const uint8_t *Key, int16_t keySize, uint8_t aesMode)</argsstring>
+        <name>B5_Aes256_Init</name>
+        <param>
+          <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>keySize</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>aesMode</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the AES data structure to be initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Key that must be used for encryption/decryption. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keySize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key size. See <ref refid="group__aes_keys" kindref="compound">AES Key, IV, Block Sizes</ref> for supported sizes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aesMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AES mode. See <ref refid="group__aes_modes" kindref="compound">AES modes</ref> for supported modes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__aes_return" kindref="compound">AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="110" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1193" bodyend="1239"/>
+      </memberdef>
+      <memberdef kind="function" id="group__aes_func_1gac2f5c3921592486df230fec302629a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Aes256_SetIV</definition>
+        <argsstring>(B5_tAesCtx *ctx, const uint8_t *IV)</argsstring>
+        <name>B5_Aes256_SetIV</name>
+        <param>
+          <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>IV</declname>
+        </param>
+        <briefdescription>
+<para>Set the IV for the current AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the AES data structure to be initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the IV. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__aes_return" kindref="compound">AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="119" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1245" bodyend="1262"/>
+      </memberdef>
+      <memberdef kind="function" id="group__aes_func_1ga5fd1cd91caa7b0dfccb7f735d120a5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Aes256_Update</definition>
+        <argsstring>(B5_tAesCtx *ctx, uint8_t *encData, uint8_t *clrData, int16_t nBlk)</argsstring>
+        <name>B5_Aes256_Update</name>
+        <param>
+          <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>encData</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>clrData</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>nBlk</declname>
+        </param>
+        <briefdescription>
+<para>Encrypt/Decrypt data based on the status of current AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the current AES context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encrypted data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clrData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clear data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nBlk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of AES blocks to process. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__aes_return" kindref="compound">AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="130" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1268" bodyend="1450"/>
+      </memberdef>
+      <memberdef kind="function" id="group__aes_func_1ga6d6ad2c832065507fd0d106f8c919623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Aes256_Finit</definition>
+        <argsstring>(B5_tAesCtx *ctx)</argsstring>
+        <name>B5_Aes256_Finit</name>
+        <param>
+          <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>De-initialize the current AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the AES context to de-initialize. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__aes_return" kindref="compound">AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="138" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1455" bodyend="1458"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+;;;
+;;; Copyright (c) Microsoft Corporation. All rights reserved
+;;;
+;;; Abstract:
+;;;    Stream Edit Callout sample driver install configuration.
+;;;
+
+[Version]
+    Signature   = "$Windows NT$"
+    Class       = WFPCALLOUTS
+    ClassGuid   = {57465043-616C-6C6F-7574-5F636C617373}
+    Provider    = %SFProvider%
+    CatalogFile = selinkflt.cat
+    DriverVer   = 01/01/2015,1.0.09.15
+
+[SourceDisksNames]
+   1 = %SFEditDisk%,,,""
+
+[SourceDisksFiles]
+   selinkflt.sys = 1,,
+
+[DestinationDirs]
+    DefaultDestDir      = 12                              ; %WinDir%\System32\Drivers
+    selinkflt.DriverFiles = 12                              ; %WinDir%\System32\Drivers
+
+[DefaultInstall]
+    OptionDesc = %SFEditServiceDesc%
+    CopyFiles  = selinkflt.DriverFiles
+
+[DefaultInstall.Services]
+    AddService = %SFEditServiceName%,,selinkflt.Service
+
+[DefaultUninstall]
+    DelFiles = selinkflt.DriverFiles
+
+[DefaultUninstall.Services]
+    DelService = %SFEditServiceName%,0x200               ; SPSVCINST_STOPSERVICE
+    DelReg     = selinkflt.DelRegistry
+
+[selinkflt.DriverFiles]
+    selinkflt.sys,,,0x00000040                              ; COPYFLG_OVERWRITE_OLDER_ONLY
+
+[selinkflt.Service]
+    DisplayName   = %SFEditServiceName%
+    Description   = %SFEditServiceDesc%
+    ServiceType   = 1                                     ; SERVICE_KERNEL_DRIVER
+    StartType     = 0                                     ; SERVICE_BOOT_START
+    ErrorControl  = 1                                     ; SERVICE_ERROR_NORMAL
+    ServiceBinary = %12%\selinkflt.sys                      ; %WinDir%\System32\Drivers\selinkflt.sys
+    AddReg        = selinkflt.AddRegistry
+
+[selinkflt.AddRegistry]
+    HKR,"Parameters","MultipleCallouts",     0x00010001, 1          ; FLG_ADDREG_TYPE_DWORD
+    HKR,"Parameters","StringToFind",         0x00000000, "rainy"    ; FLG_ADDREG_TYPE_SZ
+    HKR,"Parameters","InspectionRemotePort", 0x00010001, 0    	    ; FLG_ADDREG_TYPE_DWORD
+    HKR,"Parameters","InspectionLocalPort",  0x00010001, 8888       ; FLG_ADDREG_TYPE_DWORD
+
+
+[selinkflt.DelRegistry]
+    HKR,"Parameters",,,
+
+[Strings]
+    SFProvider        = "nicifer"
+    SFEditDisk        = "SElink Filter Installation Disk"
+    SFEditServiceDesc = "SElink Filter Service"
+    SFEditServiceName = "selinkflt"

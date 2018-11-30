@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group__hmacsha_func" kind="group">
+    <compoundname>hmacshaFunc</compoundname>
+    <title>HMAC-SHA256 functions</title>
+      <sectiondef kind="user-defined">
+      <header>HMAC-SHA256 functions</header>
+      <memberdef kind="function" id="group__hmacsha_func_1ga1178a5df067377025aec0bdea3b8f63f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_HmacSha256_Init</definition>
+        <argsstring>(B5_tHmacSha256Ctx *ctx, const uint8_t *Key, int16_t keySize)</argsstring>
+        <name>B5_HmacSha256_Init</name>
+        <param>
+          <type><ref refid="struct_b5__t_hmac_sha256_ctx" kindref="compound">B5_tHmacSha256Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>keySize</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the HMAC-SHA256 context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the HMAC-SHA256 data structure to be initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Key that must be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keySize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key size. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__hmacsha_return" kindref="compound">HMAC-SHA256 return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="127" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.c" bodystart="316" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="group__hmacsha_func_1ga4e55de9980f2f0b132d1a5ec343289e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_HmacSha256_Update</definition>
+        <argsstring>(B5_tHmacSha256Ctx *ctx, const uint8_t *data, int32_t dataLen)</argsstring>
+        <name>B5_HmacSha256_Update</name>
+        <param>
+          <type><ref refid="struct_b5__t_hmac_sha256_ctx" kindref="compound">B5_tHmacSha256Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dataLen</declname>
+        </param>
+        <briefdescription>
+<para>Compute the HMAC-SHA256 algorithm on input data depending on the current status of the HMAC-SHA256 context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the current HMAC-SHA256 context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the input data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes to be processed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__hmacsha_return" kindref="compound">HMAC-SHA256 return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="136" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.c" bodystart="369" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="group__hmacsha_func_1gac36fde1fcd954065872e07dadbfccff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_HmacSha256_Finit</definition>
+        <argsstring>(B5_tHmacSha256Ctx *ctx, uint8_t *rDigest)</argsstring>
+        <name>B5_HmacSha256_Finit</name>
+        <param>
+          <type><ref refid="struct_b5__t_hmac_sha256_ctx" kindref="compound">B5_tHmacSha256Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rDigest</declname>
+        </param>
+        <briefdescription>
+<para>De-initialize the current HMAC-SHA256 context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the HMAC-SHA256 context to de-initialize. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rDigest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a blank memory area that can store the computed output digest. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__hmacsha_return" kindref="compound">HMAC-SHA256 return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="144" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.c" bodystart="393" bodyend="419"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

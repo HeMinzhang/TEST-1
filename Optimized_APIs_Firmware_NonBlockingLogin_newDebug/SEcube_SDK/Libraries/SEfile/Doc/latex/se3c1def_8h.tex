@@ -1,0 +1,288 @@
+\hypertarget{se3c1def_8h}{\section{/run/media/scaglia/5\-B106\-C33792\-E4440/polito/\-M\-A\-G\-I\-S\-T\-R\-A\-L\-E/current/tesi/\-S\-Efile\-\_\-library/se3/se3c1def.h File Reference}
+\label{se3c1def_8h}\index{/run/media/scaglia/5\-B106\-C33792\-E4440/polito/\-M\-A\-G\-I\-S\-T\-R\-A\-L\-E/current/tesi/\-S\-Efile\-\_\-library/se3/se3c1def.\-h@{/run/media/scaglia/5\-B106\-C33792\-E4440/polito/\-M\-A\-G\-I\-S\-T\-R\-A\-L\-E/current/tesi/\-S\-Efile\-\_\-library/se3/se3c1def.\-h}}
+}
+
+
+This file contains defines to be used both for L1 and L0 functions.  
+
+
+{\ttfamily \#include \char`\"{}se3c0def.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{se3c1def_8h_ab08cbf805508d89ea42f1bfb08be9f9c}{\#define {\bfseries S\-E3\-\_\-\-D\-I\-R\-\_\-\-S\-H\-I\-F\-T}~(8)}\label{se3c1def_8h_ab08cbf805508d89ea42f1bfb08be9f9c}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{se3c1def_8h_abed82baf7f470b522273a3e37c24c600a37cf3dc8157614a3b9c037c2cee23dce}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S} = 100, 
+\hyperlink{se3c1def_8h_abed82baf7f470b522273a3e37c24c600af6bcc762e361bb3a06832370b72c1e6f}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-P\-I\-N} = 101, 
+\hyperlink{se3c1def_8h_abed82baf7f470b522273a3e37c24c600a8d18ae2bd836ebc120c3d2ed4627f45f}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-R\-E\-S\-O\-U\-R\-C\-E} = 200, 
+\hyperlink{se3c1def_8h_abed82baf7f470b522273a3e37c24c600aad6262a238429ca77f9fdef1b8794701}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D} = 201, 
+\\*
+\hyperlink{se3c1def_8h_abed82baf7f470b522273a3e37c24c600ae9e356be800b8921701c096e371855c6}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-M\-E\-M\-O\-R\-Y} = 400, 
+\hyperlink{se3c1def_8h_abed82baf7f470b522273a3e37c24c600ae649d0aa1368c83c045ac7814dd81150}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-U\-T\-H} = 401
+ \}
+\item 
+enum \{ {\bfseries S\-E3\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-U\-S\-E\-R} = 100, 
+{\bfseries S\-E3\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-A\-D\-M\-I\-N} = 1000, 
+{\bfseries S\-E3\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-M\-A\-X} = 0x\-F\-F\-F\-F
+ \}
+\item 
+enum \{ {\bfseries S\-E3\-\_\-\-R\-E\-C\-O\-R\-D\-\_\-\-S\-I\-Z\-E} = 32, 
+{\bfseries S\-E3\-\_\-\-R\-E\-C\-O\-R\-D\-\_\-\-M\-A\-X} = 2
+ \}
+\item 
+enum \{ {\bfseries S\-E3\-\_\-\-R\-E\-C\-O\-R\-D\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-D\-M\-I\-N\-P\-I\-N} = 0, 
+{\bfseries S\-E3\-\_\-\-R\-E\-C\-O\-R\-D\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-S\-E\-R\-P\-I\-N} = 1
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-L1\-\_\-\-P\-I\-N\-\_\-\-S\-I\-Z\-E} = 32, 
+{\bfseries S\-E3\-\_\-\-L1\-\_\-\-K\-E\-Y\-\_\-\-S\-I\-Z\-E} = 32, 
+{\bfseries S\-E3\-\_\-\-L1\-\_\-\-A\-U\-T\-H\-\_\-\-S\-I\-Z\-E} = 16, 
+{\bfseries S\-E3\-\_\-\-L1\-\_\-\-C\-R\-Y\-P\-T\-O\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E} = 16, 
+\\*
+{\bfseries S\-E3\-\_\-\-L1\-\_\-\-C\-H\-A\-L\-L\-E\-N\-G\-E\-\_\-\-S\-I\-Z\-E} = 32, 
+{\bfseries S\-E3\-\_\-\-L1\-\_\-\-C\-H\-A\-L\-L\-E\-N\-G\-E\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-S} = 32, 
+{\bfseries S\-E3\-\_\-\-L1\-\_\-\-I\-V\-\_\-\-S\-I\-Z\-E} = 16, 
+{\bfseries S\-E3\-\_\-\-L1\-\_\-\-T\-O\-K\-E\-N\-\_\-\-S\-I\-Z\-E} = 16
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-R\-E\-Q1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-A\-U\-T\-H} = 0, 
+{\bfseries S\-E3\-\_\-\-R\-E\-Q1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-I\-V} = 16, 
+{\bfseries S\-E3\-\_\-\-R\-E\-Q1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-T\-O\-K\-E\-N} = 32, 
+{\bfseries S\-E3\-\_\-\-R\-E\-Q1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-L\-E\-N} = 48, 
+\\*
+{\bfseries S\-E3\-\_\-\-R\-E\-Q1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-C\-M\-D} = 50, 
+{\bfseries S\-E3\-\_\-\-R\-E\-Q1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-D\-A\-T\-A} = 64, 
+{\bfseries S\-E3\-\_\-\-R\-E\-Q1\-\_\-\-M\-A\-X\-\_\-\-D\-A\-T\-A} = (S\-E3\-\_\-\-R\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-D\-A\-T\-A -\/ S\-E3\-\_\-\-R\-E\-Q1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-D\-A\-T\-A)
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-R\-E\-S\-P1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-A\-U\-T\-H} = 0, 
+{\bfseries S\-E3\-\_\-\-R\-E\-S\-P1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-I\-V} = 16, 
+{\bfseries S\-E3\-\_\-\-R\-E\-S\-P1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-T\-O\-K\-E\-N} = 32, 
+{\bfseries S\-E3\-\_\-\-R\-E\-S\-P1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-L\-E\-N} = 48, 
+\\*
+{\bfseries S\-E3\-\_\-\-R\-E\-S\-P1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-S\-T\-A\-T\-U\-S} = 50, 
+{\bfseries S\-E3\-\_\-\-R\-E\-S\-P1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-D\-A\-T\-A} = 64, 
+{\bfseries S\-E3\-\_\-\-R\-E\-S\-P1\-\_\-\-M\-A\-X\-\_\-\-D\-A\-T\-A} = (S\-E3\-\_\-\-R\-E\-S\-P\-\_\-\-M\-A\-X\-\_\-\-D\-A\-T\-A -\/ S\-E3\-\_\-\-R\-E\-S\-P1\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-D\-A\-T\-A)
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-H\-A\-L\-L\-E\-N\-G\-E} = 1, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-L\-O\-G\-I\-N} = 2, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-L\-O\-G\-O\-U\-T} = 3, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-O\-N\-F\-I\-G} = 4, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-E\-D\-I\-T} = 5, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T} = 6, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-I\-N\-I\-T} = 7, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E} = 8, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-L\-I\-S\-T} = 9, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-S\-E\-T\-\_\-\-T\-I\-M\-E} = 10
+ \}
+\item 
+enum \{ {\bfseries S\-E3\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-O\-P\-\_\-\-G\-E\-T} = 1, 
+{\bfseries S\-E3\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-O\-P\-\_\-\-S\-E\-T} = 2
+ \}
+\item 
+enum \{ {\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-I\-D} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-O\-P} = 2, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-V\-A\-L\-U\-E} = 4, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-V\-A\-L\-U\-E} = 0
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-H\-A\-L\-L\-E\-N\-G\-E\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-C\-C1} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-H\-A\-L\-L\-E\-N\-G\-E\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-C\-C2} = 32, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-H\-A\-L\-L\-E\-N\-G\-E\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-A\-C\-C\-E\-S\-S} = 64, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-H\-A\-L\-L\-E\-N\-G\-E\-\_\-\-R\-E\-Q\-\_\-\-S\-I\-Z\-E} = 66, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-H\-A\-L\-L\-E\-N\-G\-E\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-S\-C} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-H\-A\-L\-L\-E\-N\-G\-E\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-S\-R\-E\-S\-P} = 32, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-H\-A\-L\-L\-E\-N\-G\-E\-\_\-\-R\-E\-S\-P\-\_\-\-S\-I\-Z\-E} = 64
+ \}
+\item 
+enum \{ {\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-L\-O\-G\-I\-N\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-C\-R\-E\-S\-P} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-L\-O\-G\-I\-N\-\_\-\-R\-E\-Q\-\_\-\-S\-I\-Z\-E} = 32, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-L\-O\-G\-I\-N\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-T\-O\-K\-E\-N} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-L\-O\-G\-I\-N\-\_\-\-R\-E\-S\-P\-\_\-\-S\-I\-Z\-E} = 16
+ \}
+\item 
+enum \{ {\bfseries S\-E3\-\_\-\-K\-E\-Y\-\_\-\-D\-A\-T\-A\-\_\-\-M\-A\-X} = 2048, 
+{\bfseries S\-E3\-\_\-\-K\-E\-Y\-\_\-\-N\-A\-M\-E\-\_\-\-M\-A\-X} = 32
+ \}
+\item 
+enum \{ \hyperlink{group___key_op_edit_ggaae05225933a42f81e7c4a9fb286596f9a3d657386a013ef10d83cc30169752db3}{S\-E3\-\_\-\-K\-E\-Y\-\_\-\-O\-P\-\_\-\-I\-N\-S\-E\-R\-T} = 1, 
+\hyperlink{group___key_op_edit_ggaae05225933a42f81e7c4a9fb286596f9a352566ea8d1d1506d8d90919cab3f42b}{S\-E3\-\_\-\-K\-E\-Y\-\_\-\-O\-P\-\_\-\-D\-E\-L\-E\-T\-E} = 2, 
+\hyperlink{group___key_op_edit_ggaae05225933a42f81e7c4a9fb286596f9ab9154fbc25e71f9b88dbeb2b6e173885}{S\-E3\-\_\-\-K\-E\-Y\-\_\-\-O\-P\-\_\-\-U\-P\-S\-E\-R\-T} = 3
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-E\-D\-I\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-O\-P} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-E\-D\-I\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-I\-D} = 2, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-E\-D\-I\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-V\-A\-L\-I\-D\-I\-T\-Y} = 6, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-E\-D\-I\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-D\-A\-T\-A\-\_\-\-L\-E\-N} = 10, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-E\-D\-I\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-N\-A\-M\-E\-\_\-\-L\-E\-N} = 12, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-E\-D\-I\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-D\-A\-T\-A\-\_\-\-A\-N\-D\-\_\-\-N\-A\-M\-E} = 14
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T\-\_\-\-R\-E\-Q\-\_\-\-S\-I\-Z\-E} = 4, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-S\-K\-I\-P} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-N\-M\-A\-X} = 2, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-C\-O\-U\-N\-T} = 0, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-K\-E\-Y\-I\-N\-F\-O} = 2, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T\-\_\-\-K\-E\-Y\-I\-N\-F\-O\-\_\-\-O\-F\-F\-\_\-\-I\-D} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T\-\_\-\-K\-E\-Y\-I\-N\-F\-O\-\_\-\-O\-F\-F\-\_\-\-V\-A\-L\-I\-D\-I\-T\-Y} = 4, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T\-\_\-\-K\-E\-Y\-I\-N\-F\-O\-\_\-\-O\-F\-F\-\_\-\-D\-A\-T\-A\-\_\-\-L\-E\-N} = 8, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T\-\_\-\-K\-E\-Y\-I\-N\-F\-O\-\_\-\-O\-F\-F\-\_\-\-N\-A\-M\-E\-\_\-\-L\-E\-N} = 10, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-K\-E\-Y\-\_\-\-L\-I\-S\-T\-\_\-\-K\-E\-Y\-I\-N\-F\-O\-\_\-\-O\-F\-F\-\_\-\-N\-A\-M\-E} = 12
+ \}
+\item 
+enum \{ {\bfseries S\-E3\-\_\-\-A\-L\-G\-O\-\_\-\-I\-N\-V\-A\-L\-I\-D} = 0x\-F\-F\-F\-F, 
+{\bfseries S\-E3\-\_\-\-S\-E\-S\-S\-I\-O\-N\-\_\-\-I\-N\-V\-A\-L\-I\-D} = 0x\-F\-F\-F\-F\-F\-F\-F\-F, 
+{\bfseries S\-E3\-\_\-\-K\-E\-Y\-\_\-\-I\-N\-V\-A\-L\-I\-D} = 0x\-F\-F\-F\-F\-F\-F\-F\-F
+ \}
+\item 
+enum \{ \\*
+\hyperlink{group___algorithm_avail_ggae4d5251432e1a9e6803c0240cc492e18ace41ebb9afed9003f5f9351f34c50ec2}{S\-E3\-\_\-\-A\-L\-G\-O\-\_\-\-A\-E\-S} = 0, 
+\hyperlink{group___algorithm_avail_ggae4d5251432e1a9e6803c0240cc492e18a33d7aad6188bbd41f98528fdc672d003}{S\-E3\-\_\-\-A\-L\-G\-O\-\_\-\-S\-H\-A256} = 1, 
+\hyperlink{group___algorithm_avail_ggae4d5251432e1a9e6803c0240cc492e18a08386119db321e989e1912d27baea464}{S\-E3\-\_\-\-A\-L\-G\-O\-\_\-\-H\-M\-A\-C\-S\-H\-A256} = 2, 
+\hyperlink{group___algorithm_avail_ggae4d5251432e1a9e6803c0240cc492e18a5fac4b7b6331499a7277298a8a2edbf4}{S\-E3\-\_\-\-A\-L\-G\-O\-\_\-\-A\-E\-S\-\_\-\-H\-M\-A\-C\-S\-H\-A256} = 3, 
+\\*
+\hyperlink{group___algorithm_avail_ggae4d5251432e1a9e6803c0240cc492e18adaed4c5a46ddce535c2c0614e1f88c4f}{S\-E3\-\_\-\-A\-L\-G\-O\-\_\-\-A\-E\-S\-\_\-\-H\-M\-A\-C} = 4, 
+{\bfseries S\-E3\-\_\-\-A\-L\-G\-O\-\_\-\-M\-A\-X} = 8
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-I\-N\-I\-T\-\_\-\-R\-E\-Q\-\_\-\-S\-I\-Z\-E} = 8, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-I\-N\-I\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-A\-L\-G\-O} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-I\-N\-I\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-M\-O\-D\-E} = 2, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-I\-N\-I\-T\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-K\-E\-Y\-\_\-\-I\-D} = 4, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-I\-N\-I\-T\-\_\-\-R\-E\-S\-P\-\_\-\-S\-I\-Z\-E} = 4, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-I\-N\-I\-T\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-S\-I\-D} = 0
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-S\-I\-D} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-F\-L\-A\-G\-S} = 4, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-D\-A\-T\-A\-I\-N1\-\_\-\-L\-E\-N} = 6, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-D\-A\-T\-A\-I\-N2\-\_\-\-L\-E\-N} = 8, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-D\-A\-T\-A} = 16, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-D\-A\-T\-A\-O\-U\-T\-\_\-\-L\-E\-N} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-D\-A\-T\-A} = 16
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-F\-L\-A\-G\-\_\-\-F\-I\-N\-I\-T} = (1 $<$$<$ 15), 
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-F\-L\-A\-G\-\_\-\-R\-E\-S\-E\-T} = (1 $<$$<$ 14), 
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-F\-L\-A\-G\-\_\-\-S\-E\-T\-I\-V} = S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-F\-L\-A\-G\-\_\-\-R\-E\-S\-E\-T, 
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-F\-L\-A\-G\-\_\-\-S\-E\-T\-N\-O\-N\-C\-E} = (1 $<$$<$ 13), 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-F\-L\-A\-G\-\_\-\-A\-U\-T\-H} = (1 $<$$<$ 12)
+ \}
+\item 
+enum \{ {\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-M\-A\-X\-\_\-\-D\-A\-T\-A\-I\-N} = (S\-E3\-\_\-\-R\-E\-Q1\-\_\-\-M\-A\-X\-\_\-\-D\-A\-T\-A -\/ S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-D\-A\-T\-A), 
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-M\-A\-X\-\_\-\-D\-A\-T\-A\-O\-U\-T} = (S\-E3\-\_\-\-R\-E\-S\-P1\-\_\-\-M\-A\-X\-\_\-\-D\-A\-T\-A -\/ S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-D\-A\-T\-A)
+ \}
+\item 
+enum \{ {\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-S\-E\-T\-\_\-\-T\-I\-M\-E\-\_\-\-R\-E\-Q\-\_\-\-S\-I\-Z\-E} = 4, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-S\-E\-T\-\_\-\-T\-I\-M\-E\-\_\-\-R\-E\-Q\-\_\-\-O\-F\-F\-\_\-\-D\-E\-V\-T\-I\-M\-E} = 0
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-L\-I\-S\-T\-\_\-\-R\-E\-Q\-\_\-\-S\-I\-Z\-E} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-L\-I\-S\-T\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-C\-O\-U\-N\-T} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-L\-I\-S\-T\-\_\-\-R\-E\-S\-P\-\_\-\-O\-F\-F\-\_\-\-A\-L\-G\-O\-I\-N\-F\-O} = 2, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-A\-L\-G\-O\-I\-N\-F\-O\-\_\-\-S\-I\-Z\-E} = 22, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-A\-L\-G\-O\-I\-N\-F\-O\-\_\-\-O\-F\-F\-\_\-\-N\-A\-M\-E} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-A\-L\-G\-O\-I\-N\-F\-O\-\_\-\-O\-F\-F\-\_\-\-T\-Y\-P\-E} = 16, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-A\-L\-G\-O\-I\-N\-F\-O\-\_\-\-O\-F\-F\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E} = 18, 
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-A\-L\-G\-O\-I\-N\-F\-O\-\_\-\-O\-F\-F\-\_\-\-K\-E\-Y\-\_\-\-S\-I\-Z\-E} = 20, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-M\-D1\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-A\-L\-G\-O\-I\-N\-F\-O\-\_\-\-N\-A\-M\-E\-\_\-\-S\-I\-Z\-E} = 16
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-L\-O\-C\-K\-C\-I\-P\-H\-E\-R} = 0, 
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-T\-R\-E\-A\-M\-C\-I\-P\-H\-E\-R} = 1, 
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-T\-Y\-P\-E\-\_\-\-D\-I\-G\-E\-S\-T} = 2, 
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-T\-Y\-P\-E\-\_\-\-B\-L\-O\-C\-K\-C\-I\-P\-H\-E\-R\-\_\-\-A\-U\-T\-H} = 3, 
+\\*
+{\bfseries S\-E3\-\_\-\-C\-R\-Y\-P\-T\-O\-\_\-\-T\-Y\-P\-E\-\_\-\-O\-T\-H\-E\-R} = 0x\-F\-F\-F\-F
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E3\-\_\-\-F\-E\-E\-D\-B\-A\-C\-K\-\_\-\-E\-C\-B} = 1, 
+{\bfseries S\-E3\-\_\-\-F\-E\-E\-D\-B\-A\-C\-K\-\_\-\-C\-B\-C} = 2, 
+{\bfseries S\-E3\-\_\-\-F\-E\-E\-D\-B\-A\-C\-K\-\_\-\-O\-F\-B} = 3, 
+{\bfseries S\-E3\-\_\-\-F\-E\-E\-D\-B\-A\-C\-K\-\_\-\-C\-T\-R} = 4, 
+\\*
+{\bfseries S\-E3\-\_\-\-F\-E\-E\-D\-B\-A\-C\-K\-\_\-\-C\-F\-B} = 5, 
+{\bfseries S\-E3\-\_\-\-D\-I\-R\-\_\-\-E\-N\-C\-R\-Y\-P\-T} = (1 $<$$<$ S\-E3\-\_\-\-D\-I\-R\-\_\-\-S\-H\-I\-F\-T), 
+{\bfseries S\-E3\-\_\-\-D\-I\-R\-\_\-\-D\-E\-C\-R\-Y\-P\-T} = (2 $<$$<$ S\-E3\-\_\-\-D\-I\-R\-\_\-\-S\-H\-I\-F\-T)
+ \}
+\begin{DoxyCompactList}\small\item\em L1\-\_\-crypto\-\_\-init default modes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains defines to be used both for L1 and L0 functions. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{se3c1def_8h_a385c44f6fb256e5716a2302a5b940388}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a385c44f6fb256e5716a2302a5b940388}
+Configuration records definitions \hypertarget{se3c1def_8h_abc5c98fcc1211af2b80116dd6e0a035d}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_abc5c98fcc1211af2b80116dd6e0a035d}
+Default configuration record types \hypertarget{se3c1def_8h_ac36f475ca5b446f4fde4c9b90bec77c8}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_ac36f475ca5b446f4fde4c9b90bec77c8}
+L1 field size definitions \hypertarget{se3c1def_8h_a05589fbab0657f08285ebdfe93f5ec9e}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a05589fbab0657f08285ebdfe93f5ec9e}
+L1 request fields definitions \hypertarget{se3c1def_8h_a16af7b253440dadd46a80a4b9fddba4d}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a16af7b253440dadd46a80a4b9fddba4d}
+L1 response fields definitions \hypertarget{se3c1def_8h_aba01db17f4a2bfbc3db60dc172972a25}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_aba01db17f4a2bfbc3db60dc172972a25}
+L1 command codes \hypertarget{se3c1def_8h_aaf105ae5beaca1dee30ae54530691fce}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_aaf105ae5beaca1dee30ae54530691fce}
+L1\-\_\-config operations \hypertarget{se3c1def_8h_a80155586fa275b28773c9b203f52caba}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a80155586fa275b28773c9b203f52caba}
+L1\-\_\-config fields \hypertarget{se3c1def_8h_a6b7b47dd702d9e331586d485013fd1ea}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a6b7b47dd702d9e331586d485013fd1ea}
+L1\-\_\-challenge fields \hypertarget{se3c1def_8h_af9bdc3014f3d54c426b6d2df10de4960}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_af9bdc3014f3d54c426b6d2df10de4960}
+L1\-\_\-login fields \hypertarget{se3c1def_8h_adb49720dc49f7d4e4cf9adbf2948e409}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_adb49720dc49f7d4e4cf9adbf2948e409}
+Keys\-: maximum sizes for variable fields \hypertarget{se3c1def_8h_a39fca1837c5ce7715cbf571669660c13}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a39fca1837c5ce7715cbf571669660c13}
+L1\-\_\-key\-\_\-edit fields \hypertarget{se3c1def_8h_aaf8fd5f0e57d456151c951e0f3715fc4}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_aaf8fd5f0e57d456151c951e0f3715fc4}
+L1\-\_\-key\-\_\-list fields \hypertarget{se3c1def_8h_a94798fdadfbf49a7c658ace669a1d310}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a94798fdadfbf49a7c658ace669a1d310}
+Invalid handle values \hypertarget{se3c1def_8h_a7ff5f2dff38e7639981794c43dc9167b}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a7ff5f2dff38e7639981794c43dc9167b}
+L1\-\_\-crypto\-\_\-init fields \hypertarget{se3c1def_8h_aabfcbcb5ac86a1edac4035264bc7d2b8}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_aabfcbcb5ac86a1edac4035264bc7d2b8}
+L1\-\_\-crypto\-\_\-update fields \hypertarget{se3c1def_8h_a5d76b81b0ad4c19007a781d4edb8181f}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a5d76b81b0ad4c19007a781d4edb8181f}
+L1\-\_\-crypto\-\_\-update default flags \hypertarget{se3c1def_8h_aac34dfe6c6b73b43a4656c9dce041034}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_aac34dfe6c6b73b43a4656c9dce041034}
+L1\-\_\-crypto\-\_\-update maximum buffer sizes \hypertarget{se3c1def_8h_a0ed680fdb405e7195d9f14032851eebb}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a0ed680fdb405e7195d9f14032851eebb}
+L1\-\_\-crypto\-\_\-set\-\_\-time fields \hypertarget{se3c1def_8h_a0944a4353780132eeab7b06e3e42291d}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a0944a4353780132eeab7b06e3e42291d}
+L1\-\_\-crypto\-\_\-list fields \hypertarget{se3c1def_8h_a4790f45dcc812c1b00184a2edccdddf5}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a4790f45dcc812c1b00184a2edccdddf5}
+L1\-\_\-crypto\-\_\-list default cipher types \hypertarget{se3c1def_8h_a4caf8d8f829279fba122163d961608a4}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_a4caf8d8f829279fba122163d961608a4}
+
+
+L1\-\_\-crypto\-\_\-init default modes. 
+
+One F\-E\-E\-D\-B\-A\-C\-K and one D\-I\-R may be combined to specify the desired mode Example\-: Encrypt in C\-B\-C mode (S\-E3\-\_\-\-F\-E\-E\-D\-B\-A\-C\-K\-\_\-\-C\-B\-C $|$ S\-E3\-\_\-\-D\-I\-R\-\_\-\-E\-N\-C\-R\-Y\-P\-T) \hypertarget{se3c1def_8h_abed82baf7f470b522273a3e37c24c600}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{se3c1def_8h_abed82baf7f470b522273a3e37c24c600}
+L1 errors \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S}!se3c1def.\-h@{se3c1def.\-h}}\index{se3c1def.\-h@{se3c1def.\-h}!S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S}}\item[{\em 
+\hypertarget{se3c1def_8h_abed82baf7f470b522273a3e37c24c600a37cf3dc8157614a3b9c037c2cee23dce}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S}\label{se3c1def_8h_abed82baf7f470b522273a3e37c24c600a37cf3dc8157614a3b9c037c2cee23dce}
+}]insufficient privileges \index{S\-E3\-\_\-\-E\-R\-R\-\_\-\-P\-I\-N@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-P\-I\-N}!se3c1def.\-h@{se3c1def.\-h}}\index{se3c1def.\-h@{se3c1def.\-h}!S\-E3\-\_\-\-E\-R\-R\-\_\-\-P\-I\-N@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-P\-I\-N}}\item[{\em 
+\hypertarget{se3c1def_8h_abed82baf7f470b522273a3e37c24c600af6bcc762e361bb3a06832370b72c1e6f}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-P\-I\-N}\label{se3c1def_8h_abed82baf7f470b522273a3e37c24c600af6bcc762e361bb3a06832370b72c1e6f}
+}]pin rejected \index{S\-E3\-\_\-\-E\-R\-R\-\_\-\-R\-E\-S\-O\-U\-R\-C\-E@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-R\-E\-S\-O\-U\-R\-C\-E}!se3c1def.\-h@{se3c1def.\-h}}\index{se3c1def.\-h@{se3c1def.\-h}!S\-E3\-\_\-\-E\-R\-R\-\_\-\-R\-E\-S\-O\-U\-R\-C\-E@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-R\-E\-S\-O\-U\-R\-C\-E}}\item[{\em 
+\hypertarget{se3c1def_8h_abed82baf7f470b522273a3e37c24c600a8d18ae2bd836ebc120c3d2ed4627f45f}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-R\-E\-S\-O\-U\-R\-C\-E}\label{se3c1def_8h_abed82baf7f470b522273a3e37c24c600a8d18ae2bd836ebc120c3d2ed4627f45f}
+}]resource not found \index{S\-E3\-\_\-\-E\-R\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D}!se3c1def.\-h@{se3c1def.\-h}}\index{se3c1def.\-h@{se3c1def.\-h}!S\-E3\-\_\-\-E\-R\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D}}\item[{\em 
+\hypertarget{se3c1def_8h_abed82baf7f470b522273a3e37c24c600aad6262a238429ca77f9fdef1b8794701}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D}\label{se3c1def_8h_abed82baf7f470b522273a3e37c24c600aad6262a238429ca77f9fdef1b8794701}
+}]resource expired \index{S\-E3\-\_\-\-E\-R\-R\-\_\-\-M\-E\-M\-O\-R\-Y@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-M\-E\-M\-O\-R\-Y}!se3c1def.\-h@{se3c1def.\-h}}\index{se3c1def.\-h@{se3c1def.\-h}!S\-E3\-\_\-\-E\-R\-R\-\_\-\-M\-E\-M\-O\-R\-Y@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-M\-E\-M\-O\-R\-Y}}\item[{\em 
+\hypertarget{se3c1def_8h_abed82baf7f470b522273a3e37c24c600ae9e356be800b8921701c096e371855c6}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-M\-E\-M\-O\-R\-Y}\label{se3c1def_8h_abed82baf7f470b522273a3e37c24c600ae9e356be800b8921701c096e371855c6}
+}]no more space to allocate resource \index{S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-U\-T\-H@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-U\-T\-H}!se3c1def.\-h@{se3c1def.\-h}}\index{se3c1def.\-h@{se3c1def.\-h}!S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-U\-T\-H@{S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-U\-T\-H}}\item[{\em 
+\hypertarget{se3c1def_8h_abed82baf7f470b522273a3e37c24c600ae649d0aa1368c83c045ac7814dd81150}{S\-E3\-\_\-\-E\-R\-R\-\_\-\-A\-U\-T\-H}\label{se3c1def_8h_abed82baf7f470b522273a3e37c24c600ae649d0aa1368c83c045ac7814dd81150}
+}]S\-H\-A256\-H\-M\-A\-C Authentication failed. \end{description}
+\end{Desc}

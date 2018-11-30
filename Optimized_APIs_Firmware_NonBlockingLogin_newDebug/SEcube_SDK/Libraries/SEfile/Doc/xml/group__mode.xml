@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group__mode" kind="group">
+    <compoundname>mode</compoundname>
+    <title>mode parameter for secure_open</title>
+      <sectiondef kind="user-defined">
+      <header>Use this values as mode parameter for</header>
+      <description><para><ref refid="_s_efile_8c_1ae99f8ccb396cbb5685d9e16bb3dbbe98" kindref="member">secure_open()</ref>. </para></description>
+      <memberdef kind="define" id="group__mode_1ga54f7b08eaa281b5cc96f9b38f8cec756" prot="public" static="no">
+        <name>SEFILE_READ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open as Read only </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="46" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__mode_1ga3402f85400c41104d35136c74566cf67" prot="public" static="no">
+        <name>SEFILE_WRITE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open for Read/Write </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="47" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+{
+    "rules" : [
+        {
+            "description": "Name",
+            "path" : "C:/prog.exe",
+            "address" : "1.2.3.4",
+            "port-first" : 8888,
+            "port-last" : 8888,
+            "action": "encrypt",
+            "key-id": 1
+        } 
+    ]
+}

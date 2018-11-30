@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group___key_op_edit" kind="group">
+    <compoundname>KeyOpEdit</compoundname>
+    <title>KeyOpEdit</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___key_op_edit_1gaae05225933a42f81e7c4a9fb286596f9" prot="public" static="no">
+        <name>@21</name>
+        <enumvalue id="group___key_op_edit_1ggaae05225933a42f81e7c4a9fb286596f9a3d657386a013ef10d83cc30169752db3" prot="public">
+          <name>SE3_KEY_OP_INSERT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use this value to insert a new key </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___key_op_edit_1ggaae05225933a42f81e7c4a9fb286596f9a352566ea8d1d1506d8d90919cab3f42b" prot="public">
+          <name>SE3_KEY_OP_DELETE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use this value to delete a new key </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___key_op_edit_1ggaae05225933a42f81e7c4a9fb286596f9ab9154fbc25e71f9b88dbeb2b6e173885" prot="public">
+          <name>SE3_KEY_OP_UPSERT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use this value to update/insert a key </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c1def.h" line="143" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c1def.h" bodystart="143" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Use these values when using L1_key_edit. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

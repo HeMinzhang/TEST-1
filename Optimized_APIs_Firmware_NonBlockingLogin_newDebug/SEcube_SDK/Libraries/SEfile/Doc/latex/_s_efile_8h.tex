@@ -1,0 +1,575 @@
+\hypertarget{_s_efile_8h}{\section{/run/media/scaglia/5\-B106\-C33792\-E4440/polito/\-M\-A\-G\-I\-S\-T\-R\-A\-L\-E/current/tesi/\-S\-Efile\-\_\-library/\-S\-Efile.h File Reference}
+\label{_s_efile_8h}\index{/run/media/scaglia/5\-B106\-C33792\-E4440/polito/\-M\-A\-G\-I\-S\-T\-R\-A\-L\-E/current/tesi/\-S\-Efile\-\_\-library/\-S\-Efile.\-h@{/run/media/scaglia/5\-B106\-C33792\-E4440/polito/\-M\-A\-G\-I\-S\-T\-R\-A\-L\-E/current/tesi/\-S\-Efile\-\_\-library/\-S\-Efile.\-h}}
+}
+
+
+This file includes constants, return values and public functions used for implementing a secure file system.  
+
+
+{\ttfamily \#include \char`\"{}se3/\-L0.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}se3/\-L1.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}se3/se3c1def.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_s_efile_8h_aa4e5ca47d52a8be522912705c27e0d1c}{M\-A\-X\-\_\-\-P\-A\-T\-H\-N\-A\-M\-E}~256
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Use this values as mode parameter for}\par
+{\em \hyperlink{_s_efile_8c_ae99f8ccb396cbb5685d9e16bb3dbbe98}{secure\-\_\-open()}. }\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___mode___defines_ga54f7b08eaa281b5cc96f9b38f8cec756}{S\-E\-F\-I\-L\-E\-\_\-\-R\-E\-A\-D}
+\item 
+\#define \hyperlink{group___mode___defines_ga3402f85400c41104d35136c74566cf67}{S\-E\-F\-I\-L\-E\-\_\-\-W\-R\-I\-T\-E}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Use this values as access parameter for}\par
+{\em \hyperlink{_s_efile_8c_ae99f8ccb396cbb5685d9e16bb3dbbe98}{secure\-\_\-open()}. }\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___access___defines_ga57c4f0752b0acce2d45dff73592e09e3}{S\-E\-F\-I\-L\-E\-\_\-\-N\-E\-W\-F\-I\-L\-E}
+\item 
+\#define \hyperlink{group___access___defines_ga3912e29a65705156f8d2e7ffe7fe80c7}{S\-E\-F\-I\-L\-E\-\_\-\-O\-P\-E\-N}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Use this values as whence parameter for}\par
+{\em \hyperlink{_s_efile_8c_a157807247b4913a73fc3b6677a61e6a3}{secure\-\_\-seek()}. }\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___seek___defines_gab6c0208f58dfecf3ee595f75a3156a27}{S\-E\-F\-I\-L\-E\-\_\-\-B\-E\-G\-I\-N}
+\item 
+\#define \hyperlink{group___seek___defines_ga96800ac1f03fb12ac3f761d37553ddc3}{S\-E\-F\-I\-L\-E\-\_\-\-C\-U\-R\-R\-E\-N\-T}
+\item 
+\#define \hyperlink{group___seek___defines_gac99113dc9b1f7710c8f451ce0b76c925}{S\-E\-F\-I\-L\-E\-\_\-\-E\-N\-D}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Returned error values}\par
+{\em If something goes wrong, one of this values will be returned. }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__error_values_gaef0379bf0ad20b2772c25501047a7d4a}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-E\-N\-V\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-S\-E\-T}~15}\label{group__error_values_gaef0379bf0ad20b2772c25501047a7d4a}
+
+\item 
+\hypertarget{group__error_values_ga53869d0f6f2c9fbfbcb7aa6bf1fb4442}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-E\-N\-V\-\_\-\-W\-R\-O\-N\-G\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R}~16}\label{group__error_values_ga53869d0f6f2c9fbfbcb7aa6bf1fb4442}
+
+\item 
+\hypertarget{group__error_values_gad12c7a1466b671f490ae39ce0713bc78}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-E\-N\-V\-\_\-\-M\-A\-L\-L\-O\-C\-\_\-\-E\-R\-R\-O\-R}~17}\label{group__error_values_gad12c7a1466b671f490ae39ce0713bc78}
+
+\item 
+\hypertarget{group__error_values_gafddfc71142aed0903f4d1ea923216b7e}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-E\-N\-V\-\_\-\-N\-O\-T\-\_\-\-S\-E\-T}~18}\label{group__error_values_gafddfc71142aed0903f4d1ea923216b7e}
+
+\item 
+\hypertarget{group__error_values_ga1e1aabadb5130519c51d950ac93d1826}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-M\-A\-L\-L\-O\-C\-\_\-\-E\-R\-R}~19}\label{group__error_values_ga1e1aabadb5130519c51d950ac93d1826}
+
+\item 
+\hypertarget{group__error_values_ga37c8b9e2086b758d7e5a883de0d41d02}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-G\-E\-T\-\_\-\-F\-I\-L\-E\-P\-O\-I\-N\-T\-E\-R\-\_\-\-E\-R\-R}~20}\label{group__error_values_ga37c8b9e2086b758d7e5a883de0d41d02}
+
+\item 
+\hypertarget{group__error_values_ga75d2ef63f37fbd2c5a3489f03e20e7a9}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E\-\_\-\-M\-A\-L\-L\-O\-C\-\_\-\-E\-R\-R}~21}\label{group__error_values_ga75d2ef63f37fbd2c5a3489f03e20e7a9}
+
+\item 
+\hypertarget{group__error_values_ga6142dae41abd857c4b8d98e28b33afb7}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-C\-L\-O\-S\-E\-\_\-\-H\-A\-N\-D\-L\-E\-\_\-\-E\-R\-R}~22}\label{group__error_values_ga6142dae41abd857c4b8d98e28b33afb7}
+
+\item 
+\hypertarget{group__error_values_gab9228a3791ed91c954cb95fb8a022ce4}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-E\-R\-R\-O\-R}~23}\label{group__error_values_gab9228a3791ed91c954cb95fb8a022ce4}
+
+\item 
+\hypertarget{group__error_values_ga53ed7e1a28f72c836dec4dbde1a863ae}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-O\-P\-E\-N\-\_\-\-E\-R\-R\-O\-R}~24}\label{group__error_values_ga53ed7e1a28f72c836dec4dbde1a863ae}
+
+\item 
+\hypertarget{group__error_values_ga4f75c01ae99f556170441fdf75dee72c}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R}~25}\label{group__error_values_ga4f75c01ae99f556170441fdf75dee72c}
+
+\item 
+\hypertarget{group__error_values_ga17c8f4bc7a1cd110cb0d3c2d854e967e}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-S\-E\-E\-K\-\_\-\-E\-R\-R\-O\-R}~26}\label{group__error_values_ga17c8f4bc7a1cd110cb0d3c2d854e967e}
+
+\item 
+\hypertarget{group__error_values_ga46ab7b08bd58721fb66aace45f4fb27f}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-R\-E\-A\-D\-\_\-\-E\-R\-R\-O\-R}~27}\label{group__error_values_ga46ab7b08bd58721fb66aace45f4fb27f}
+
+\item 
+\hypertarget{group__error_values_ga067e414c0566c344a984376900e8e7d8}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-I\-L\-L\-E\-G\-A\-L\-\_\-\-S\-E\-E\-K}~28}\label{group__error_values_ga067e414c0566c344a984376900e8e7d8}
+
+\item 
+\hypertarget{group__error_values_gabd136bee016febfbfdf5754f186c285d}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-F\-I\-L\-E\-S\-I\-Z\-E\-\_\-\-E\-R\-R\-O\-R}~29}\label{group__error_values_gabd136bee016febfbfdf5754f186c285d}
+
+\item 
+\hypertarget{group__error_values_ga53f3cd3c21d07ca618485d3f1147fbfc}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-M\-A\-L\-L\-O\-C\-\_\-\-E\-R\-R}~30}\label{group__error_values_ga53f3cd3c21d07ca618485d3f1147fbfc}
+
+\item 
+\hypertarget{group__error_values_ga8c68586e02436a25919d5350dd634abf}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-F\-I\-L\-E\-N\-A\-M\-E\-\_\-\-D\-E\-C\-\_\-\-E\-R\-R\-O\-R}~31}\label{group__error_values_ga8c68586e02436a25919d5350dd634abf}
+
+\item 
+\hypertarget{group__error_values_ga2aa7ba73839f975186cbc5f1326b9e92}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-F\-I\-L\-E\-N\-A\-M\-E\-\_\-\-E\-N\-C\-\_\-\-E\-R\-R\-O\-R}~32}\label{group__error_values_ga2aa7ba73839f975186cbc5f1326b9e92}
+
+\item 
+\hypertarget{group__error_values_ga31400539e2fa4f94f4ebf80780812e6a}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-D\-I\-R\-N\-A\-M\-E\-\_\-\-E\-N\-C\-\_\-\-E\-R\-R\-O\-R}~33}\label{group__error_values_ga31400539e2fa4f94f4ebf80780812e6a}
+
+\item 
+\hypertarget{group__error_values_ga38cc6c1072a3f22f11e22d3079c26648}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-D\-I\-R\-N\-A\-M\-E\-\_\-\-D\-E\-C\-\_\-\-E\-R\-R\-O\-R}~34}\label{group__error_values_ga38cc6c1072a3f22f11e22d3079c26648}
+
+\item 
+\hypertarget{group__error_values_ga3b754ce0aa97840cde8560f172f55968}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-D\-I\-R\-N\-A\-M\-E\-\_\-\-T\-O\-O\-\_\-\-L\-O\-N\-G}~35}\label{group__error_values_ga3b754ce0aa97840cde8560f172f55968}
+
+\item 
+\hypertarget{group__error_values_ga1839e1718f5b676be3d85b95e6cf58d3}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-M\-K\-D\-I\-R\-\_\-\-E\-R\-R\-O\-R}~36}\label{group__error_values_ga1839e1718f5b676be3d85b95e6cf58d3}
+
+\item 
+\hypertarget{group__error_values_ga467402454a621261d56af8a938d5cfee}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-L\-S\-\_\-\-E\-R\-R\-O\-R}~37}\label{group__error_values_ga467402454a621261d56af8a938d5cfee}
+
+\item 
+\hypertarget{group__error_values_ga46a3c08997f9f9f5d81c8647fdeec654}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-U\-S\-E\-R\-\_\-\-N\-O\-T\-\_\-\-A\-L\-L\-O\-W\-E\-D}~38}\label{group__error_values_ga46a3c08997f9f9f5d81c8647fdeec654}
+
+\item 
+\hypertarget{group__error_values_gad7982cf767e27ebd3ae51b32c7e901fa}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-E\-N\-V\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}~39}\label{group__error_values_gad7982cf767e27ebd3ae51b32c7e901fa}
+
+\item 
+\hypertarget{group__error_values_ga35d130b08fd47835ac8434089996f511}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-E\-N\-V\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-E\-R\-R\-O\-R}~40}\label{group__error_values_ga35d130b08fd47835ac8434089996f511}
+
+\item 
+\hypertarget{group__error_values_ga62143add129dfcbec6512f7f531309ce}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-I\-N\-T\-E\-G\-R\-I\-T\-Y\-\_\-\-E\-R\-R\-O\-R}~41}\label{group__error_values_ga62143add129dfcbec6512f7f531309ce}
+
+\item 
+\hypertarget{group__error_values_ga99a623f4578c42e52fec20d4773d4004}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-N\-A\-M\-E\-\_\-\-N\-O\-T\-\_\-\-V\-A\-L\-I\-D}~42}\label{group__error_values_ga99a623f4578c42e52fec20d4773d4004}
+
+\item 
+\hypertarget{group__error_values_gab67139e5ac7e0fdda43b7df3efa82ae6}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-T\-R\-U\-N\-C\-A\-T\-E\-\_\-\-E\-R\-R\-O\-R}~43}\label{group__error_values_gab67139e5ac7e0fdda43b7df3efa82ae6}
+
+\item 
+\hypertarget{group__error_values_ga43bb90520aa942643136bacf666646ab}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-S\-N\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H}~44}\label{group__error_values_ga43bb90520aa942643136bacf666646ab}
+
+\item 
+\hypertarget{group__error_values_gae714c3753d850fabe5cf9d0776f069cb}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-K\-E\-Y\-I\-D\-\_\-\-N\-O\-T\-\_\-\-P\-R\-E\-S\-E\-N\-T}~45}\label{group__error_values_gae714c3753d850fabe5cf9d0776f069cb}
+
+\item 
+\hypertarget{group__error_values_ga74d06ed9a59c21093dd0ab040162bdcf}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-A\-L\-G\-I\-D\-\_\-\-N\-O\-T\-\_\-\-P\-R\-E\-S\-E\-N\-T}~46}\label{group__error_values_ga74d06ed9a59c21093dd0ab040162bdcf}
+
+\item 
+\hypertarget{group__error_values_ga9d0494548ef592b9b778d89162d51149}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-P\-A\-T\-H\-\_\-\-T\-O\-O\-\_\-\-L\-O\-N\-G}~47}\label{group__error_values_ga9d0494548ef592b9b778d89162d51149}
+
+\item 
+\hypertarget{group__error_values_gae22cec823d2d3e831fd1af8e769fa7b8}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-E\-R\-R}~48}\label{group__error_values_gae22cec823d2d3e831fd1af8e769fa7b8}
+
+\item 
+\hypertarget{group__error_values_gadcb1402e3f630353dfc26774c319db57}{\#define {\bfseries S\-E\-F\-I\-L\-E\-\_\-\-S\-I\-G\-N\-A\-T\-U\-R\-E\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H}~49}\label{group__error_values_gadcb1402e3f630353dfc26774c319db57}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Constant used to define sector structure.}\par
+{\em Do not change this unless you know what you are doing. }\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___sector___defines_gad205a758c315675de3ad9f5f1cbf962d}{S\-E\-F\-I\-L\-E\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-S\-I\-Z\-E}~512
+\item 
+\#define \hyperlink{group___sector___defines_ga6961ed45e472749b587136d18eb74b4d}{S\-E\-F\-I\-L\-E\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-D\-A\-T\-A\-\_\-\-S\-I\-Z\-E}~(\hyperlink{group___sector___defines_gad205a758c315675de3ad9f5f1cbf962d}{S\-E\-F\-I\-L\-E\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-S\-I\-Z\-E}-\/B5\-\_\-\-S\-H\-A256\-\_\-\-D\-I\-G\-E\-S\-T\-\_\-\-S\-I\-Z\-E)
+\item 
+\#define \hyperlink{group___sector___defines_ga9344350dc20df5bbdc5693775c54afcb}{S\-E\-F\-I\-L\-E\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E}~B5\-\_\-\-A\-E\-S\-\_\-\-B\-L\-K\-\_\-\-S\-I\-Z\-E
+\item 
+\#define \hyperlink{group___sector___defines_ga460525481b728a7bbad706019c7f2156}{S\-E\-F\-I\-L\-E\-\_\-\-L\-O\-G\-I\-C\-\_\-\-D\-A\-T\-A}~(\hyperlink{group___sector___defines_ga6961ed45e472749b587136d18eb74b4d}{S\-E\-F\-I\-L\-E\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-D\-A\-T\-A\-\_\-\-S\-I\-Z\-E}-\/2)
+\item 
+\#define \hyperlink{group___sector___defines_ga70a387176632325441aebca4839e19fc}{S\-E\-F\-I\-L\-E\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-O\-V\-E\-R\-H\-E\-A\-D}~(\hyperlink{group___sector___defines_gad205a758c315675de3ad9f5f1cbf962d}{S\-E\-F\-I\-L\-E\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-S\-I\-Z\-E}-\/\hyperlink{group___sector___defines_ga460525481b728a7bbad706019c7f2156}{S\-E\-F\-I\-L\-E\-\_\-\-L\-O\-G\-I\-C\-\_\-\-D\-A\-T\-A})
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_s_e_f_i_l_e___h_a_n_d_l_e}{S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E} $\ast$ \hyperlink{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_a435a1cfd0cd619deb2efeb7aa3723126}{secure\-\_\-init} (se3\-\_\-session $\ast$s, uint32\-\_\-t key\-I\-D, uint16\-\_\-t crypto)
+\begin{DoxyCompactList}\small\item\em This function creates a new secure environment, by allocating statically the parameters needed by the following functions. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_ae8d0daae652fc1f3e2c29781591aa36e}{secure\-\_\-update} (se3\-\_\-session $\ast$s, int32\-\_\-t key\-I\-D, uint16\-\_\-t crypto)
+\begin{DoxyCompactList}\small\item\em This function can be called only after the \hyperlink{_s_efile_8c_a435a1cfd0cd619deb2efeb7aa3723126}{secure\-\_\-init()} function and give to the user the possibility to overwrite the Environment variables with new ones. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_a71736a6b4cc1a0ec94d013052e1e2a10}{secure\-\_\-finit} ()
+\begin{DoxyCompactList}\small\item\em This function deallocate the structures defined by the \hyperlink{_s_efile_8c_a435a1cfd0cd619deb2efeb7aa3723126}{secure\-\_\-init()}. Should be called at the end of a session. No parameters are needed;. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_ab134ec0c74652e6c2ecac3096d0bfd7f}{crypto\-\_\-filename} (char $\ast$path, char $\ast$enc\-\_\-name, uint16\-\_\-t $\ast$encoded\-\_\-length)
+\begin{DoxyCompactList}\small\item\em This function computes the encrypted name of the file specified at position path and its length. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_a06dff80bbbf693ebef7f5f8a2fe36f0e}{secure\-\_\-open} (char $\ast$path, \hyperlink{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$h\-File, int32\-\_\-t mode, int32\-\_\-t access)
+\begin{DoxyCompactList}\small\item\em This function opens a secure file and create a S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E that can be used in future. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_adbb72ef517bfb5e342fba86f2e72b25f}{secure\-\_\-create} (char $\ast$path, \hyperlink{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$h\-File, int mode)
+\begin{DoxyCompactList}\small\item\em This function creates a new secure file and creates a S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E that can be used in future. If the file already exists, it is overwritten with an empty one, all previous data are lost. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_acb652f6362fd5635c4aaa8c5e67c7f1b}{secure\-\_\-write} (\hyperlink{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$h\-File, uint8\-\_\-t $\ast$data\-In, uint32\-\_\-t data\-In\-\_\-len)
+\begin{DoxyCompactList}\small\item\em This function writes the characters given by data\-In to the encrypted file h\-File. Before writing them, data\-In is encrypted according to the environmental parameters. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_ab4468e0e71fe2626767388150952fbdf}{secure\-\_\-read} (\hyperlink{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$h\-File, uint8\-\_\-t $\ast$data\-Out, uint32\-\_\-t data\-Out\-\_\-len, uint32\-\_\-t $\ast$bytes\-Read)
+\begin{DoxyCompactList}\small\item\em This function reads from h\-File bytes\-Read characters out of data\-Out\-\_\-len correctly decrypted ones and stores them in data\-Out string. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_a157807247b4913a73fc3b6677a61e6a3}{secure\-\_\-seek} (\hyperlink{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$h\-File, int32\-\_\-t offset, int32\-\_\-t $\ast$position, uint8\-\_\-t whence)
+\begin{DoxyCompactList}\small\item\em This function is used to move correctly the file pointer. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_ae51272c2c3b72a01bd7aa98f25fb5245}{secure\-\_\-truncate} (\hyperlink{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$h\-File, uint32\-\_\-t size)
+\begin{DoxyCompactList}\small\item\em This function resizes the file pointed by h\-File to size. If size is bigger than its current size the gap is filled with 0s. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_a54f66c38e6025c8e57ceda5c43d51c5c}{secure\-\_\-close} (\hyperlink{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$h\-File)
+\begin{DoxyCompactList}\small\item\em This function releases resources related to h\-File. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_a6b2a9a6b81381a4ce20421831103b8b3}{secure\-\_\-ls} (char $\ast$path, char $\ast$list, uint32\-\_\-t $\ast$list\-\_\-length)
+\begin{DoxyCompactList}\small\item\em This function identifies which encrypted files and encrypted directories are present in the directory pointed by path and writes them in list. It only recognizes the ones encrypted with the current environmental parameters. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_a987cae1899d44e2c86de985b6145d41b}{secure\-\_\-getfilesize} (char $\ast$path, uint32\-\_\-t $\ast$position)
+\begin{DoxyCompactList}\small\item\em This function is used to get the total logic size of an encrypted file pointed by path. Logic size will always be smaller than physical size. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_afc10a53fb05941bb327447cbef30b963}{secure\-\_\-mkdir} (char $\ast$path)
+\begin{DoxyCompactList}\small\item\em This function creates a directory with an encrypted name. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_s_efile_8h_aae977955a0ae4b48158806cd45d2cd12}{secure\-\_\-sync} (\hyperlink{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$h\-File)
+\begin{DoxyCompactList}\small\item\em This function is used in case we want to be sure that the physical file is synced with the O\-S buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file includes constants, return values and public functions used for implementing a secure file system. \begin{DoxyAuthor}{Authors}
+Francesco Giavatto, Nicolò Maunero, Giulio Scalia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+17/09/2016
+\end{DoxyDate}
+In this library you will find wrappers to common O\-S system calls, in order to manage encrypted files using the S\-E\-Cube Board. In this files are also reported the constant used as parameter and all the possible return values. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_s_efile_8h_aa4e5ca47d52a8be522912705c27e0d1c}{\index{S\-Efile.\-h@{S\-Efile.\-h}!M\-A\-X\-\_\-\-P\-A\-T\-H\-N\-A\-M\-E@{M\-A\-X\-\_\-\-P\-A\-T\-H\-N\-A\-M\-E}}
+\index{M\-A\-X\-\_\-\-P\-A\-T\-H\-N\-A\-M\-E@{M\-A\-X\-\_\-\-P\-A\-T\-H\-N\-A\-M\-E}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{M\-A\-X\-\_\-\-P\-A\-T\-H\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-P\-A\-T\-H\-N\-A\-M\-E~256}}\label{_s_efile_8h_aa4e5ca47d52a8be522912705c27e0d1c}
+Maximum length for pathname string 
+
+\subsection{Typedef Documentation}
+\hypertarget{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}{\index{S\-Efile.\-h@{S\-Efile.\-h}!S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E@{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E}}
+\index{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E@{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf S\-E\-F\-I\-L\-E\-\_\-\-H\-A\-N\-D\-L\-E}$\ast$ {\bf S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E}}}\label{_s_efile_8h_ac073933cdf58a366c2dfed344c37ebe9}
+Data struct used to access encrypted files 
+
+\subsection{Function Documentation}
+\hypertarget{_s_efile_8h_ab134ec0c74652e6c2ecac3096d0bfd7f}{\index{S\-Efile.\-h@{S\-Efile.\-h}!crypto\-\_\-filename@{crypto\-\_\-filename}}
+\index{crypto\-\_\-filename@{crypto\-\_\-filename}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{crypto\-\_\-filename}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t crypto\-\_\-filename (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path, }
+\item[{char $\ast$}]{enc\-\_\-name, }
+\item[{uint16\-\_\-t $\ast$}]{encoded\-\_\-length}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_ab134ec0c74652e6c2ecac3096d0bfd7f}
+
+
+This function computes the encrypted name of the file specified at position path and its length. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & It can be absolute or relative but it can not be a directory. No encrypted directory are allowed inside the path. \\
+\hline
+\mbox{\tt out}  & {\em enc\-\_\-name} & Already allocate string where the encrypted filename should be stored. \\
+\hline
+\mbox{\tt out}  & {\em encoded\-\_\-length} & Pointer to an allocated uint16\-\_\-t where the length of the encrypted filename is stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_a54f66c38e6025c8e57ceda5c43d51c5c}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-close@{secure\-\_\-close}}
+\index{secure\-\_\-close@{secure\-\_\-close}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-close}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-close (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$}]{h\-File}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_a54f66c38e6025c8e57ceda5c43d51c5c}
+
+
+This function releases resources related to h\-File. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h\-File} & The handle to the file we do not want to manipulate no more. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_adbb72ef517bfb5e342fba86f2e72b25f}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-create@{secure\-\_\-create}}
+\index{secure\-\_\-create@{secure\-\_\-create}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-create (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path, }
+\item[{{\bf S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$}]{h\-File, }
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_adbb72ef517bfb5e342fba86f2e72b25f}
+
+
+This function creates a new secure file and creates a S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E that can be used in future. If the file already exists, it is overwritten with an empty one, all previous data are lost. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & Specify the absolute/relative path where to create the file. No encrypted directory are allowed inside the path. \\
+\hline
+\mbox{\tt out}  & {\em h\-File} & The pointer in which the file handle to the new opened file is placed after a success, N\-U\-L\-L in case of failure. \\
+\hline
+\mbox{\tt in}  & {\em mode} & The mode in which the file should be created. See \hyperlink{group___mode___defines}{mode parameter for secure\-\_\-open}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_a71736a6b4cc1a0ec94d013052e1e2a10}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-finit@{secure\-\_\-finit}}
+\index{secure\-\_\-finit@{secure\-\_\-finit}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-finit}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-finit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_a71736a6b4cc1a0ec94d013052e1e2a10}
+
+
+This function deallocate the structures defined by the \hyperlink{_s_efile_8c_a435a1cfd0cd619deb2efeb7aa3723126}{secure\-\_\-init()}. Should be called at the end of a session. No parameters are needed;. 
+
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_a987cae1899d44e2c86de985b6145d41b}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-getfilesize@{secure\-\_\-getfilesize}}
+\index{secure\-\_\-getfilesize@{secure\-\_\-getfilesize}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-getfilesize}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-getfilesize (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path, }
+\item[{uint32\-\_\-t $\ast$}]{position}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_a987cae1899d44e2c86de985b6145d41b}
+
+
+This function is used to get the total logic size of an encrypted file pointed by path. Logic size will always be smaller than physical size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & Absolute or relative path the file. No encrypted directory are allowed inside the path. \\
+\hline
+\mbox{\tt out}  & {\em position} & Pointer to an allocated uint32\-\_\-t variable where will be stored the file size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_a435a1cfd0cd619deb2efeb7aa3723126}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-init@{secure\-\_\-init}}
+\index{secure\-\_\-init@{secure\-\_\-init}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{se3\-\_\-session $\ast$}]{s, }
+\item[{uint32\-\_\-t}]{key\-I\-D, }
+\item[{uint16\-\_\-t}]{crypto}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_a435a1cfd0cd619deb2efeb7aa3723126}
+
+
+This function creates a new secure environment, by allocating statically the parameters needed by the following functions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & Contains the pointer to the se3\-\_\-session structure that must be used during the session. \\
+\hline
+\mbox{\tt in}  & {\em key\-I\-D} & Contains the I\-D number of the key that must be used during the session. \\
+\hline
+\mbox{\tt in}  & {\em crypto} & Contains the id to specify which algorithm to use. See Algorithm\-Avail, it can be S\-E3\-\_\-\-A\-L\-G\-O\-\_\-\-M\-A\-X + 1 if you don't know which algorithm to choose. See \hyperlink{group__error_values}{error values} for error list.\\
+\hline
+\end{DoxyParams}
+All the data passed to this function must be allocated and filled with valid data. Once secure\-\_\-init succeed it is possible to destroy these data, since a copy has been made. N.\-B. Remember to call the \hyperlink{_s_efile_8h_a71736a6b4cc1a0ec94d013052e1e2a10}{secure\-\_\-finit} function to deallocate these data once you have finished. \hypertarget{_s_efile_8h_a6b2a9a6b81381a4ce20421831103b8b3}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-ls@{secure\-\_\-ls}}
+\index{secure\-\_\-ls@{secure\-\_\-ls}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-ls}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-ls (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path, }
+\item[{char $\ast$}]{list, }
+\item[{uint32\-\_\-t $\ast$}]{list\-\_\-length}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_a6b2a9a6b81381a4ce20421831103b8b3}
+
+
+This function identifies which encrypted files and encrypted directories are present in the directory pointed by path and writes them in list. It only recognizes the ones encrypted with the current environmental parameters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & Absolute or relative path to the directory to browse. No encrypted directory are allowed inside the path. \\
+\hline
+\mbox{\tt out}  & {\em list} & Already allocated array where to store filenames and directory names. Each entry is separated by '\textbackslash{}0'. \\
+\hline
+\mbox{\tt out}  & {\em list\-\_\-length} & Pointer to a uint32\-\_\-t used to stored total number of characters written in list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_afc10a53fb05941bb327447cbef30b963}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-mkdir@{secure\-\_\-mkdir}}
+\index{secure\-\_\-mkdir@{secure\-\_\-mkdir}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-mkdir}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-mkdir (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_afc10a53fb05941bb327447cbef30b963}
+
+
+This function creates a directory with an encrypted name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & Absolute or relative path of the new directory. No encrypted directory are allowed inside the path. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_a06dff80bbbf693ebef7f5f8a2fe36f0e}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-open@{secure\-\_\-open}}
+\index{secure\-\_\-open@{secure\-\_\-open}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-open}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-open (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path, }
+\item[{{\bf S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$}]{h\-File, }
+\item[{int32\-\_\-t}]{mode, }
+\item[{int32\-\_\-t}]{access}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_a06dff80bbbf693ebef7f5f8a2fe36f0e}
+
+
+This function opens a secure file and create a S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E that can be used in future. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & Specify the absolute/relative path where to retrieve the file to open. No encrypted directory are allowed inside the path. \\
+\hline
+\mbox{\tt out}  & {\em h\-File} & The pointer in which the file handle to the opened file is placed after a success, N\-U\-L\-L in case of failure. \\
+\hline
+\mbox{\tt in}  & {\em mode} & The mode in which the file should be opened. See \hyperlink{group___mode___defines}{mode parameter for secure\-\_\-open}. \\
+\hline
+\mbox{\tt in}  & {\em access} & Define if the file should be created or it should already exist. See \hyperlink{group___access___defines}{access parameter for secure\-\_\-open}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_ab4468e0e71fe2626767388150952fbdf}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-read@{secure\-\_\-read}}
+\index{secure\-\_\-read@{secure\-\_\-read}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$}]{h\-File, }
+\item[{uint8\-\_\-t $\ast$}]{data\-Out, }
+\item[{uint32\-\_\-t}]{data\-Out\-\_\-len, }
+\item[{uint32\-\_\-t $\ast$}]{bytes\-Read}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_ab4468e0e71fe2626767388150952fbdf}
+
+
+This function reads from h\-File bytes\-Read characters out of data\-Out\-\_\-len correctly decrypted ones and stores them in data\-Out string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h\-File} & The handle to an already opened file to be read. \\
+\hline
+\mbox{\tt out}  & {\em data\-Out} & An already allocated array of characters where to store data read. \\
+\hline
+\mbox{\tt in}  & {\em data\-Out\-\_\-len} & Number of characters we want to read. \\
+\hline
+\mbox{\tt out}  & {\em bytes\-Read} & Number of effective characters read, M\-U\-S\-T N\-O\-T B\-E N\-U\-L\-L. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_a157807247b4913a73fc3b6677a61e6a3}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-seek@{secure\-\_\-seek}}
+\index{secure\-\_\-seek@{secure\-\_\-seek}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-seek}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-seek (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$}]{h\-File, }
+\item[{int32\-\_\-t}]{offset, }
+\item[{int32\-\_\-t $\ast$}]{position, }
+\item[{uint8\-\_\-t}]{whence}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_a157807247b4913a73fc3b6677a61e6a3}
+
+
+This function is used to move correctly the file pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h\-File} & The handle to the file to manipulate. \\
+\hline
+\mbox{\tt in}  & {\em offset} & Amount of character we want to move. \\
+\hline
+\mbox{\tt out}  & {\em position} & Pointer to a int32\-\_\-t variable where the final position is stored, M\-U\-S\-T N\-O\-T B\-E N\-U\-L\-L. \\
+\hline
+\mbox{\tt in}  & {\em whence} & According to this parameter we can choose if we want to move from the file beginning, file ending or current file pointer position. See \hyperlink{group___seek___defines}{whence parameter for secure\-\_\-seek}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_aae977955a0ae4b48158806cd45d2cd12}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-sync@{secure\-\_\-sync}}
+\index{secure\-\_\-sync@{secure\-\_\-sync}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-sync}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-sync (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$}]{h\-File}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_aae977955a0ae4b48158806cd45d2cd12}
+
+
+This function is used in case we want to be sure that the physical file is synced with the O\-S buffers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h\-File} & Handle to the secure file to be synced. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_ae51272c2c3b72a01bd7aa98f25fb5245}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-truncate@{secure\-\_\-truncate}}
+\index{secure\-\_\-truncate@{secure\-\_\-truncate}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-truncate}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-truncate (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$}]{h\-File, }
+\item[{uint32\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_ae51272c2c3b72a01bd7aa98f25fb5245}
+
+
+This function resizes the file pointed by h\-File to size. If size is bigger than its current size the gap is filled with 0s. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h\-File} & The handle to the file to manipulate. \\
+\hline
+\mbox{\tt in}  & {\em size} & New size of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}
+\hypertarget{_s_efile_8h_ae8d0daae652fc1f3e2c29781591aa36e}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-update@{secure\-\_\-update}}
+\index{secure\-\_\-update@{secure\-\_\-update}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-update (
+\begin{DoxyParamCaption}
+\item[{se3\-\_\-session $\ast$}]{s, }
+\item[{int32\-\_\-t}]{key\-I\-D, }
+\item[{uint16\-\_\-t}]{crypto}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_ae8d0daae652fc1f3e2c29781591aa36e}
+
+
+This function can be called only after the \hyperlink{_s_efile_8c_a435a1cfd0cd619deb2efeb7aa3723126}{secure\-\_\-init()} function and give to the user the possibility to overwrite the Environment variables with new ones. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & Contains the pointer to the se3\-\_\-session structure that must be used during the session. Can be N\-U\-L\-L. \\
+\hline
+\mbox{\tt in}  & {\em key\-I\-D} & key\-I\-D Contains the I\-D number of the key that must be used during the session. Can be -\/1. \\
+\hline
+\mbox{\tt in}  & {\em crypto} & Contains the id to specify which algorithm to use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list.
+\end{DoxyReturn}
+Parameters from 1 to 3 can be a N\-U\-L\-L pointer or '-\/1' value, if all parameters are N\-U\-L\-L (or '-\/1' in case of key\-I\-D) the function is a No-\/\-Operation one. \hypertarget{_s_efile_8h_acb652f6362fd5635c4aaa8c5e67c7f1b}{\index{S\-Efile.\-h@{S\-Efile.\-h}!secure\-\_\-write@{secure\-\_\-write}}
+\index{secure\-\_\-write@{secure\-\_\-write}!SEfile.h@{S\-Efile.\-h}}
+\subsubsection[{secure\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t secure\-\_\-write (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-E\-F\-I\-L\-E\-\_\-\-F\-H\-A\-N\-D\-L\-E} $\ast$}]{h\-File, }
+\item[{uint8\-\_\-t $\ast$}]{data\-In, }
+\item[{uint32\-\_\-t}]{data\-In\-\_\-len}
+\end{DoxyParamCaption}
+)}}\label{_s_efile_8h_acb652f6362fd5635c4aaa8c5e67c7f1b}
+
+
+This function writes the characters given by data\-In to the encrypted file h\-File. Before writing them, data\-In is encrypted according to the environmental parameters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h\-File} & The handle to an already opened file to be written. \\
+\hline
+\mbox{\tt in}  & {\em data\-In} & The string of characters that have to be written. \\
+\hline
+\mbox{\tt in}  & {\em data\-In\-\_\-len} & The length, in bytes, of the data that have to be written. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a (uint16\-\_\-t) '0' in case of success. See \hyperlink{group__error_values}{error values} for error list. 
+\end{DoxyReturn}

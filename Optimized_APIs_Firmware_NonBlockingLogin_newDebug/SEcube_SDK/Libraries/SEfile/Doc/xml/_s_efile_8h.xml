@@ -1,0 +1,1400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="_s_efile_8h" kind="file">
+    <compoundname>SEfile.h</compoundname>
+    <includes local="yes">se3/L0.h</includes>
+    <includes local="yes">se3/L1.h</includes>
+    <includes local="yes">se3/se3c1def.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">ctype.h</includes>
+    <includedby refid="_s_efile_8c" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c</includedby>
+    <incdepgraph>
+      <node id="25">
+        <label>se3/L1.h</label>
+      </node>
+      <node id="24">
+        <label>se3/L0.h</label>
+      </node>
+      <node id="27">
+        <label>string.h</label>
+      </node>
+      <node id="23">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h</label>
+        <link refid="SEfile.h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>ctype.h</label>
+      </node>
+      <node id="26">
+        <label>se3/se3c1def.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="30">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c</label>
+        <link refid="_s_efile_8c"/>
+      </node>
+      <node id="29">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h</label>
+        <link refid="SEfile.h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>Use this values as mode parameter for</header>
+      <description><para><ref refid="_s_efile_8c_1ae99f8ccb396cbb5685d9e16bb3dbbe98" kindref="member">secure_open()</ref>. </para></description>
+      <memberdef kind="define" id="group___mode___defines_1ga54f7b08eaa281b5cc96f9b38f8cec756" prot="public" static="no">
+        <name>SEFILE_READ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open as Read only </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="46" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___mode___defines_1ga3402f85400c41104d35136c74566cf67" prot="public" static="no">
+        <name>SEFILE_WRITE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open for Read/Write </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="47" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Use this values as access parameter for</header>
+      <description><para><ref refid="_s_efile_8c_1ae99f8ccb396cbb5685d9e16bb3dbbe98" kindref="member">secure_open()</ref>. </para></description>
+      <memberdef kind="define" id="group___access___defines_1ga57c4f0752b0acce2d45dff73592e09e3" prot="public" static="no">
+        <name>SEFILE_NEWFILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create new file and delete if existing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="57" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___access___defines_1ga3912e29a65705156f8d2e7ffe7fe80c7" prot="public" static="no">
+        <name>SEFILE_OPEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open an existing file, create it if not existing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="58" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Use this values as whence parameter for</header>
+      <description><para><ref refid="_s_efile_8c_1a157807247b4913a73fc3b6677a61e6a3" kindref="member">secure_seek()</ref>. </para></description>
+      <memberdef kind="define" id="group___seek___defines_1gab6c0208f58dfecf3ee595f75a3156a27" prot="public" static="no">
+        <name>SEFILE_BEGIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seek from file beginning </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="68" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___seek___defines_1ga96800ac1f03fb12ac3f761d37553ddc3" prot="public" static="no">
+        <name>SEFILE_CURRENT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seek from current position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="69" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___seek___defines_1gac99113dc9b1f7710c8f451ce0b76c925" prot="public" static="no">
+        <name>SEFILE_END</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seek from file ending </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="70" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Returned error values</header>
+      <description><para>If something goes wrong, one of this values will be returned. </para></description>
+      <memberdef kind="define" id="group__error_values_1gaef0379bf0ad20b2772c25501047a7d4a" prot="public" static="no">
+        <name>SEFILE_ENV_ALREADY_SET</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="185" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga53869d0f6f2c9fbfbcb7aa6bf1fb4442" prot="public" static="no">
+        <name>SEFILE_ENV_WRONG_PARAMETER</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="186" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1gad12c7a1466b671f490ae39ce0713bc78" prot="public" static="no">
+        <name>SEFILE_ENV_MALLOC_ERROR</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="187" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1gafddfc71142aed0903f4d1ea923216b7e" prot="public" static="no">
+        <name>SEFILE_ENV_NOT_SET</name>
+        <initializer>18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="188" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga1e1aabadb5130519c51d950ac93d1826" prot="public" static="no">
+        <name>SEFILE_SECTOR_MALLOC_ERR</name>
+        <initializer>19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="189" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga37c8b9e2086b758d7e5a883de0d41d02" prot="public" static="no">
+        <name>SEFILE_GET_FILEPOINTER_ERR</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="190" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga75d2ef63f37fbd2c5a3489f03e20e7a9" prot="public" static="no">
+        <name>SEFILE_HANDLE_MALLOC_ERR</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="191" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga6142dae41abd857c4b8d98e28b33afb7" prot="public" static="no">
+        <name>SEFILE_CLOSE_HANDLE_ERR</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="192" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1gab9228a3791ed91c954cb95fb8a022ce4" prot="public" static="no">
+        <name>SEFILE_CREATE_ERROR</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="193" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga53ed7e1a28f72c836dec4dbde1a863ae" prot="public" static="no">
+        <name>SEFILE_OPEN_ERROR</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="194" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga4f75c01ae99f556170441fdf75dee72c" prot="public" static="no">
+        <name>SEFILE_WRITE_ERROR</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="195" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga17c8f4bc7a1cd110cb0d3c2d854e967e" prot="public" static="no">
+        <name>SEFILE_SEEK_ERROR</name>
+        <initializer>26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="196" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga46ab7b08bd58721fb66aace45f4fb27f" prot="public" static="no">
+        <name>SEFILE_READ_ERROR</name>
+        <initializer>27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="197" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga067e414c0566c344a984376900e8e7d8" prot="public" static="no">
+        <name>SEFILE_ILLEGAL_SEEK</name>
+        <initializer>28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="198" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1gabd136bee016febfbfdf5754f186c285d" prot="public" static="no">
+        <name>SEFILE_FILESIZE_ERROR</name>
+        <initializer>29</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="199" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga53f3cd3c21d07ca618485d3f1147fbfc" prot="public" static="no">
+        <name>SEFILE_BUFFER_MALLOC_ERR</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="200" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga8c68586e02436a25919d5350dd634abf" prot="public" static="no">
+        <name>SEFILE_FILENAME_DEC_ERROR</name>
+        <initializer>31</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="201" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga2aa7ba73839f975186cbc5f1326b9e92" prot="public" static="no">
+        <name>SEFILE_FILENAME_ENC_ERROR</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="202" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga31400539e2fa4f94f4ebf80780812e6a" prot="public" static="no">
+        <name>SEFILE_DIRNAME_ENC_ERROR</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="203" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga38cc6c1072a3f22f11e22d3079c26648" prot="public" static="no">
+        <name>SEFILE_DIRNAME_DEC_ERROR</name>
+        <initializer>34</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="204" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga3b754ce0aa97840cde8560f172f55968" prot="public" static="no">
+        <name>SEFILE_DIRNAME_TOO_LONG</name>
+        <initializer>35</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="205" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga1839e1718f5b676be3d85b95e6cf58d3" prot="public" static="no">
+        <name>SEFILE_MKDIR_ERROR</name>
+        <initializer>36</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="206" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga467402454a621261d56af8a938d5cfee" prot="public" static="no">
+        <name>SEFILE_LS_ERROR</name>
+        <initializer>37</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="207" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga46a3c08997f9f9f5d81c8647fdeec654" prot="public" static="no">
+        <name>SEFILE_USER_NOT_ALLOWED</name>
+        <initializer>38</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="208" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1gad7982cf767e27ebd3ae51b32c7e901fa" prot="public" static="no">
+        <name>SEFILE_ENV_INIT_ERROR</name>
+        <initializer>39</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="209" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga35d130b08fd47835ac8434089996f511" prot="public" static="no">
+        <name>SEFILE_ENV_UPDATE_ERROR</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="210" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga62143add129dfcbec6512f7f531309ce" prot="public" static="no">
+        <name>SEFILE_INTEGRITY_ERROR</name>
+        <initializer>41</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="211" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga99a623f4578c42e52fec20d4773d4004" prot="public" static="no">
+        <name>SEFILE_NAME_NOT_VALID</name>
+        <initializer>42</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="212" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1gab67139e5ac7e0fdda43b7df3efa82ae6" prot="public" static="no">
+        <name>SEFILE_TRUNCATE_ERROR</name>
+        <initializer>43</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="213" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga43bb90520aa942643136bacf666646ab" prot="public" static="no">
+        <name>SEFILE_DEVICE_SN_MISMATCH</name>
+        <initializer>44</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="214" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1gae714c3753d850fabe5cf9d0776f069cb" prot="public" static="no">
+        <name>SEFILE_KEYID_NOT_PRESENT</name>
+        <initializer>45</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="215" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga74d06ed9a59c21093dd0ab040162bdcf" prot="public" static="no">
+        <name>SEFILE_ALGID_NOT_PRESENT</name>
+        <initializer>46</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="216" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1ga9d0494548ef592b9b778d89162d51149" prot="public" static="no">
+        <name>SEFILE_PATH_TOO_LONG</name>
+        <initializer>47</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="217" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1gae22cec823d2d3e831fd1af8e769fa7b8" prot="public" static="no">
+        <name>SEFILE_SYNC_ERR</name>
+        <initializer>48</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="218" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__error_values_1gadcb1402e3f630353dfc26774c319db57" prot="public" static="no">
+        <name>SEFILE_SIGNATURE_MISMATCH</name>
+        <initializer>49</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="219" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Constant used to define sector structure.</header>
+      <description><para>Do not change this unless you know what you are doing. </para></description>
+      <memberdef kind="define" id="group___sector___defines_1gad205a758c315675de3ad9f5f1cbf962d" prot="public" static="no">
+        <name>SEFILE_SECTOR_SIZE</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actual sector size. Use only power of 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="234" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___sector___defines_1ga6961ed45e472749b587136d18eb74b4d" prot="public" static="no">
+        <name>SEFILE_SECTOR_DATA_SIZE</name>
+        <initializer>(<ref refid="group___sector___defines_1gad205a758c315675de3ad9f5f1cbf962d" kindref="member">SEFILE_SECTOR_SIZE</ref>-B5_SHA256_DIGEST_SIZE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual valid data may be as much as this, since the signature is coded on 32 bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="236" column="10" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___sector___defines_1ga9344350dc20df5bbdc5693775c54afcb" prot="public" static="no">
+        <name>SEFILE_BLOCK_SIZE</name>
+        <initializer>B5_AES_BLK_SIZE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cipher block algorithm requires to encrypt data whose size is a multiple of this block size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="238" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___sector___defines_1ga460525481b728a7bbad706019c7f2156" prot="public" static="no">
+        <name>SEFILE_LOGIC_DATA</name>
+        <initializer>(<ref refid="group___sector___defines_1ga6961ed45e472749b587136d18eb74b4d" kindref="member">SEFILE_SECTOR_DATA_SIZE</ref>-2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The largest multiple of <ref refid="group___sector___defines_1ga9344350dc20df5bbdc5693775c54afcb" kindref="member">SEFILE_BLOCK_SIZE</ref> that can fit in <ref refid="group___sector___defines_1ga6961ed45e472749b587136d18eb74b4d" kindref="member">SEFILE_SECTOR_DATA_SIZE</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="240" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___sector___defines_1ga70a387176632325441aebca4839e19fc" prot="public" static="no">
+        <name>SEFILE_SECTOR_OVERHEAD</name>
+        <initializer>(<ref refid="group___sector___defines_1gad205a758c315675de3ad9f5f1cbf962d" kindref="member">SEFILE_SECTOR_SIZE</ref>-<ref refid="group___sector___defines_1ga460525481b728a7bbad706019c7f2156" kindref="member">SEFILE_LOGIC_DATA</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The amount of Overhead created by <ref refid="struct_s_e_f_i_l_e___s_e_c_t_o_r_1a7a0bf13d497fbcd2a5ac99511209bff0" kindref="member">SEFILE_SECTOR::len</ref> and <ref refid="struct_s_e_f_i_l_e___s_e_c_t_o_r_1a111b909efca8a7c55f22c621c81e4cb5" kindref="member">SEFILE_SECTOR::signature</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="242" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_s_efile_8h_1aa4e5ca47d52a8be522912705c27e0d1c" prot="public" static="no">
+        <name>MAX_PATHNAME</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum length for pathname string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="174" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" prot="public" static="no">
+        <type>struct <ref refid="struct_s_e_f_i_l_e___h_a_n_d_l_e" kindref="compound">SEFILE_HANDLE</ref> *</type>
+        <definition>typedef struct SEFILE_HANDLE* SEFILE_FHANDLE</definition>
+        <argsstring></argsstring>
+        <name>SEFILE_FHANDLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data struct used to access encrypted files </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="27" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_s_efile_8h_1a435a1cfd0cd619deb2efeb7aa3723126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_init</definition>
+        <argsstring>(se3_session *s, uint32_t keyID, uint16_t crypto)</argsstring>
+        <name>secure_init</name>
+        <param>
+          <type>se3_session *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>keyID</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>crypto</declname>
+        </param>
+        <briefdescription>
+<para>This function creates a new secure environment, by allocating statically the parameters needed by the following functions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the pointer to the se3_session structure that must be used during the session. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">keyID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the ID number of the key that must be used during the session. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">crypto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the id to specify which algorithm to use. See AlgorithmAvail, it can be SE3_ALGO_MAX + 1 if you don&apos;t know which algorithm to choose. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+All the data passed to this function must be allocated and filled with valid data. Once secure_init succeed it is possible to destroy these data, since a copy has been made. N.B. Remember to call the <ref refid="_s_efile_8h_1a71736a6b4cc1a0ec94d013052e1e2a10" kindref="member">secure_finit</ref> function to deallocate these data once you have finished. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="266" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="240" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1ae8d0daae652fc1f3e2c29781591aa36e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_update</definition>
+        <argsstring>(se3_session *s, int32_t keyID, uint16_t crypto)</argsstring>
+        <name>secure_update</name>
+        <param>
+          <type>se3_session *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>keyID</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>crypto</declname>
+        </param>
+        <briefdescription>
+<para>This function can be called only after the <ref refid="_s_efile_8c_1a435a1cfd0cd619deb2efeb7aa3723126" kindref="member">secure_init()</ref> function and give to the user the possibility to overwrite the Environment variables with new ones. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the pointer to the se3_session structure that must be used during the session. Can be NULL. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">keyID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>keyID Contains the ID number of the key that must be used during the session. Can be -1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">crypto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the id to specify which algorithm to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list.</para></simplesect>
+Parameters from 1 to 3 can be a NULL pointer or &apos;-1&apos; value, if all parameters are NULL (or &apos;-1&apos; in case of keyID) the function is a No-Operation one. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="285" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="329" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1a71736a6b4cc1a0ec94d013052e1e2a10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_finit</definition>
+        <argsstring>()</argsstring>
+        <name>secure_finit</name>
+        <briefdescription>
+<para>This function deallocate the structures defined by the <ref refid="_s_efile_8c_1a435a1cfd0cd619deb2efeb7aa3723126" kindref="member">secure_init()</ref>. Should be called at the end of a session. No parameters are needed;. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="293" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="364" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1ab134ec0c74652e6c2ecac3096d0bfd7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t crypto_filename</definition>
+        <argsstring>(char *path, char *enc_name, uint16_t *encoded_length)</argsstring>
+        <name>crypto_filename</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>enc_name</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>encoded_length</declname>
+        </param>
+        <briefdescription>
+<para>This function computes the encrypted name of the file specified at position path and its length. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>It can be absolute or relative but it can not be a directory. No encrypted directory are allowed inside the path. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">enc_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Already allocate string where the encrypted filename should be stored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">encoded_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an allocated uint16_t where the length of the encrypted filename is stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="307" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="1280" bodyend="1326"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1a06dff80bbbf693ebef7f5f8a2fe36f0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_open</definition>
+        <argsstring>(char *path, SEFILE_FHANDLE *hFile, int32_t mode, int32_t access)</argsstring>
+        <name>secure_open</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" kindref="member">SEFILE_FHANDLE</ref> *</type>
+          <declname>hFile</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>access</declname>
+        </param>
+        <briefdescription>
+<para>This function opens a secure file and create a SEFILE_FHANDLE that can be used in future. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify the absolute/relative path where to retrieve the file to open. No encrypted directory are allowed inside the path. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">hFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer in which the file handle to the opened file is placed after a success, NULL in case of failure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mode in which the file should be opened. See <ref refid="group___mode___defines" kindref="compound">mode parameter for secure_open</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">access</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Define if the file should be created or it should already exist. See <ref refid="group___access___defines" kindref="compound">access parameter for secure_open</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="321" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="379" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1adbb72ef517bfb5e342fba86f2e72b25f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_create</definition>
+        <argsstring>(char *path, SEFILE_FHANDLE *hFile, int mode)</argsstring>
+        <name>secure_create</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" kindref="member">SEFILE_FHANDLE</ref> *</type>
+          <declname>hFile</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>This function creates a new secure file and creates a SEFILE_FHANDLE that can be used in future. If the file already exists, it is overwritten with an empty one, all previous data are lost. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify the absolute/relative path where to create the file. No encrypted directory are allowed inside the path. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">hFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer in which the file handle to the new opened file is placed after a success, NULL in case of failure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mode in which the file should be created. See <ref refid="group___mode___defines" kindref="compound">mode parameter for secure_open</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="334" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="462" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1acb652f6362fd5635c4aaa8c5e67c7f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_write</definition>
+        <argsstring>(SEFILE_FHANDLE *hFile, uint8_t *dataIn, uint32_t dataIn_len)</argsstring>
+        <name>secure_write</name>
+        <param>
+          <type><ref refid="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" kindref="member">SEFILE_FHANDLE</ref> *</type>
+          <declname>hFile</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dataIn</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dataIn_len</declname>
+        </param>
+        <briefdescription>
+<para>This function writes the characters given by dataIn to the encrypted file hFile. Before writing them, dataIn is encrypted according to the environmental parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to an already opened file to be written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dataIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string of characters that have to be written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dataIn_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length, in bytes, of the data that have to be written. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="345" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="580" bodyend="732"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1ab4468e0e71fe2626767388150952fbdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_read</definition>
+        <argsstring>(SEFILE_FHANDLE *hFile, uint8_t *dataOut, uint32_t dataOut_len, uint32_t *bytesRead)</argsstring>
+        <name>secure_read</name>
+        <param>
+          <type><ref refid="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" kindref="member">SEFILE_FHANDLE</ref> *</type>
+          <declname>hFile</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dataOut</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dataOut_len</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>bytesRead</declname>
+        </param>
+        <briefdescription>
+<para>This function reads from hFile bytesRead characters out of dataOut_len correctly decrypted ones and stores them in dataOut string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to an already opened file to be read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dataOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An already allocated array of characters where to store data read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dataOut_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of characters we want to read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">bytesRead</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of effective characters read, MUST NOT BE NULL. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="356" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="736" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1a157807247b4913a73fc3b6677a61e6a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_seek</definition>
+        <argsstring>(SEFILE_FHANDLE *hFile, int32_t offset, int32_t *position, uint8_t whence)</argsstring>
+        <name>secure_seek</name>
+        <param>
+          <type><ref refid="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" kindref="member">SEFILE_FHANDLE</ref> *</type>
+          <declname>hFile</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>whence</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to move correctly the file pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the file to manipulate. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of character we want to move. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a int32_t variable where the final position is stored, MUST NOT BE NULL. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">whence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>According to this parameter we can choose if we want to move from the file beginning, file ending or current file pointer position. See <ref refid="group___seek___defines" kindref="compound">whence parameter for secure_seek</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="369" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="842" bodyend="969"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1ae51272c2c3b72a01bd7aa98f25fb5245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_truncate</definition>
+        <argsstring>(SEFILE_FHANDLE *hFile, uint32_t size)</argsstring>
+        <name>secure_truncate</name>
+        <param>
+          <type><ref refid="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" kindref="member">SEFILE_FHANDLE</ref> *</type>
+          <declname>hFile</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>This function resizes the file pointed by hFile to size. If size is bigger than its current size the gap is filled with 0s. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the file to manipulate. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New size of the file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="378" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="971" bodyend="1046"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1a54f66c38e6025c8e57ceda5c43d51c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_close</definition>
+        <argsstring>(SEFILE_FHANDLE *hFile)</argsstring>
+        <name>secure_close</name>
+        <param>
+          <type><ref refid="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" kindref="member">SEFILE_FHANDLE</ref> *</type>
+          <declname>hFile</declname>
+        </param>
+        <briefdescription>
+<para>This function releases resources related to hFile. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the file we do not want to manipulate no more. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="386" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="1048" bodyend="1083"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1a6b2a9a6b81381a4ce20421831103b8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_ls</definition>
+        <argsstring>(char *path, char *list, uint32_t *list_length)</argsstring>
+        <name>secure_ls</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>list_length</declname>
+        </param>
+        <briefdescription>
+<para>This function identifies which encrypted files and encrypted directories are present in the directory pointed by path and writes them in list. It only recognizes the ones encrypted with the current environmental parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute or relative path to the directory to browse. No encrypted directory are allowed inside the path. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Already allocated array where to store filenames and directory names. Each entry is separated by &apos;\0&apos;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">list_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a uint32_t used to stored total number of characters written in list. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="401" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="1085" bodyend="1189"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1a987cae1899d44e2c86de985b6145d41b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_getfilesize</definition>
+        <argsstring>(char *path, uint32_t *position)</argsstring>
+        <name>secure_getfilesize</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get the total logic size of an encrypted file pointed by path. Logic size will always be smaller than physical size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute or relative path the file. No encrypted directory are allowed inside the path. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an allocated uint32_t variable where will be stored the file size. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="413" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="1191" bodyend="1209"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1afc10a53fb05941bb327447cbef30b963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_mkdir</definition>
+        <argsstring>(char *path)</argsstring>
+        <name>secure_mkdir</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>This function creates a directory with an encrypted name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute or relative path of the new directory. No encrypted directory are allowed inside the path. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="421" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="1211" bodyend="1242"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_efile_8h_1aae977955a0ae4b48158806cd45d2cd12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t secure_sync</definition>
+        <argsstring>(SEFILE_FHANDLE *hFile)</argsstring>
+        <name>secure_sync</name>
+        <param>
+          <type><ref refid="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" kindref="member">SEFILE_FHANDLE</ref> *</type>
+          <declname>hFile</declname>
+        </param>
+        <briefdescription>
+<para>This function is used in case we want to be sure that the physical file is synced with the OS buffers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the secure file to be synced. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns a (uint16_t) &apos;0&apos; in case of success. See <ref refid="group__error_values" kindref="compound">error values</ref> for error list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="429" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="1833" bodyend="1851"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file includes constants, return values and public functions used for implementing a secure file system. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="authors"><para>Francesco Giavatto, Nicolò Maunero, Giulio Scalia </para></simplesect>
+<simplesect kind="date"><para>17/09/2016</para></simplesect>
+In this library you will find wrappers to common OS system calls, in order to manage encrypted files using the SECube Board. In this files are also reported the constant used as parameter and all the possible return values. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#ifndef<sp/>__SEFILE_SYSCALL__</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__SEFILE_SYSCALL__</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;se3/L0.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;se3/L1.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;se3/se3c1def.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_s_e_f_i_l_e___h_a_n_d_l_e" kindref="compound">SEFILE_HANDLE</ref><sp/>*<sp/><ref refid="_s_efile_8h_1ac073933cdf58a366c2dfed344c37ebe9" kindref="member">SEFILE_FHANDLE</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor">#ifdef<sp/>__linux__</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>open,<sp/>seek<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>open,<sp/>create<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>open,<sp/>create<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>write,<sp/>read,<sp/>seek,<sp/>close<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libgen.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dirent.h&gt;</highlight></codeline>
+<codeline lineno="38"></codeline>
+<codeline lineno="45"><highlight class="preprocessor">#define<sp/>SEFILE_READ<sp/><sp/><sp/><sp/><sp/>O_RDONLY<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="group___mode___defines_1ga3402f85400c41104d35136c74566cf67" refkind="member"><highlight class="preprocessor">#define<sp/>SEFILE_WRITE<sp/><sp/><sp/><sp/>O_RDWR<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor">#define<sp/>SEFILE_NEWFILE<sp/><sp/>O_CREAT<sp/>|<sp/>O_TRUNC<sp/></highlight></codeline>
+<codeline lineno="58" refid="group___access___defines_1ga3912e29a65705156f8d2e7ffe7fe80c7" refkind="member"><highlight class="preprocessor">#define<sp/>SEFILE_OPEN<sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">#define<sp/>SEFILE_BEGIN<sp/><sp/><sp/><sp/>SEEK_SET<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="group___seek___defines_1ga96800ac1f03fb12ac3f761d37553ddc3" refkind="member"><highlight class="preprocessor">#define<sp/>SEFILE_CURRENT<sp/><sp/>SEEK_CUR<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="group___seek___defines_1gac99113dc9b1f7710c8f451ce0b76c925" refkind="member"><highlight class="preprocessor">#define<sp/>SEFILE_END<sp/><sp/><sp/><sp/><sp/><sp/>SEEK_END<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor">#elif<sp/>_WIN32</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>UNICODE</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>_UNICODE</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>__MINGW32__</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fileapi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;FileApi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor">#define<sp/>SEFILE_READ<sp/><sp/><sp/><sp/><sp/>GENERIC_READ</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_WRITE<sp/><sp/><sp/><sp/>GENERIC_READ<sp/>|<sp/>GENERIC_WRITE</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor">#define<sp/>SEFILE_NEWFILE<sp/><sp/>CREATE_ALWAYS</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_OPEN<sp/><sp/><sp/><sp/><sp/>OPEN_EXISTING</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor">#define<sp/>SEFILE_BEGIN<sp/><sp/><sp/><sp/>FILE_BEGIN</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_CURRENT<sp/><sp/>FILE_CURRENT</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_END<sp/><sp/><sp/><sp/><sp/><sp/>FILE_END</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor">#elif<sp/>__APPLE__</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>open,<sp/>create<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>open<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>write,<sp/>read,<sp/>seek,<sp/>close<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>open,<sp/>read<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/uio.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>read<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dirent.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>SEFILE_INT32<sp/>SEFILE_FHANDLE;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor">#define<sp/>SEFILE_READ<sp/><sp/><sp/><sp/><sp/>O_RDONLY</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_WRITE<sp/><sp/><sp/><sp/>O_RDWR</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor">#define<sp/>SEFILE_NEWFILE<sp/><sp/>O_CREAT<sp/>|<sp/>O_TRUNC</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_OPEN<sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor">#define<sp/>SEFILE_BEGIN<sp/><sp/><sp/><sp/>SEEK_SET</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_CURRENT<sp/><sp/>SEEK_CUR</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_END<sp/><sp/><sp/><sp/><sp/><sp/>SEEK_END</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="_s_efile_8h_1aa4e5ca47d52a8be522912705c27e0d1c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_PATHNAME<sp/>256<sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor">#define<sp/>SEFILE_ENV_ALREADY_SET<sp/><sp/><sp/><sp/><sp/><sp/>15</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_ENV_WRONG_PARAMETER<sp/><sp/>16</highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_ENV_MALLOC_ERROR<sp/><sp/><sp/><sp/><sp/>17</highlight></codeline>
+<codeline lineno="188"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_ENV_NOT_SET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>18</highlight></codeline>
+<codeline lineno="189"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_SECTOR_MALLOC_ERR<sp/><sp/><sp/><sp/>19</highlight></codeline>
+<codeline lineno="190"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_GET_FILEPOINTER_ERR<sp/><sp/>20</highlight></codeline>
+<codeline lineno="191"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_HANDLE_MALLOC_ERR<sp/><sp/><sp/><sp/>21</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_CLOSE_HANDLE_ERR<sp/><sp/><sp/><sp/><sp/>22</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_CREATE_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>23</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_OPEN_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>24</highlight></codeline>
+<codeline lineno="195"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_WRITE_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>25</highlight></codeline>
+<codeline lineno="196"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_SEEK_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>26</highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_READ_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>27</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_ILLEGAL_SEEK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>28</highlight></codeline>
+<codeline lineno="199"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_FILESIZE_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>29</highlight></codeline>
+<codeline lineno="200"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_BUFFER_MALLOC_ERR<sp/><sp/><sp/><sp/>30</highlight></codeline>
+<codeline lineno="201"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_FILENAME_DEC_ERROR<sp/><sp/><sp/>31</highlight></codeline>
+<codeline lineno="202"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_FILENAME_ENC_ERROR<sp/><sp/><sp/>32</highlight></codeline>
+<codeline lineno="203"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_DIRNAME_ENC_ERROR<sp/><sp/><sp/><sp/>33</highlight></codeline>
+<codeline lineno="204"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_DIRNAME_DEC_ERROR<sp/><sp/><sp/><sp/>34</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_DIRNAME_TOO_LONG<sp/><sp/><sp/><sp/><sp/>35</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_MKDIR_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>36</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_LS_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>37</highlight></codeline>
+<codeline lineno="208"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_USER_NOT_ALLOWED<sp/><sp/><sp/><sp/><sp/>38</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_ENV_INIT_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>39</highlight></codeline>
+<codeline lineno="210"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_ENV_UPDATE_ERROR<sp/><sp/><sp/><sp/><sp/>40</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_INTEGRITY_ERROR<sp/><sp/><sp/><sp/><sp/><sp/>41</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_NAME_NOT_VALID<sp/><sp/><sp/><sp/><sp/><sp/><sp/>42</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_TRUNCATE_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>43</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_DEVICE_SN_MISMATCH<sp/><sp/><sp/>44</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_KEYID_NOT_PRESENT<sp/><sp/><sp/><sp/>45</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_ALGID_NOT_PRESENT<sp/><sp/><sp/><sp/>46</highlight></codeline>
+<codeline lineno="217"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_PATH_TOO_LONG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>47</highlight></codeline>
+<codeline lineno="218"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_SYNC_ERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>48</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_SIGNATURE_MISMATCH<sp/><sp/><sp/>49</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="222"></codeline>
+<codeline lineno="232"><highlight class="preprocessor">#ifndef<sp/>SEFILE_SECTOR_SIZE</highlight></codeline>
+<codeline lineno="234" refid="group___sector___defines_1gad205a758c315675de3ad9f5f1cbf962d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_SECTOR_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>512<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="236" refid="group___sector___defines_1ga6961ed45e472749b587136d18eb74b4d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEFILE_SECTOR_DATA_SIZE<sp/><sp/><sp/><sp/><sp/>(SEFILE_SECTOR_SIZE-B5_SHA256_DIGEST_SIZE)<sp/><sp/></highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor">//#define<sp/>SEFILE_SECTOR_DATA_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SEFILE_SECTOR_SIZE-4)<sp/><sp/></highlight></codeline>
+<codeline lineno="238" refid="group___sector___defines_1ga9344350dc20df5bbdc5693775c54afcb" refkind="member"><highlight class="preprocessor">#define<sp/>SEFILE_BLOCK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B5_AES_BLK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240" refid="group___sector___defines_1ga460525481b728a7bbad706019c7f2156" refkind="member"><highlight class="preprocessor">#define<sp/>SEFILE_LOGIC_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SEFILE_SECTOR_DATA_SIZE-2)</highlight></codeline>
+<codeline lineno="241"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="242" refid="group___sector___defines_1ga70a387176632325441aebca4839e19fc" refkind="member"><highlight class="preprocessor">#define<sp/>SEFILE_SECTOR_OVERHEAD<sp/><sp/><sp/><sp/><sp/><sp/>(SEFILE_SECTOR_SIZE-SEFILE_LOGIC_DATA)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="243"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1a435a1cfd0cd619deb2efeb7aa3723126" kindref="member">secure_init</ref>(se3_session<sp/>*s,<sp/>uint32_t<sp/>keyID,<sp/>uint16_t<sp/>crypto);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1ae8d0daae652fc1f3e2c29781591aa36e" kindref="member">secure_update</ref>(se3_session<sp/>*s,<sp/>int32_t<sp/>keyID,<sp/>uint16_t<sp/>crypto);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1a71736a6b4cc1a0ec94d013052e1e2a10" kindref="member">secure_finit</ref>();</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1ab134ec0c74652e6c2ecac3096d0bfd7f" kindref="member">crypto_filename</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*enc_name,<sp/>uint16_t<sp/>*encoded_length);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1ae99f8ccb396cbb5685d9e16bb3dbbe98" kindref="member">secure_open</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/>SEFILE_FHANDLE<sp/>*hFile,<sp/>int32_t<sp/>mode,<sp/>int32_t<sp/>access);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1adbb72ef517bfb5e342fba86f2e72b25f" kindref="member">secure_create</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/>SEFILE_FHANDLE<sp/>*hFile,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1acb652f6362fd5635c4aaa8c5e67c7f1b" kindref="member">secure_write</ref>(SEFILE_FHANDLE<sp/>*hFile,<sp/>uint8_t<sp/>*<sp/>dataIn,<sp/>uint32_t<sp/>dataIn_len);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1ab4468e0e71fe2626767388150952fbdf" kindref="member">secure_read</ref>(SEFILE_FHANDLE<sp/>*hFile,<sp/><sp/>uint8_t<sp/>*<sp/>dataOut,<sp/>uint32_t<sp/>dataOut_len,<sp/>uint32_t<sp/>*<sp/>bytesRead);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1a157807247b4913a73fc3b6677a61e6a3" kindref="member">secure_seek</ref>(SEFILE_FHANDLE<sp/>*hFile,<sp/>int32_t<sp/>offset,<sp/>int32_t<sp/>*position<sp/>,uint8_t<sp/>whence);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1ae51272c2c3b72a01bd7aa98f25fb5245" kindref="member">secure_truncate</ref>(SEFILE_FHANDLE<sp/>*hFile,<sp/>uint32_t<sp/>size);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1a54f66c38e6025c8e57ceda5c43d51c5c" kindref="member">secure_close</ref>(SEFILE_FHANDLE<sp/>*hFile);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1a6b2a9a6b81381a4ce20421831103b8b3" kindref="member">secure_ls</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*list,<sp/>uint32_t<sp/>*<sp/>list_length);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1a987cae1899d44e2c86de985b6145d41b" kindref="member">secure_getfilesize</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/>uint32_t<sp/>*<sp/>position);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1afc10a53fb05941bb327447cbef30b963" kindref="member">secure_mkdir</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="429"><highlight class="normal">uint16_t<sp/><ref refid="_s_efile_8c_1aae977955a0ae4b48158806cd45d2cd12" kindref="member">secure_sync</ref>(SEFILE_FHANDLE<sp/>*hFile);</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="431"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="433"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//__SEFILE_SYSCALL__</highlight></codeline>
+<codeline lineno="435"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h"/>
+  </compounddef>
+</doxygen>

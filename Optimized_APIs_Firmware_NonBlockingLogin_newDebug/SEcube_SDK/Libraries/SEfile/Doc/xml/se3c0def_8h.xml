@@ -1,0 +1,823 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="se3c0def_8h" kind="file">
+    <compoundname>se3c0def.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includedby refid="se3__common_8h" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h</includedby>
+    <includedby refid="se3comm_8h" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h</includedby>
+    <includedby refid="se3c1def_8h" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c1def.h</includedby>
+    <incdepgraph>
+      <node id="156">
+        <label>stdbool.h</label>
+      </node>
+      <node id="152">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h</label>
+        <link refid="se3c0def.h"/>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>stdint.h</label>
+      </node>
+      <node id="153">
+        <label>stdlib.h</label>
+      </node>
+      <node id="155">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="157">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h</label>
+        <link refid="se3c0def.h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3comm.h</label>
+        <link refid="se3comm_8h_source"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h</label>
+        <link refid="se3__common_8h_source"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c1def.h</label>
+        <link refid="se3c1def_8h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h</label>
+        <link refid="_l1_8h_source"/>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h</label>
+        <link refid="_l0_8h_source"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c</label>
+        <link refid="_s_efile_8c"/>
+      </node>
+      <node id="161">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h</label>
+        <link refid="_s_efile_8h"/>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="se3c0def_8h_1acb08db8894ce7b0fe45b48d174e02499" prot="public" static="no">
+        <name>SE3_TRACE</name>
+        <param><defname>msg</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="16" column="11" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="se3c0def_8h_1a34ffafe12571bb01e09f6115434f195c" prot="public" static="no">
+        <name>SE3_CONF_CRC</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="19" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="se3c0def_8h_1a4e45d77ed3b26e7c125246cc31126cc4" prot="public" static="no">
+        <name>SE3_SET64</name>
+        <param><defname>x</defname></param>
+        <param><defname>pos</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>do{ memcpy(((uint8_t*)(x))+pos, (void*)&amp;(val), 8); }while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="21" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="se3c0def_8h_1a7fc68ed3022c13f18f9c6def9dc83980" prot="public" static="no">
+        <name>SE3_SET32</name>
+        <param><defname>x</defname></param>
+        <param><defname>pos</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>do{ memcpy(((uint8_t*)(x))+pos, (void*)&amp;(val), 4); }while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="22" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="se3c0def_8h_1aefd316aa9be4959df5c1fa61c8a1a319" prot="public" static="no">
+        <name>SE3_SET16</name>
+        <param><defname>x</defname></param>
+        <param><defname>pos</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>do{ memcpy(((uint8_t*)(x))+pos, (void*)&amp;(val), 2); }while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="23" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="se3c0def_8h_1aecda0f5dc6bd69ffa5e785cd0295b774" prot="public" static="no">
+        <name>SE3_GET64</name>
+        <param><defname>x</defname></param>
+        <param><defname>pos</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>do{ memcpy((void*)&amp;(val), ((uint8_t*)(x))+pos, 8); }while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="24" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="se3c0def_8h_1a0c5becd1630f7a3e2758e28bcb91c632" prot="public" static="no">
+        <name>SE3_GET32</name>
+        <param><defname>x</defname></param>
+        <param><defname>pos</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>do{ memcpy((void*)&amp;(val), ((uint8_t*)(x))+pos, 4); }while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="25" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="se3c0def_8h_1a2fc68480f7db5c8f8e7c77ef1cec4cb2" prot="public" static="no">
+        <name>SE3_GET16</name>
+        <param><defname>x</defname></param>
+        <param><defname>pos</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>do{ memcpy((void*)&amp;(val), ((uint8_t*)(x))+pos, 2); }while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="26" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="se3c0def_8h_1a06b45be29dbe56490643524035c3d709" prot="public" static="no">
+        <name>SE3_BIT_SET</name>
+        <param><defname>val</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>do{ val |= (1 &lt;&lt; (n)); }while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="28" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="se3c0def_8h_1a981f566160f609d6c68e97f6881155b0" prot="public" static="no">
+        <name>SE3_BIT_CLEAR</name>
+        <param><defname>val</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>do{ val &amp;= ~(1 &lt;&lt; (n)); }while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="29" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="se3c0def_8h_1ab84eca113645f41ee461bc936eca7268" prot="public" static="no">
+        <name>SE3_BIT_TEST</name>
+        <param><defname>val</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>(val &amp; (1&lt;&lt; (n)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="30" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="se3c0def_8h_1a06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no">
+        <name>@0</name>
+        <enumvalue id="se3c0def_8h_1a06fc87d81c62e9abb8790b6e5713c55ba9ded4d9efc0fb59f71b0c8f292e03828" prot="public">
+          <name>SE3_COMM_BLOCK</name>
+          <initializer>= 512</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a06fc87d81c62e9abb8790b6e5713c55baabe9b53361173b1b81d8f671054b12d4" prot="public">
+          <name>SE3_COMM_N</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="32" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="se3c0def_8h_1adf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no">
+        <name>@1</name>
+        <enumvalue id="se3c0def_8h_1adf764cbdea00d65edcd07bb9953ad2b7aea2995b52b84e813d83d76bdd7dec4a4" prot="public">
+          <name>SE3_MAGIC_SIZE</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1adf764cbdea00d65edcd07bb9953ad2b7a879986c4de51c34d1061b80550ddb95f" prot="public">
+          <name>SE3_HELLO_SIZE</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1adf764cbdea00d65edcd07bb9953ad2b7a6650b8d62a36f4edbe324ba48283fb06" prot="public">
+          <name>SE3_SERIAL_SIZE</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="37" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="se3c0def_8h_1a99fb83031ce9923c84392b4e92f956b5" prot="public" static="no">
+        <name>@2</name>
+        <enumvalue id="se3c0def_8h_1a99fb83031ce9923c84392b4e92f956b5ad6fb21bb031eeba4658d8a55f8cef79c" prot="public">
+          <name>SE3_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>success </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a99fb83031ce9923c84392b4e92f956b5ab57ce3b3744034502d480216f9fb6eb7" prot="public">
+          <name>SE3_ERR_HW</name>
+          <initializer>= 0xF001</initializer>
+          <briefdescription>
+<para>hardware failure </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a99fb83031ce9923c84392b4e92f956b5a15a9e27d5b5bf016b0e8799eca950688" prot="public">
+          <name>SE3_ERR_COMM</name>
+          <initializer>= 0xF002</initializer>
+          <briefdescription>
+<para>communication error </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a99fb83031ce9923c84392b4e92f956b5a879288355c94f1bc50f7892488f666c1" prot="public">
+          <name>SE3_ERR_BUSY</name>
+          <initializer>= 0xF003</initializer>
+          <briefdescription>
+<para>device locked by another process </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a99fb83031ce9923c84392b4e92f956b5a9b016e82b9ff6efc4cb63f56ab2ef31b" prot="public">
+          <name>SE3_ERR_STATE</name>
+          <initializer>= 0xF004</initializer>
+          <briefdescription>
+<para>invalid state for this operation </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a99fb83031ce9923c84392b4e92f956b5a292e85d68126c0074e7c239e45e26a39" prot="public">
+          <name>SE3_ERR_CMD</name>
+          <initializer>= 0xF005</initializer>
+          <briefdescription>
+<para>command does not exist </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a99fb83031ce9923c84392b4e92f956b5a032b0e3ddc01041b35193ac3c43360d9" prot="public">
+          <name>SE3_ERR_PARAMS</name>
+          <initializer>= 0xF006</initializer>
+          <briefdescription>
+<para>parameters are not valid </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>L0 error codes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="44" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="44" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="enum" id="se3c0def_8h_1abc6126af1d45847bc59afa0aa3216b04" prot="public" static="no">
+        <name>@3</name>
+        <enumvalue id="se3c0def_8h_1abc6126af1d45847bc59afa0aa3216b04aa361646b35f7ec5848e2d68205721bbb" prot="public">
+          <name>SE3_CMD0_FACTORY_INIT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1abc6126af1d45847bc59afa0aa3216b04a1d0760ba584611461aac93f57c99b304" prot="public">
+          <name>SE3_CMD0_ECHO</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1abc6126af1d45847bc59afa0aa3216b04ad65db291be44f534274e22bb1b9e3504" prot="public">
+          <name>SE3_CMD0_L1</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>L0 command codes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="55" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="se3c0def_8h_1adc29c2ff13d900c2f185ee95427fb06c" prot="public" static="no">
+        <name>@4</name>
+        <enumvalue id="se3c0def_8h_1adc29c2ff13d900c2f185ee95427fb06ca5a420539c8170c9c8022a50c7d502e5c" prot="public">
+          <name>SE3_CMDFLAG_ENCRYPT</name>
+          <initializer>= (1 &lt;&lt; 15)</initializer>
+          <briefdescription>
+<para>encrypt L1 packet </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1adc29c2ff13d900c2f185ee95427fb06caa85c94598d95af75d0a43710539b7c42" prot="public">
+          <name>SE3_CMDFLAG_SIGN</name>
+          <initializer>= (1 &lt;&lt; 14)</initializer>
+          <briefdescription>
+<para>sign L1 payload </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>L0 command flags </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="62" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="enum" id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9e" prot="public" static="no">
+        <name>@5</name>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9eacf9a610272a41b8d262c05edd85a37cb" prot="public">
+          <name>SE3_REQ_SIZE_HEADER</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9ea213fe8596558066fe067866b944168f8" prot="public">
+          <name>SE3_REQDATA_SIZE_HEADER</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9ea0ba9ed7870bfe8d3bcc7cf0d1d3dd7ce" prot="public">
+          <name>SE3_REQ_SIZE_DATA</name>
+          <initializer>= SE3_COMM_BLOCK - SE3_REQ_SIZE_HEADER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9eaba48217d7735160b09ff167408c4cd62" prot="public">
+          <name>SE3_REQDATA_SIZE_DATA</name>
+          <initializer>= SE3_COMM_BLOCK - SE3_REQDATA_SIZE_HEADER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9ea955ad0729c9c0e6e2ac8a047902aee5b" prot="public">
+          <name>SE3_REQ_OFFSET_CMD</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9ea095756e43d846b84913571125df42e10" prot="public">
+          <name>SE3_REQ_OFFSET_CMDFLAGS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9eaefb1c726d6d5b7f7ff06b221d83ec3dc" prot="public">
+          <name>SE3_REQ_OFFSET_LEN</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9ea2c02f4a71368d3647cc5616fa654c7de" prot="public">
+          <name>SE3_REQ_OFFSET_CMDTOKEN</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9ea9ace4c547adf5810ad228221155867e9" prot="public">
+          <name>SE3_REQ_OFFSET_PADDING</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9eac03f9897960503ae1c5ec1ce32426acc" prot="public">
+          <name>SE3_REQ_OFFSET_CRC</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9eaea6291ee3a03bef2d41723126760f4a7" prot="public">
+          <name>SE3_REQ_OFFSET_DATA</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9ea6be4db660163c8ddfc5d7c487f2bcc52" prot="public">
+          <name>SE3_REQDATA_OFFSET_CMDTOKEN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9ead15c6540ad6c68822c0d929a0fc37438" prot="public">
+          <name>SE3_REQDATA_OFFSET_DATA</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a61dadd085c1777f559549e05962b2c9ea0896323e4ba790d4aba761ae02a9d071" prot="public">
+          <name>SE3_REQ_MAX_DATA</name>
+          <initializer>= ((SE3_COMM_BLOCK-SE3_REQ_SIZE_HEADER) + (SE3_COMM_N-2)*(SE3_COMM_BLOCK-SE3_REQDATA_SIZE_HEADER) - 8)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request fields </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="68" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="68" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="enum" id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635" prot="public" static="no">
+        <name>@6</name>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635a77c201a749556b338fd89356dee5640f" prot="public">
+          <name>SE3_RESP_SIZE_HEADER</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635a365cb5e6bcec1d9a5e5504a94333e596" prot="public">
+          <name>SE3_RESPDATA_SIZE_HEADER</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635a20b7f0d7ae457117a18d1f346016418b" prot="public">
+          <name>SE3_RESP_SIZE_DATA</name>
+          <initializer>= SE3_COMM_BLOCK - SE3_REQ_SIZE_HEADER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635a886ba7c3e3dfdc35213dbbbb73a9e473" prot="public">
+          <name>SE3_RESPDATA_SIZE_DATA</name>
+          <initializer>= SE3_COMM_BLOCK - SE3_REQDATA_SIZE_HEADER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635adbdad1f22f99a00c6841d8e1525e9d32" prot="public">
+          <name>SE3_RESP_OFFSET_READY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635a86c7eb2bf6eb17766692bcbfecfc7a00" prot="public">
+          <name>SE3_RESP_OFFSET_STATUS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635ad6b396ecf38016223fdb27a3d3eb8361" prot="public">
+          <name>SE3_RESP_OFFSET_LEN</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635ab29bb14917dbf239e93d2b64fef169a0" prot="public">
+          <name>SE3_RESP_OFFSET_CMDTOKEN</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635a7d6d4ab5dbcc3ba585e408ce46b60b27" prot="public">
+          <name>SE3_RESP_OFFSET_CRC</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635adf6a91ec37178a9a91c8ede0c452e2a5" prot="public">
+          <name>SE3_RESPDATA_OFFSET_CMDTOKEN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635a174890a13e0b04cb769a2ec8e6b57dbf" prot="public">
+          <name>SE3_RESPDATA_OFFSET_DATA</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a726ca809ffd3d67ab4b8476646f26635a749e0e49968dc63a03dea266329cb482" prot="public">
+          <name>SE3_RESP_MAX_DATA</name>
+          <initializer>= ((SE3_COMM_BLOCK-SE3_REQ_SIZE_HEADER) + (SE3_COMM_N-2)*(SE3_COMM_BLOCK-SE3_REQDATA_SIZE_HEADER) - 8)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Response fields </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="89" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="89" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="enum" id="se3c0def_8h_1a0411cd49bb5b71852cecd93bcbf0ca2d" prot="public" static="no">
+        <name>@7</name>
+        <enumvalue id="se3c0def_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da5f28fb14d8b3c21b7298b1e18fc9cdd4" prot="public">
+          <name>SE3_DISCO_OFFSET_MAGIC</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a0411cd49bb5b71852cecd93bcbf0ca2dab0de79223ce77a40ba2681d99d08b23f" prot="public">
+          <name>SE3_DISCO_OFFSET_SERIAL</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da875d35807e752ed07fceffd40808b7b7" prot="public">
+          <name>SE3_DISCO_OFFSET_HELLO</name>
+          <initializer>= 2*32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="se3c0def_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da79da21b26a81aeb6e0b51468fed24b98" prot="public">
+          <name>SE3_DISCO_OFFSET_STATUS</name>
+          <initializer>= 3*32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Discover fields </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" line="108" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h" bodystart="108" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CUBESIM)</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;stubs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>defined(CUBESIM)<sp/>&amp;&amp;<sp/>defined(_DEBUG)</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SE3_TRACE(msg)<sp/>printf<sp/>msg</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_TRACE(msg)</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SE3_CONF_CRC<sp/>0</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SE3_SET64(x,<sp/>pos,<sp/>val)<sp/>do{<sp/>memcpy(((uint8_t*)(x))+pos,<sp/>(void*)&amp;(val),<sp/>8);<sp/>}while(0)</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_SET32(x,<sp/>pos,<sp/>val)<sp/>do{<sp/>memcpy(((uint8_t*)(x))+pos,<sp/>(void*)&amp;(val),<sp/>4);<sp/>}while(0)</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_SET16(x,<sp/>pos,<sp/>val)<sp/>do{<sp/>memcpy(((uint8_t*)(x))+pos,<sp/>(void*)&amp;(val),<sp/>2);<sp/>}while(0)</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_GET64(x,<sp/>pos,<sp/>val)<sp/>do{<sp/>memcpy((void*)&amp;(val),<sp/>((uint8_t*)(x))+pos,<sp/>8);<sp/>}while(0)</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_GET32(x,<sp/>pos,<sp/>val)<sp/>do{<sp/>memcpy((void*)&amp;(val),<sp/>((uint8_t*)(x))+pos,<sp/>4);<sp/>}while(0)</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_GET16(x,<sp/>pos,<sp/>val)<sp/>do{<sp/>memcpy((void*)&amp;(val),<sp/>((uint8_t*)(x))+pos,<sp/>2);<sp/>}while(0)</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SE3_BIT_SET(val,<sp/>n)<sp/>do{<sp/>val<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>(n));<sp/>}while(0)</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_BIT_CLEAR(val,<sp/>n)<sp/>do{<sp/>val<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>(n));<sp/>}while(0)</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SE3_BIT_TEST(val,<sp/>n)<sp/>(val<sp/>&amp;<sp/>(1&lt;&lt;<sp/>(n)))</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_COMM_BLOCK<sp/>=<sp/>512,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_COMM_N<sp/>=<sp/>16</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_MAGIC_SIZE<sp/>=<sp/>32,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_HELLO_SIZE<sp/>=<sp/>32,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_SERIAL_SIZE<sp/>=<sp/>32</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_OK<sp/>=<sp/>0,<sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_ERR_HW<sp/>=<sp/>0xF001,<sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_ERR_COMM<sp/>=<sp/>0xF002,<sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_ERR_BUSY<sp/>=<sp/>0xF003,<sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_ERR_STATE<sp/>=<sp/>0xF004,<sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_ERR_CMD<sp/>=<sp/>0xF005,<sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_ERR_PARAMS<sp/>=<sp/>0xF006,<sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_CMD0_FACTORY_INIT<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_CMD0_ECHO<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_CMD0_L1<sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_CMDFLAG_ENCRYPT<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>15),<sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_CMDFLAG_SIGN<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>14)<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQ_SIZE_HEADER<sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQDATA_SIZE_HEADER<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQ_SIZE_DATA<sp/>=<sp/>SE3_COMM_BLOCK<sp/>-<sp/>SE3_REQ_SIZE_HEADER,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQDATA_SIZE_DATA<sp/>=<sp/>SE3_COMM_BLOCK<sp/>-<sp/>SE3_REQDATA_SIZE_HEADER,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQ_OFFSET_CMD<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQ_OFFSET_CMDFLAGS<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQ_OFFSET_LEN<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQ_OFFSET_CMDTOKEN<sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQ_OFFSET_PADDING<sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQ_OFFSET_CRC<sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQ_OFFSET_DATA<sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQDATA_OFFSET_CMDTOKEN<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQDATA_OFFSET_DATA<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_REQ_MAX_DATA<sp/>=<sp/>((SE3_COMM_BLOCK-SE3_REQ_SIZE_HEADER)<sp/>+<sp/>(SE3_COMM_N-2)*(SE3_COMM_BLOCK-SE3_REQDATA_SIZE_HEADER)<sp/>-<sp/>8)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESP_SIZE_HEADER<sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESPDATA_SIZE_HEADER<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESP_SIZE_DATA<sp/>=<sp/>SE3_COMM_BLOCK<sp/>-<sp/>SE3_REQ_SIZE_HEADER,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESPDATA_SIZE_DATA<sp/>=<sp/>SE3_COMM_BLOCK<sp/>-<sp/>SE3_REQDATA_SIZE_HEADER,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESP_OFFSET_READY<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESP_OFFSET_STATUS<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESP_OFFSET_LEN<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESP_OFFSET_CMDTOKEN<sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESP_OFFSET_CRC<sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESPDATA_OFFSET_CMDTOKEN<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESPDATA_OFFSET_DATA<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_RESP_MAX_DATA<sp/>=<sp/>((SE3_COMM_BLOCK-SE3_REQ_SIZE_HEADER)<sp/>+<sp/>(SE3_COMM_N-2)*(SE3_COMM_BLOCK-SE3_REQDATA_SIZE_HEADER)<sp/>-<sp/>8)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_DISCO_OFFSET_MAGIC<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_DISCO_OFFSET_SERIAL<sp/>=<sp/>32,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_DISCO_OFFSET_HELLO<sp/>=<sp/>2*32,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>SE3_DISCO_OFFSET_STATUS<sp/>=<sp/>3*32</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/>required<sp/>for<sp/>in-place<sp/>encryption<sp/>with<sp/>AES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(SE3_REQ_MAX_DATA<sp/>%<sp/>16<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;SE3_REQ_MAX_DATA<sp/>is<sp/>not<sp/>a<sp/>multiple<sp/>of<sp/>16&quot;</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>(SE3_RESP_MAX_DATA<sp/>%<sp/>16<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;SE3_RESP_MAX_DATA<sp/>is<sp/>not<sp/>a<sp/>multiple<sp/>of<sp/>16&quot;</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c0def.h"/>
+  </compounddef>
+</doxygen>

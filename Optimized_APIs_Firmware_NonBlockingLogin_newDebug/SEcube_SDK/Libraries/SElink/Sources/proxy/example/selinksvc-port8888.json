@@ -1,0 +1,11 @@
+{
+    "rules" : [
+        {
+            "description": "Port 8888",
+            "port-first" : 8888,
+            "port-last" : 8888,
+            "action": "encrypt",
+            "key-id": 1
+        } 
+    ]
+}

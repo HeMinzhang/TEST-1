@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structse3__payload__cryptoctx__" kind="struct" prot="public">
+    <compoundname>se3_payload_cryptoctx_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structse3__payload__cryptoctx___1a790d1f56a01416565f79f4f3567a6c8f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref></type>
+        <definition>B5_tAesCtx se3_payload_cryptoctx_::aesenc</definition>
+        <argsstring></argsstring>
+        <name>aesenc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="25" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__payload__cryptoctx___1a10e1130cdbe14739512d504f9a809d69" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref></type>
+        <definition>B5_tAesCtx se3_payload_cryptoctx_::aesdec</definition>
+        <argsstring></argsstring>
+        <name>aesdec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="26" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__payload__cryptoctx___1ae595c73521c05a71d9e69d0d7b84e24e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_b5__t_hmac_sha256_ctx" kindref="compound">B5_tHmacSha256Ctx</ref></type>
+        <definition>B5_tHmacSha256Ctx se3_payload_cryptoctx_::hmac</definition>
+        <argsstring></argsstring>
+        <name>hmac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="27" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__payload__cryptoctx___1a41a3857d896ccf28514daf24af8e6cf6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t se3_payload_cryptoctx_::hmac_key[B5_AES_256]</definition>
+        <argsstring>[B5_AES_256]</argsstring>
+        <name>hmac_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="28" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__payload__cryptoctx___1a934757b3332d30c709705a1c81078df5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t se3_payload_cryptoctx_::auth[B5_SHA256_DIGEST_SIZE]</definition>
+        <argsstring>[B5_SHA256_DIGEST_SIZE]</argsstring>
+        <name>auth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="29" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="33">
+        <label>se3_payload_cryptoctx_</label>
+        <link refid="structse3__payload__cryptoctx__"/>
+        <childnode refid="34" relation="usage">
+          <edgelabel>aesdec</edgelabel>
+          <edgelabel>aesenc</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>hmac</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>B5_tHmacSha256Ctx</label>
+        <link refid="struct_b5__t_hmac_sha256_ctx"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>shaCtx</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>B5_tAesCtx</label>
+        <link refid="struct_b5__t_aes_ctx"/>
+      </node>
+      <node id="36">
+        <label>B5_tSha256Ctx</label>
+        <link refid="struct_b5__t_sha256_ctx"/>
+      </node>
+    </collaborationgraph>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" line="24" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h" bodystart="24" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structse3__payload__cryptoctx___1a10e1130cdbe14739512d504f9a809d69" prot="public" virt="non-virtual"><scope>se3_payload_cryptoctx_</scope><name>aesdec</name></member>
+      <member refid="structse3__payload__cryptoctx___1a790d1f56a01416565f79f4f3567a6c8f" prot="public" virt="non-virtual"><scope>se3_payload_cryptoctx_</scope><name>aesenc</name></member>
+      <member refid="structse3__payload__cryptoctx___1a934757b3332d30c709705a1c81078df5" prot="public" virt="non-virtual"><scope>se3_payload_cryptoctx_</scope><name>auth</name></member>
+      <member refid="structse3__payload__cryptoctx___1ae595c73521c05a71d9e69d0d7b84e24e" prot="public" virt="non-virtual"><scope>se3_payload_cryptoctx_</scope><name>hmac</name></member>
+      <member refid="structse3__payload__cryptoctx___1a41a3857d896ccf28514daf24af8e6cf6" prot="public" virt="non-virtual"><scope>se3_payload_cryptoctx_</scope><name>hmac_key</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

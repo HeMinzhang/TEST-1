@@ -1,0 +1,83 @@
+﻿<Window x:Class="tray.FilterRulesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tray"
+        xmlns:k="clr-namespace:tray.Resources"
+        mc:Ignorable="d"
+        Title="{x:Static k:strings.wr_title}" Height="500" Width="700" Initialized="Window_Initialized" Closing="Window_Closing">
+    <Grid x:Name="gridRoot">
+        <StatusBar Height="22" VerticalAlignment="Top" Background="White">
+            <StatusBarItem Padding="3,3,3,3" Foreground="Gray">
+                <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Stretch">
+                    <TextBlock Text=" &#xf05a; " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock FontSize="12" Name="lblStatus" />
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
+
+        <DataGrid x:Name="dataGrid" Margin="5,26,5,64" ItemsSource="{Binding entries}" AutoGenerateColumns="False" 
+                  CanUserSortColumns="False" Padding="0" ColumnWidth="*" CanUserReorderColumns="False" CanUserAddRows="True"
+                  CanUserResizeColumns="True" CanUserResizeRows="False" RowHeaderWidth="25"
+                  CellEditEnding="dataGrid_CellEditEnding" SelectionChanged="dataGrid_SelectionChanged" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="{x:Static k:strings.wr_col_description}"  Binding="{Binding Description}"/>
+                <DataGridTextColumn Header="{x:Static k:strings.wr_col_exepath}" Binding="{Binding Executable}"/>
+                <DataGridTextColumn Header="{x:Static k:strings.wr_col_address}" Binding="{Binding Address}"/>
+                <DataGridTextColumn Header="{x:Static k:strings.wr_col_portfirst}" Binding="{Binding PortFirst}"/>
+                <DataGridTextColumn Header="{x:Static k:strings.wr_col_portlast}" Binding="{Binding PortLast}"/>
+                <DataGridComboBoxColumn x:Name="Action" Header="{x:Static k:strings.wr_col_action}" DisplayMemberPath="{Binding Action}" SelectedValueBinding="{Binding Action, Mode=TwoWay}" Width="100"/>
+                <DataGridTextColumn Header="Key ID" Binding="{Binding KeyId}"/>
+            </DataGrid.Columns>
+
+            <DataGrid.RowValidationErrorTemplate>
+                <ControlTemplate>
+                    <Grid Margin="0,-2,0,-2" ToolTip="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGridRow}}, Path=(Validation.Errors)[0].ErrorContent}">
+                        <TextBlock Text="&#xf06a; " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center" Foreground="Red"></TextBlock>
+                        <!--
+                        <Ellipse StrokeThickness="0" Fill="Red" Width="{TemplateBinding FontSize}"  Height="{TemplateBinding FontSize}" />
+                        <TextBlock Text="!" FontSize="{TemplateBinding FontSize}" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"  /> -->
+                    </Grid>
+                </ControlTemplate>
+            </DataGrid.RowValidationErrorTemplate>
+            <DataGrid.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#e0eaf1"/>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="#000000"/>
+            </DataGrid.Resources>
+        </DataGrid>
+        <StackPanel Orientation="Vertical" Margin="0,0,0,10" VerticalAlignment="Bottom" >
+            <Grid Width="5"></Grid>
+            <Label x:Name="lblWarn" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Bottom" Foreground="Red" MouseUp="lblWarn_MouseUp" Cursor="Arrow">
+                <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Stretch">
+                    <TextBlock Text="&#xf071; " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock x:Name="lblWarnContent"></TextBlock>
+                </StackPanel>
+            </Label>
+            <StackPanel Orientation="Horizontal" FlowDirection="RightToLeft" >
+                <Grid Width="5"></Grid>
+                <Button x:Name="btnCancel" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="117" Height="30" Click="btnCancel_Click">
+                    <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Stretch">
+                        <TextBlock Text="&#xf00d; " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                        <TextBlock Text="{x:Static k:strings.btn_cancel}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+                <Grid Width="5"></Grid>
+                <Button x:Name="btnApply" HorizontalAlignment="Right" Width="120" Height="30" Click="btnApply_Click">
+                    <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Stretch">
+                        <TextBlock Text="&#xf00c; " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                        <TextBlock Text="{x:Static k:strings.btn_apply}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <Popup x:Name="popupDrag" IsHitTestVisible="False" Placement="RelativePoint" AllowsTransparency="True">
+            <Border BorderBrush="LightGray" BorderThickness="1" Background="White" Opacity="0.80">
+                <StackPanel  Orientation="Horizontal" Margin="4,3,8,3">
+                    <TextBlock x:Name="popupDragText" FontWeight="Bold" VerticalAlignment="Center" Text="" Margin="8,0,0,0" />
+                </StackPanel>
+            </Border>
+        </Popup>
+    </Grid>
+</Window>

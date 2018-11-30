@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group___environmental_vars" kind="group">
+    <compoundname>EnvironmentalVars</compoundname>
+    <title>EnvironmentalVars</title>
+      <sectiondef kind="user-defined">
+      <header>Environmental Variables</header>
+      <description><para>This static variables will store some data useful during the active session. </para></description>
+      <memberdef kind="variable" id="group___environmental_vars_1gad3215e338581ce95b76b3b84b928d744" prot="public" static="yes" mutable="no">
+        <type>se3_session *</type>
+        <definition>se3_session* EnvSession</definition>
+        <argsstring></argsstring>
+        <name>EnvSession</name>
+        <initializer>=NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Which session we want to use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="95" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___environmental_vars_1ga7a8b4d6945f6a13f8683427dc7ab7a44" prot="public" static="yes" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* EnvKeyID</definition>
+        <argsstring></argsstring>
+        <name>EnvKeyID</name>
+        <initializer>=NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Which KeyID we want to use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="96" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___environmental_vars_1ga328037c714e95e56186f9d5f0842adea" prot="public" static="yes" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* EnvCrypto</definition>
+        <argsstring></argsstring>
+        <name>EnvCrypto</name>
+        <initializer>=NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Which cipher algorithm and mode we want to use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="97" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

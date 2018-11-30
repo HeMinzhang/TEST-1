@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group__whence" kind="group">
+    <compoundname>whence</compoundname>
+    <title>whence parameter for secure_seek</title>
+      <sectiondef kind="user-defined">
+      <header>Use this values as whence parameter for</header>
+      <description><para><ref refid="_s_efile_8c_1a157807247b4913a73fc3b6677a61e6a3" kindref="member">secure_seek()</ref>. </para></description>
+      <memberdef kind="define" id="group__whence_1gab6c0208f58dfecf3ee595f75a3156a27" prot="public" static="no">
+        <name>SEFILE_BEGIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seek from file beginning </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="68" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__whence_1ga96800ac1f03fb12ac3f761d37553ddc3" prot="public" static="no">
+        <name>SEFILE_CURRENT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seek from current position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="69" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__whence_1gac99113dc9b1f7710c8f451ce0b76c925" prot="public" static="no">
+        <name>SEFILE_END</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seek from file ending </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="70" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

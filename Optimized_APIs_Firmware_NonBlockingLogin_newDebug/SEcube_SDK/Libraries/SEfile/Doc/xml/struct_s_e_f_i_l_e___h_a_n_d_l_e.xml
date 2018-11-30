@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_s_e_f_i_l_e___h_a_n_d_l_e" kind="struct" prot="public">
+    <compoundname>SEFILE_HANDLE</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_a_n_d_l_e_1a507fef27d36d8ad4550276f9abf84ebb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SEFILE_HANDLE::log_offset</definition>
+        <argsstring></argsstring>
+        <name>log_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actual pointer position in bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="25" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_a_n_d_l_e_1a17bc7f2e296f61d7758cb18e68d41375" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t SEFILE_HANDLE::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>File descriptor in Unix environment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="27" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_a_n_d_l_e_1a37935da2e79760bd04e32e05e5922975" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SEFILE_HANDLE::nonce_ctr[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>nonce_ctr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Nonce used for the CTR feedback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="31" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_e_f_i_l_e___h_a_n_d_l_e_1a6d2cb56237e6a99def8f9e9e54a46489" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SEFILE_HANDLE::nonce_pbkdf2[SEFILE_NONCE_LEN]</definition>
+        <argsstring>[SEFILE_NONCE_LEN]</argsstring>
+        <name>nonce_pbkdf2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Nonce used for the PBKDF2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="32" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="struct_s_e_f_i_l_e___h_a_n_d_l_e" kindref="compound">SEFILE_HANDLE</ref> struct. </para>    </briefdescription>
+    <detaileddescription>
+<para>This abstract data type is used to hide from higher level of abstraction its implementation. The data stored in here are the current physical file pointer position and the file descriptor OS-dependent data type. </para>    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" line="24" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c" bodystart="24" bodyend="33"/>
+    <listofallmembers>
+      <member refid="struct_s_e_f_i_l_e___h_a_n_d_l_e_1a17bc7f2e296f61d7758cb18e68d41375" prot="public" virt="non-virtual"><scope>SEFILE_HANDLE</scope><name>fd</name></member>
+      <member refid="struct_s_e_f_i_l_e___h_a_n_d_l_e_1a507fef27d36d8ad4550276f9abf84ebb" prot="public" virt="non-virtual"><scope>SEFILE_HANDLE</scope><name>log_offset</name></member>
+      <member refid="struct_s_e_f_i_l_e___h_a_n_d_l_e_1a37935da2e79760bd04e32e05e5922975" prot="public" virt="non-virtual"><scope>SEFILE_HANDLE</scope><name>nonce_ctr</name></member>
+      <member refid="struct_s_e_f_i_l_e___h_a_n_d_l_e_1a6d2cb56237e6a99def8f9e9e54a46489" prot="public" virt="non-virtual"><scope>SEFILE_HANDLE</scope><name>nonce_pbkdf2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

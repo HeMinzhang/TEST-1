@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group___access___defines" kind="group">
+    <compoundname>Access_Defines</compoundname>
+    <title>access parameter for secure_open</title>
+      <sectiondef kind="user-defined">
+      <header>Use this values as access parameter for</header>
+      <description><para><ref refid="_s_efile_8c_1ae99f8ccb396cbb5685d9e16bb3dbbe98" kindref="member">secure_open()</ref>. </para></description>
+      <memberdef kind="define" id="group___access___defines_1ga57c4f0752b0acce2d45dff73592e09e3" prot="public" static="no">
+        <name>SEFILE_NEWFILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create new file and delete if existing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="57" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___access___defines_1ga3912e29a65705156f8d2e7ffe7fe80c7" prot="public" static="no">
+        <name>SEFILE_OPEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open an existing file, create it if not existing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="58" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

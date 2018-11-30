@@ -1,0 +1,90 @@
+\hypertarget{group__hmacsha_func}{\section{H\-M\-A\-C-\/\-S\-H\-A256 functions}
+\label{group__hmacsha_func}\index{H\-M\-A\-C-\/\-S\-H\-A256 functions@{H\-M\-A\-C-\/\-S\-H\-A256 functions}}
+}
+\subsection*{H\-M\-A\-C-\/\-S\-H\-A256 functions}
+\begin{DoxyCompactItemize}
+\item 
+int32\-\_\-t \hyperlink{group__hmacsha_func_ga1178a5df067377025aec0bdea3b8f63f}{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Init} (\hyperlink{struct_b5__t_hmac_sha256_ctx}{B5\-\_\-t\-Hmac\-Sha256\-Ctx} $\ast$ctx, const uint8\-\_\-t $\ast$Key, int16\-\_\-t key\-Size)
+\begin{DoxyCompactList}\small\item\em Initialize the H\-M\-A\-C-\/\-S\-H\-A256 context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__hmacsha_func_ga4e55de9980f2f0b132d1a5ec343289e0}{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Update} (\hyperlink{struct_b5__t_hmac_sha256_ctx}{B5\-\_\-t\-Hmac\-Sha256\-Ctx} $\ast$ctx, const uint8\-\_\-t $\ast$data, int32\-\_\-t data\-Len)
+\begin{DoxyCompactList}\small\item\em Compute the H\-M\-A\-C-\/\-S\-H\-A256 algorithm on input data depending on the current status of the H\-M\-A\-C-\/\-S\-H\-A256 context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__hmacsha_func_gac36fde1fcd954065872e07dadbfccff7}{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Finit} (\hyperlink{struct_b5__t_hmac_sha256_ctx}{B5\-\_\-t\-Hmac\-Sha256\-Ctx} $\ast$ctx, uint8\-\_\-t $\ast$r\-Digest)
+\begin{DoxyCompactList}\small\item\em De-\/initialize the current H\-M\-A\-C-\/\-S\-H\-A256 context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__hmacsha_func_gac36fde1fcd954065872e07dadbfccff7}{\index{H\-M\-A\-C-\/\-S\-H\-A256 functions@{H\-M\-A\-C-\/\-S\-H\-A256 functions}!B5\-\_\-\-Hmac\-Sha256\-\_\-\-Finit@{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Finit}}
+\index{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Finit@{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Finit}!HMAC-SHA256 functions@{H\-M\-A\-C-\/\-S\-H\-A256 functions}}
+\subsubsection[{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Finit}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Hmac\-Sha256\-\_\-\-Finit (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Hmac\-Sha256\-Ctx} $\ast$}]{ctx, }
+\item[{uint8\-\_\-t $\ast$}]{r\-Digest}
+\end{DoxyParamCaption}
+)}}\label{group__hmacsha_func_gac36fde1fcd954065872e07dadbfccff7}
+
+
+De-\/initialize the current H\-M\-A\-C-\/\-S\-H\-A256 context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the H\-M\-A\-C-\/\-S\-H\-A256 context to de-\/initialize. \\
+\hline
+{\em r\-Digest} & Pointer to a blank memory area that can store the computed output digest. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__hmacsha_return}{H\-M\-A\-C-\/\-S\-H\-A256 return values} . 
+\end{DoxyReturn}
+\hypertarget{group__hmacsha_func_ga1178a5df067377025aec0bdea3b8f63f}{\index{H\-M\-A\-C-\/\-S\-H\-A256 functions@{H\-M\-A\-C-\/\-S\-H\-A256 functions}!B5\-\_\-\-Hmac\-Sha256\-\_\-\-Init@{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Init}}
+\index{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Init@{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Init}!HMAC-SHA256 functions@{H\-M\-A\-C-\/\-S\-H\-A256 functions}}
+\subsubsection[{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Hmac\-Sha256\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Hmac\-Sha256\-Ctx} $\ast$}]{ctx, }
+\item[{const uint8\-\_\-t $\ast$}]{Key, }
+\item[{int16\-\_\-t}]{key\-Size}
+\end{DoxyParamCaption}
+)}}\label{group__hmacsha_func_ga1178a5df067377025aec0bdea3b8f63f}
+
+
+Initialize the H\-M\-A\-C-\/\-S\-H\-A256 context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the H\-M\-A\-C-\/\-S\-H\-A256 data structure to be initialized. \\
+\hline
+{\em Key} & Pointer to the Key that must be used. \\
+\hline
+{\em key\-Size} & Key size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__hmacsha_return}{H\-M\-A\-C-\/\-S\-H\-A256 return values} . 
+\end{DoxyReturn}
+\hypertarget{group__hmacsha_func_ga4e55de9980f2f0b132d1a5ec343289e0}{\index{H\-M\-A\-C-\/\-S\-H\-A256 functions@{H\-M\-A\-C-\/\-S\-H\-A256 functions}!B5\-\_\-\-Hmac\-Sha256\-\_\-\-Update@{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Update}}
+\index{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Update@{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Update}!HMAC-SHA256 functions@{H\-M\-A\-C-\/\-S\-H\-A256 functions}}
+\subsubsection[{B5\-\_\-\-Hmac\-Sha256\-\_\-\-Update}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Hmac\-Sha256\-\_\-\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Hmac\-Sha256\-Ctx} $\ast$}]{ctx, }
+\item[{const uint8\-\_\-t $\ast$}]{data, }
+\item[{int32\-\_\-t}]{data\-Len}
+\end{DoxyParamCaption}
+)}}\label{group__hmacsha_func_ga4e55de9980f2f0b132d1a5ec343289e0}
+
+
+Compute the H\-M\-A\-C-\/\-S\-H\-A256 algorithm on input data depending on the current status of the H\-M\-A\-C-\/\-S\-H\-A256 context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the current H\-M\-A\-C-\/\-S\-H\-A256 context. \\
+\hline
+{\em data} & Pointer to the input data. \\
+\hline
+{\em data\-Len} & Bytes to be processed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__hmacsha_return}{H\-M\-A\-C-\/\-S\-H\-A256 return values} . 
+\end{DoxyReturn}

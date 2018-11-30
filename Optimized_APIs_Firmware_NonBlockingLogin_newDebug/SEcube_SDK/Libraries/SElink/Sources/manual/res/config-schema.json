@@ -1,0 +1,56 @@
+{
+    "description": "Root node",
+    "type": "object",
+    "properties": {
+        "map": {
+            "description" : "List of port mappings",
+            "type": "array",
+            "items": {
+                "description": "Port mapping entry",
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "A short description",
+                        "type": "string"
+                    },
+                    "listen-port": {
+                        "description": "The port on which encrypted connections will be accepted",
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 65535
+                    },
+                    "redirect-host": {
+                        "description": "The host to which connections will be redirected, unencrypted",
+                        "type": "string",
+                        "anyOf": [
+                            { "format": "ipv4" },
+                            { "format": "ipv6" }
+                        ]
+                    },
+                    "redirect-port": {
+                        "description": "The port to which connections will be redirected, unencrypted",
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 65535
+                    },
+                    "key-id": {
+                        "description": "The key id to use for encryption",
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 4294967295
+                    }
+                },
+                "required": [
+                    "description", 
+                    "listen-port", 
+                    "redirect-host", 
+                    "redirect-port", 
+                    "key-id"
+                ],
+                "additionalProperties": false
+            }
+        }        
+    },
+    "required": ["map"],
+    "additionalProperties": false
+}

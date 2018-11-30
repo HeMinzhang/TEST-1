@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_5dfa43ed9ae3de87f20c606a5f317945" kind="dir">
+    <compoundname>/run</compoundname>
+    <innerdir refid="dir_f2aa5959c66f4323c61133ecfbdb2e96">/run/media</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/"/>
+  </compounddef>
+</doxygen>

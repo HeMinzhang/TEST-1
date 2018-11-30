@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_b5__t_cmac_aes_ctx" kind="struct" prot="public">
+    <compoundname>B5_tCmacAesCtx</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_b5__t_cmac_aes_ctx_1a434f147b67e07047c1f1249690c0d893" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref></type>
+        <definition>B5_tAesCtx B5_tCmacAesCtx::aesCtx</definition>
+        <argsstring></argsstring>
+        <name>aesCtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="180" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_cmac_aes_ctx_1a9e33af19b1c46ab59918427a9b6bdf25" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tCmacAesCtx::K1[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>K1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="182" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_cmac_aes_ctx_1a98481bd172eb8e272138a9d65b1055e9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tCmacAesCtx::K2[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>K2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="183" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_cmac_aes_ctx_1aec9d84dff64a14d738e0efb61a81513f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tCmacAesCtx::tmpBlk[B5_AES_BLK_SIZE]</definition>
+        <argsstring>[B5_AES_BLK_SIZE]</argsstring>
+        <name>tmpBlk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="185" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_cmac_aes_ctx_1ace95cf28ee71378dbe10a6e4e4a7e116" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tCmacAesCtx::tmpBlkLen</definition>
+        <argsstring></argsstring>
+        <name>tmpBlkLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="186" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_cmac_aes_ctx_1a982a5dfe1d71dc3371e52b83021438e0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tCmacAesCtx::C[B5_AES_BLK_SIZE]</definition>
+        <argsstring>[B5_AES_BLK_SIZE]</argsstring>
+        <name>C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="188" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>B5_tCmacAesCtx</label>
+        <link refid="struct_b5__t_cmac_aes_ctx"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>aesCtx</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>B5_tAesCtx</label>
+        <link refid="struct_b5__t_aes_ctx"/>
+      </node>
+    </collaborationgraph>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="179" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="179" bodyend="189"/>
+    <listofallmembers>
+      <member refid="struct_b5__t_cmac_aes_ctx_1a434f147b67e07047c1f1249690c0d893" prot="public" virt="non-virtual"><scope>B5_tCmacAesCtx</scope><name>aesCtx</name></member>
+      <member refid="struct_b5__t_cmac_aes_ctx_1a982a5dfe1d71dc3371e52b83021438e0" prot="public" virt="non-virtual"><scope>B5_tCmacAesCtx</scope><name>C</name></member>
+      <member refid="struct_b5__t_cmac_aes_ctx_1a9e33af19b1c46ab59918427a9b6bdf25" prot="public" virt="non-virtual"><scope>B5_tCmacAesCtx</scope><name>K1</name></member>
+      <member refid="struct_b5__t_cmac_aes_ctx_1a98481bd172eb8e272138a9d65b1055e9" prot="public" virt="non-virtual"><scope>B5_tCmacAesCtx</scope><name>K2</name></member>
+      <member refid="struct_b5__t_cmac_aes_ctx_1aec9d84dff64a14d738e0efb61a81513f" prot="public" virt="non-virtual"><scope>B5_tCmacAesCtx</scope><name>tmpBlk</name></member>
+      <member refid="struct_b5__t_cmac_aes_ctx_1ace95cf28ee71378dbe10a6e4e4a7e116" prot="public" virt="non-virtual"><scope>B5_tCmacAesCtx</scope><name>tmpBlkLen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_3d303b07de2ece778d569cb1a30008db" kind="dir">
+    <compoundname>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current</compoundname>
+    <innerdir refid="dir_2784b58c2fefa9fcb9855238fe36adcc">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structse3__algo__" kind="struct" prot="public">
+    <compoundname>se3_algo_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structse3__algo___1a36ad4f84ca7ca240d5d1acf1ec8c4b83" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t se3_algo_::name[SE3_CMD1_CRYPTO_ALGOINFO_NAME_SIZE]</definition>
+        <argsstring>[SE3_CMD1_CRYPTO_ALGOINFO_NAME_SIZE]</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="51" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__algo___1ac2a8eae36ad73e8f7c3097af0ddb518d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_algo_::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="52" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__algo___1ad00721d245c6db1827b08820cbb432f1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_algo_::block_size</definition>
+        <argsstring></argsstring>
+        <name>block_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="53" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__algo___1a0d49d27de7e5ea61554621c28807bd91" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_algo_::key_size</definition>
+        <argsstring></argsstring>
+        <name>key_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="54" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="50" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="50" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structse3__algo___1ad00721d245c6db1827b08820cbb432f1" prot="public" virt="non-virtual"><scope>se3_algo_</scope><name>block_size</name></member>
+      <member refid="structse3__algo___1a0d49d27de7e5ea61554621c28807bd91" prot="public" virt="non-virtual"><scope>se3_algo_</scope><name>key_size</name></member>
+      <member refid="structse3__algo___1a36ad4f84ca7ca240d5d1acf1ec8c4b83" prot="public" virt="non-virtual"><scope>se3_algo_</scope><name>name</name></member>
+      <member refid="structse3__algo___1ac2a8eae36ad73e8f7c3097af0ddb518d" prot="public" virt="non-virtual"><scope>se3_algo_</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

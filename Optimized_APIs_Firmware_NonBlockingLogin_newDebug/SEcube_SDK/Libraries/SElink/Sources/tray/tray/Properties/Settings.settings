@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="tray.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="State" Type="System.Windows.WindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="Location" Type="System.Windows.Rect" Scope="User">
+      <Value Profile="(Default)">100,100,700,500</Value>
+    </Setting>
+    <Setting Name="CubeSelectLocation" Type="System.Windows.Rect" Scope="User">
+      <Value Profile="(Default)">100,100,0,0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

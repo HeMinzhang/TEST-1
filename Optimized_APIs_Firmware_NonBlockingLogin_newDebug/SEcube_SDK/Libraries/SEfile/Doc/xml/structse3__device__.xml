@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structse3__device__" kind="struct" prot="public">
+    <compoundname>se3_device_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structse3__device___1acf59c445ad16d93a42ef4778d3cd9f5b" prot="public" static="no" mutable="no">
+        <type><ref refid="structse3__device__info__" kindref="compound">se3_device_info</ref></type>
+        <definition>se3_device_info se3_device_::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="20" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__device___1aaeb84a611ba0db8bc4731e53f9564b2e" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* se3_device_::request</definition>
+        <argsstring></argsstring>
+        <name>request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="21" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__device___1a04f5fc8e98e6e4fa9577257495b9866d" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* se3_device_::response</definition>
+        <argsstring></argsstring>
+        <name>response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="22" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__device___1a36e8f9b6bafc4b5db5d8a18e67b6d088" prot="public" static="no" mutable="no">
+        <type><ref refid="structse3__file" kindref="compound">se3_file</ref></type>
+        <definition>se3_file se3_device_::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="23" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__device___1abda2d2ee92f3f74961b5d2fae3017159" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool se3_device_::opened</definition>
+        <argsstring></argsstring>
+        <name>opened</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="24" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="16">
+        <label>se3_device_info_</label>
+        <link refid="structse3__device__info__"/>
+      </node>
+      <node id="17">
+        <label>se3_file</label>
+        <link refid="structse3__file"/>
+      </node>
+      <node id="15">
+        <label>se3_device_</label>
+        <link refid="structse3__device__"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>info</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" line="19" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h" bodystart="19" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structse3__device___1a36e8f9b6bafc4b5db5d8a18e67b6d088" prot="public" virt="non-virtual"><scope>se3_device_</scope><name>f</name></member>
+      <member refid="structse3__device___1acf59c445ad16d93a42ef4778d3cd9f5b" prot="public" virt="non-virtual"><scope>se3_device_</scope><name>info</name></member>
+      <member refid="structse3__device___1abda2d2ee92f3f74961b5d2fae3017159" prot="public" virt="non-virtual"><scope>se3_device_</scope><name>opened</name></member>
+      <member refid="structse3__device___1aaeb84a611ba0db8bc4731e53f9564b2e" prot="public" virt="non-virtual"><scope>se3_device_</scope><name>request</name></member>
+      <member refid="structse3__device___1a04f5fc8e98e6e4fa9577257495b9866d" prot="public" virt="non-virtual"><scope>se3_device_</scope><name>response</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

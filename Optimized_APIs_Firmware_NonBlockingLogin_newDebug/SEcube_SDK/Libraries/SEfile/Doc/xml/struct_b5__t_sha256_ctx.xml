@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_b5__t_sha256_ctx" kind="struct" prot="public">
+    <compoundname>B5_tSha256Ctx</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_b5__t_sha256_ctx_1a8c253fc902f73d2c19d4ce29a50f4761" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t B5_tSha256Ctx::total[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="42" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_sha256_ctx_1a7b8950bc92d4e3983d1c71711dacaa43" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t B5_tSha256Ctx::state[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="43" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_sha256_ctx_1a222be7951fa5eae2df611ed742ca64d2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tSha256Ctx::buffer[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="44" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_sha256_ctx_1ad555e10fd58ea7df2d2cdce3e59ebc53" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t B5_tSha256Ctx::W[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>W</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="45" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="41" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="40" bodyend="46"/>
+    <listofallmembers>
+      <member refid="struct_b5__t_sha256_ctx_1a222be7951fa5eae2df611ed742ca64d2" prot="public" virt="non-virtual"><scope>B5_tSha256Ctx</scope><name>buffer</name></member>
+      <member refid="struct_b5__t_sha256_ctx_1a7b8950bc92d4e3983d1c71711dacaa43" prot="public" virt="non-virtual"><scope>B5_tSha256Ctx</scope><name>state</name></member>
+      <member refid="struct_b5__t_sha256_ctx_1a8c253fc902f73d2c19d4ce29a50f4761" prot="public" virt="non-virtual"><scope>B5_tSha256Ctx</scope><name>total</name></member>
+      <member refid="struct_b5__t_sha256_ctx_1ad555e10fd58ea7df2d2cdce3e59ebc53" prot="public" virt="non-virtual"><scope>B5_tSha256Ctx</scope><name>W</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

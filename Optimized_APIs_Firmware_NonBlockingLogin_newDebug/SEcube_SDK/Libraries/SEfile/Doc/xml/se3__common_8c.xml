@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="se3__common_8c" kind="file">
+    <compoundname>se3_common.c</compoundname>
+    <includes refid="se3__common_8h" local="yes">se3_common.h</includes>
+    <incdepgraph>
+      <node id="131">
+        <label>stdbool.h</label>
+      </node>
+      <node id="127">
+        <label>se3c0def.h</label>
+        <link refid="se3c0def_8h_source"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c</label>
+        <link refid="se3_common.c"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>se3_common.h</label>
+        <link refid="se3__common_8h_source"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>sha256.h</label>
+        <link refid="sha256_8h_source"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>stdint.h</label>
+      </node>
+      <node id="128">
+        <label>stdlib.h</label>
+      </node>
+      <node id="135">
+        <label>pbkdf2.h</label>
+        <link refid="pbkdf2_8h_source"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>stddef.h</label>
+      </node>
+      <node id="133">
+        <label>string.h</label>
+      </node>
+      <node id="132">
+        <label>aes256.h</label>
+        <link refid="aes256_8h_source"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="se3__common_8c_1aa201786ad97096944ab1032aca5db043" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t se3_magic[SE3_MAGIC_SIZE]</definition>
+        <argsstring>[SE3_MAGIC_SIZE]</argsstring>
+        <name>se3_magic</name>
+        <initializer>= {
+    0x3c, 0xab, 0x78, 0xb6, 0x2, 0x64, 0x47, 0xe9, 0x30, 0x26, 0xd4, 0x1f, 0xad, 0x68, 0x22, 0x27,
+    0x41, 0xa4, 0x32, 0xba, 0xbe, 0x54, 0x83, 0xee, 0xab, 0x6b, 0x62, 0xce, 0xf0, 0x5c, 0x7, 0x91
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" line="4" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="se3__common_8c_1a30a11413f918c02acbf92d9b92f105f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_req_len_data</definition>
+        <argsstring>(uint16_t len_data_and_headers)</argsstring>
+        <name>se3_req_len_data</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>len_data_and_headers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" line="10" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="10" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8c_1a31051c8df3db3079664208d08a0b98be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_req_len_data_and_headers</definition>
+        <argsstring>(uint16_t len_data)</argsstring>
+        <name>se3_req_len_data_and_headers</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>len_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" line="24" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="24" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8c_1a966b6970e793c6362327a5938aaecc6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_resp_len_data</definition>
+        <argsstring>(uint16_t len_data_and_headers)</argsstring>
+        <name>se3_resp_len_data</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>len_data_and_headers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" line="38" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="38" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8c_1aeff812903773900833b9f1e84dbac2cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_resp_len_data_and_headers</definition>
+        <argsstring>(uint16_t len_data)</argsstring>
+        <name>se3_resp_len_data_and_headers</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>len_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" line="52" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="52" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8c_1a70bb843b91e1a75a8976cfbb6eaa64f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t se3_nblocks</definition>
+        <argsstring>(uint16_t len)</argsstring>
+        <name>se3_nblocks</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" line="66" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8c_1aa88c08d19a2b7a6bcb1ed6c843c1db93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void se3_payload_cryptoinit</definition>
+        <argsstring>(se3_payload_cryptoctx *ctx, const uint8_t *key)</argsstring>
+        <name>se3_payload_cryptoinit</name>
+        <param>
+          <type><ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" line="75" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="75" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8c_1a7d33099409d45dfaa5bf9bcb9ca6b71a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void se3_payload_encrypt</definition>
+        <argsstring>(se3_payload_cryptoctx *ctx, uint8_t *auth, uint8_t *iv, uint8_t *data, uint16_t nblocks, uint16_t flags)</argsstring>
+        <name>se3_payload_encrypt</name>
+        <param>
+          <type><ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>auth</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>nblocks</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" line="84" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="84" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="se3__common_8c_1a34cd2751f16c6d63915d7043a20d8de1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool se3_payload_decrypt</definition>
+        <argsstring>(se3_payload_cryptoctx *ctx, const uint8_t *auth, const uint8_t *iv, uint8_t *data, uint16_t nblocks, uint16_t flags)</argsstring>
+        <name>se3_payload_decrypt</name>
+        <param>
+          <type><ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>auth</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>nblocks</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" line="103" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c" bodystart="103" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;se3_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>se3_magic[SE3_MAGIC_SIZE]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>0x3c,<sp/>0xab,<sp/>0x78,<sp/>0xb6,<sp/>0x2,<sp/>0x64,<sp/>0x47,<sp/>0xe9,<sp/>0x30,<sp/>0x26,<sp/>0xd4,<sp/>0x1f,<sp/>0xad,<sp/>0x68,<sp/>0x22,<sp/>0x27,</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>0x41,<sp/>0xa4,<sp/>0x32,<sp/>0xba,<sp/>0xbe,<sp/>0x54,<sp/>0x83,<sp/>0xee,<sp/>0xab,<sp/>0x6b,<sp/>0x62,<sp/>0xce,<sp/>0xf0,<sp/>0x5c,<sp/>0x7,<sp/>0x91</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">uint16_t<sp/>se3_req_len_data(uint16_t<sp/>len_data_and_headers)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>nblocks;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len_data_and_headers<sp/>&lt;<sp/>SE3_REQ_SIZE_HEADER)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>nblocks<sp/>=<sp/>len_data_and_headers/SE3_COMM_BLOCK;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len_data_and_headers<sp/>%<sp/>SE3_COMM_BLOCK<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nblocks++;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nblocks<sp/>==<sp/>0)</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>len_data_and_headers<sp/>-<sp/>SE3_REQ_SIZE_HEADER<sp/>-<sp/>(nblocks<sp/>-<sp/>1)*SE3_REQDATA_SIZE_HEADER;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">uint16_t<sp/>se3_req_len_data_and_headers(uint16_t<sp/>len_data)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>ndatablocks;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len_data<sp/>&lt;=<sp/>SE3_COMM_BLOCK<sp/>-<sp/>SE3_REQ_SIZE_HEADER)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>len_data<sp/>+<sp/>SE3_REQ_SIZE_HEADER;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>len_data<sp/>-=<sp/>(SE3_COMM_BLOCK<sp/>-<sp/>SE3_REQ_SIZE_HEADER);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>ndatablocks<sp/>=<sp/>len_data<sp/>/<sp/>(SE3_COMM_BLOCK<sp/>-<sp/>SE3_REQDATA_SIZE_HEADER);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len_data<sp/>%<sp/>(SE3_COMM_BLOCK<sp/>-<sp/>SE3_REQDATA_SIZE_HEADER)<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ndatablocks++;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SE3_COMM_BLOCK<sp/>+<sp/>len_data<sp/>+<sp/>ndatablocks*SE3_REQDATA_SIZE_HEADER;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">uint16_t<sp/>se3_resp_len_data(uint16_t<sp/>len_data_and_headers)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>nblocks;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len_data_and_headers<sp/>&lt;<sp/>SE3_RESP_SIZE_HEADER)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>nblocks<sp/>=<sp/>len_data_and_headers<sp/>/<sp/>SE3_COMM_BLOCK;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len_data_and_headers<sp/>%<sp/>SE3_COMM_BLOCK<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nblocks++;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nblocks<sp/>==<sp/>0)</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>len_data_and_headers<sp/>-<sp/>SE3_RESP_SIZE_HEADER<sp/>-<sp/>(nblocks<sp/>-<sp/>1)*SE3_RESPDATA_SIZE_HEADER;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">uint16_t<sp/>se3_resp_len_data_and_headers(uint16_t<sp/>len_data)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>ndatablocks;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len_data<sp/>&lt;=<sp/>SE3_COMM_BLOCK<sp/>-<sp/>SE3_RESP_SIZE_HEADER)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>len_data<sp/>+<sp/>SE3_RESP_SIZE_HEADER;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>len_data<sp/>-=<sp/>(SE3_COMM_BLOCK<sp/>-<sp/>SE3_REQ_SIZE_HEADER);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>ndatablocks<sp/>=<sp/>len_data<sp/>/<sp/>(SE3_COMM_BLOCK<sp/>-<sp/>SE3_RESPDATA_SIZE_HEADER);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len_data<sp/>%<sp/>(SE3_COMM_BLOCK<sp/>-<sp/>SE3_RESPDATA_SIZE_HEADER)<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ndatablocks++;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SE3_COMM_BLOCK<sp/>+<sp/>len_data<sp/>+<sp/>ndatablocks*SE3_RESPDATA_SIZE_HEADER;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">uint16_t<sp/>se3_nblocks(uint16_t<sp/>len)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>nblocks<sp/>=<sp/>len<sp/>/<sp/>SE3_COMM_BLOCK;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len%SE3_COMM_BLOCK<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nblocks++;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nblocks;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>se3_payload_cryptoinit(<ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref>*<sp/>ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>key)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>keys[2<sp/>*<sp/><ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>];</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>PBKDF2HmacSha256(key,<sp/><ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>,<sp/>NULL,<sp/>0,<sp/>1,<sp/>keys,<sp/>2<sp/>*<sp/><ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__aes_func_1ga53e5e4bce089a65bb66b3ba172d12804" kindref="member">B5_Aes256_Init</ref>(&amp;(ctx-&gt;aesenc),<sp/>keys,<sp/><ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>,<sp/><ref refid="group__aes_modes_1ga3e837386acbd4a8b0de7908eda9d4615" kindref="member">B5_AES256_CBC_ENC</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__aes_func_1ga53e5e4bce089a65bb66b3ba172d12804" kindref="member">B5_Aes256_Init</ref>(&amp;(ctx-&gt;aesdec),<sp/>keys,<sp/><ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>,<sp/><ref refid="group__aes_modes_1ga2fd07638d5700e2c86ed99d768af5b64" kindref="member">B5_AES256_CBC_DEC</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(ctx-&gt;hmac_key,<sp/>keys<sp/>+<sp/><ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>,<sp/><ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(keys,<sp/>0,<sp/>2<sp/>*<sp/><ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>se3_payload_encrypt(<ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref>*<sp/>ctx,<sp/>uint8_t*<sp/>auth,<sp/>uint8_t*<sp/>iv,<sp/>uint8_t*<sp/>data,<sp/>uint16_t<sp/>nblocks,<sp/>uint16_t<sp/>flags)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flags<sp/>&amp;<sp/>SE3_CMDFLAG_ENCRYPT)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__aes_func_1gac2f5c3921592486df230fec302629a41" kindref="member">B5_Aes256_SetIV</ref>(&amp;(ctx-&gt;aesenc),<sp/>iv);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__aes_func_1ga5fd1cd91caa7b0dfccb7f735d120a5e9" kindref="member">B5_Aes256_Update</ref>(&amp;(ctx-&gt;aesenc),<sp/>data,<sp/>data,<sp/>nblocks);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flags<sp/>&amp;<sp/>SE3_CMDFLAG_SIGN)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__hmacsha_func_1ga1178a5df067377025aec0bdea3b8f63f" kindref="member">B5_HmacSha256_Init</ref>(&amp;(ctx-&gt;hmac),<sp/>ctx-&gt;hmac_key,<sp/><ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__hmacsha_func_1ga4e55de9980f2f0b132d1a5ec343289e0" kindref="member">B5_HmacSha256_Update</ref>(&amp;(ctx-&gt;hmac),<sp/>iv,<sp/><ref refid="group__aes_keys_1gacdb3619e3b9cfdf86bd929b2ad3786ad" kindref="member">B5_AES_IV_SIZE</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__hmacsha_func_1ga4e55de9980f2f0b132d1a5ec343289e0" kindref="member">B5_HmacSha256_Update</ref>(&amp;(ctx-&gt;hmac),<sp/>data,<sp/>nblocks*<ref refid="group__aes_keys_1ga64a33b32fc1ab72a27a36a63a66c5774" kindref="member">B5_AES_BLK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__hmacsha_func_1gac36fde1fcd954065872e07dadbfccff7" kindref="member">B5_HmacSha256_Finit</ref>(&amp;(ctx-&gt;hmac),<sp/>ctx-&gt;auth);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(auth,<sp/>ctx-&gt;auth,<sp/>16);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(auth,<sp/>0,<sp/>16);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>se3_payload_decrypt(<ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref>*<sp/>ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>auth,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>iv,<sp/>uint8_t*<sp/>data,<sp/>uint16_t<sp/>nblocks,<sp/>uint16_t<sp/>flags)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flags<sp/>&amp;<sp/>SE3_CMDFLAG_SIGN)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__hmacsha_func_1ga1178a5df067377025aec0bdea3b8f63f" kindref="member">B5_HmacSha256_Init</ref>(&amp;(ctx-&gt;hmac),<sp/>ctx-&gt;hmac_key,<sp/><ref refid="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" kindref="member">B5_AES_256</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__hmacsha_func_1ga4e55de9980f2f0b132d1a5ec343289e0" kindref="member">B5_HmacSha256_Update</ref>(&amp;(ctx-&gt;hmac),<sp/>iv,<sp/><ref refid="group__aes_keys_1gacdb3619e3b9cfdf86bd929b2ad3786ad" kindref="member">B5_AES_IV_SIZE</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__hmacsha_func_1ga4e55de9980f2f0b132d1a5ec343289e0" kindref="member">B5_HmacSha256_Update</ref>(&amp;(ctx-&gt;hmac),<sp/>data,<sp/>nblocks*<ref refid="group__aes_keys_1ga64a33b32fc1ab72a27a36a63a66c5774" kindref="member">B5_AES_BLK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__hmacsha_func_1gac36fde1fcd954065872e07dadbfccff7" kindref="member">B5_HmacSha256_Finit</ref>(&amp;(ctx-&gt;hmac),<sp/>ctx-&gt;auth);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(memcmp(auth,<sp/>ctx-&gt;auth,<sp/>16))<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flags<sp/>&amp;<sp/>SE3_CMDFLAG_ENCRYPT)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__aes_func_1gac2f5c3921592486df230fec302629a41" kindref="member">B5_Aes256_SetIV</ref>(&amp;(ctx-&gt;aesdec),<sp/>iv);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__aes_func_1ga5fd1cd91caa7b0dfccb7f735d120a5e9" kindref="member">B5_Aes256_Update</ref>(&amp;(ctx-&gt;aesdec),<sp/>data,<sp/>data,<sp/>nblocks);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.c"/>
+  </compounddef>
+</doxygen>

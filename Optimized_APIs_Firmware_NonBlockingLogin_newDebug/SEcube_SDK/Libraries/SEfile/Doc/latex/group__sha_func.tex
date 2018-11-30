@@ -1,0 +1,84 @@
+\hypertarget{group__sha_func}{\section{S\-H\-A256 functions}
+\label{group__sha_func}\index{S\-H\-A256 functions@{S\-H\-A256 functions}}
+}
+\subsection*{S\-H\-A256 functions}
+\begin{DoxyCompactItemize}
+\item 
+int32\-\_\-t \hyperlink{group__sha_func_gaf3507913b8ba5c90d7aecaa26456082e}{B5\-\_\-\-Sha256\-\_\-\-Init} (\hyperlink{struct_b5__t_sha256_ctx}{B5\-\_\-t\-Sha256\-Ctx} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Initialize the S\-H\-A256 context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__sha_func_gafedcaa9cc6241df89b13d1533ab7583c}{B5\-\_\-\-Sha256\-\_\-\-Update} (\hyperlink{struct_b5__t_sha256_ctx}{B5\-\_\-t\-Sha256\-Ctx} $\ast$ctx, const uint8\-\_\-t $\ast$data, int32\-\_\-t data\-Len)
+\begin{DoxyCompactList}\small\item\em Compute the S\-H\-A256 algorithm on input data depending on the current status of the S\-H\-A256 context. \end{DoxyCompactList}\item 
+int32\-\_\-t \hyperlink{group__sha_func_ga481d39b16dccfa2e85d4ad8962c1de3a}{B5\-\_\-\-Sha256\-\_\-\-Finit} (\hyperlink{struct_b5__t_sha256_ctx}{B5\-\_\-t\-Sha256\-Ctx} $\ast$ctx, uint8\-\_\-t $\ast$r\-Digest)
+\begin{DoxyCompactList}\small\item\em De-\/initialize the current S\-H\-A256 context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__sha_func_ga481d39b16dccfa2e85d4ad8962c1de3a}{\index{S\-H\-A256 functions@{S\-H\-A256 functions}!B5\-\_\-\-Sha256\-\_\-\-Finit@{B5\-\_\-\-Sha256\-\_\-\-Finit}}
+\index{B5\-\_\-\-Sha256\-\_\-\-Finit@{B5\-\_\-\-Sha256\-\_\-\-Finit}!SHA256 functions@{S\-H\-A256 functions}}
+\subsubsection[{B5\-\_\-\-Sha256\-\_\-\-Finit}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Sha256\-\_\-\-Finit (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Sha256\-Ctx} $\ast$}]{ctx, }
+\item[{uint8\-\_\-t $\ast$}]{r\-Digest}
+\end{DoxyParamCaption}
+)}}\label{group__sha_func_ga481d39b16dccfa2e85d4ad8962c1de3a}
+
+
+De-\/initialize the current S\-H\-A256 context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the S\-H\-A context to de-\/initialize. \\
+\hline
+{\em r\-Digest} & Pointer to a blank memory area that can store the computed output digest. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__sha_return}{S\-H\-A256 return values} . 
+\end{DoxyReturn}
+\hypertarget{group__sha_func_gaf3507913b8ba5c90d7aecaa26456082e}{\index{S\-H\-A256 functions@{S\-H\-A256 functions}!B5\-\_\-\-Sha256\-\_\-\-Init@{B5\-\_\-\-Sha256\-\_\-\-Init}}
+\index{B5\-\_\-\-Sha256\-\_\-\-Init@{B5\-\_\-\-Sha256\-\_\-\-Init}!SHA256 functions@{S\-H\-A256 functions}}
+\subsubsection[{B5\-\_\-\-Sha256\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Sha256\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Sha256\-Ctx} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{group__sha_func_gaf3507913b8ba5c90d7aecaa26456082e}
+
+
+Initialize the S\-H\-A256 context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the S\-H\-A256 data structure to be initialized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__sha_return}{S\-H\-A256 return values} . 
+\end{DoxyReturn}
+\hypertarget{group__sha_func_gafedcaa9cc6241df89b13d1533ab7583c}{\index{S\-H\-A256 functions@{S\-H\-A256 functions}!B5\-\_\-\-Sha256\-\_\-\-Update@{B5\-\_\-\-Sha256\-\_\-\-Update}}
+\index{B5\-\_\-\-Sha256\-\_\-\-Update@{B5\-\_\-\-Sha256\-\_\-\-Update}!SHA256 functions@{S\-H\-A256 functions}}
+\subsubsection[{B5\-\_\-\-Sha256\-\_\-\-Update}]{\setlength{\rightskip}{0pt plus 5cm}int32\-\_\-t B5\-\_\-\-Sha256\-\_\-\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf B5\-\_\-t\-Sha256\-Ctx} $\ast$}]{ctx, }
+\item[{const uint8\-\_\-t $\ast$}]{data, }
+\item[{int32\-\_\-t}]{data\-Len}
+\end{DoxyParamCaption}
+)}}\label{group__sha_func_gafedcaa9cc6241df89b13d1533ab7583c}
+
+
+Compute the S\-H\-A256 algorithm on input data depending on the current status of the S\-H\-A256 context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Pointer to the current S\-H\-A context. \\
+\hline
+{\em data} & Pointer to the input data. \\
+\hline
+{\em data\-Len} & Bytes to be processed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+See \hyperlink{group__sha_return}{S\-H\-A256 return values} . 
+\end{DoxyReturn}

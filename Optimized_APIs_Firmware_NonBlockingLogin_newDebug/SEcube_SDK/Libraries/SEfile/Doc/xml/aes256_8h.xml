@@ -1,0 +1,911 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="aes256_8h" kind="file">
+    <compoundname>aes256.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">string.h</includes>
+    <includedby refid="aes256_8c" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c</includedby>
+    <includedby refid="se3__common_8h" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h</includedby>
+    <includedby refid="_l1_8c" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.c</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>string.h</label>
+      </node>
+      <node id="5">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h</label>
+        <link refid="aes256.h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3_common.h</label>
+        <link refid="se3__common_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h</label>
+        <link refid="_l1_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L0.h</label>
+        <link refid="_l0_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.c</label>
+        <link refid="_s_efile_8c"/>
+      </node>
+      <node id="12">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h</label>
+        <link refid="_s_efile_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h</label>
+        <link refid="aes256.h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_b5__t_aes_ctx" prot="public">B5_tAesCtx</innerclass>
+    <innerclass refid="struct_b5__t_cmac_aes_ctx" prot="public">B5_tCmacAesCtx</innerclass>
+      <sectiondef kind="user-defined">
+      <header>AES return values</header>
+      <memberdef kind="define" id="group__aes_return_1ga00ffcdf1f612771e50746a698b5b1c74" prot="public" static="no">
+        <name>B5_AES256_RES_OK</name>
+        <initializer>( 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="24" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_return_1ga0f56c14cc394a1022d48a74f2ae92d3a" prot="public" static="no">
+        <name>B5_AES256_RES_INVALID_CONTEXT</name>
+        <initializer>(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="25" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_return_1ga3aec4b8145ea7932bf9811a3f0b4e652" prot="public" static="no">
+        <name>B5_AES256_RES_CANNOT_ALLOCATE_CONTEXT</name>
+        <initializer>(-2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="26" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_return_1ga936c253f0e3f957d5513107d9ec9e043" prot="public" static="no">
+        <name>B5_AES256_RES_INVALID_KEY_SIZE</name>
+        <initializer>(-3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="27" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_return_1ga7986201f27d74baad93d452149a8c642" prot="public" static="no">
+        <name>B5_AES256_RES_INVALID_ARGUMENT</name>
+        <initializer>(-4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="28" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_return_1ga9b1fbd9617ea5eeebf71eeadff455ec5" prot="public" static="no">
+        <name>B5_AES256_RES_INVALID_MODE</name>
+        <initializer>(-5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="29" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>AES Key, IV, Block Sizes</header>
+      <memberdef kind="define" id="group__aes_keys_1gaaa12529ea4bb869bdc8f535b81045936" prot="public" static="no">
+        <name>B5_AES_256</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Key Size in Bytes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="42" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_keys_1ga2c5c2d32e434e577808b530494dbf45a" prot="public" static="no">
+        <name>B5_AES_192</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Key Size in Bytes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="43" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_keys_1ga4219b772a2b3f05a3160ae82a1440519" prot="public" static="no">
+        <name>B5_AES_128</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Key Size in Bytes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="44" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_keys_1gacdb3619e3b9cfdf86bd929b2ad3786ad" prot="public" static="no">
+        <name>B5_AES_IV_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IV Size in Bytes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="45" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_keys_1ga64a33b32fc1ab72a27a36a63a66c5774" prot="public" static="no">
+        <name>B5_AES_BLK_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block Size in Bytes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="46" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>AES modes</header>
+      <memberdef kind="define" id="group__aes_modes_1gaa6e9c20473b20e271d541e65ad22b31a" prot="public" static="no">
+        <name>B5_AES256_OFB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OFB full feedback encryption-decryption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="56" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_modes_1gaa10e7bc21ff6269423c0843ab06523de" prot="public" static="no">
+        <name>B5_AES256_ECB_ENC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ECB encryption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="57" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_modes_1ga7cc574715866041d7702bc928392b34d" prot="public" static="no">
+        <name>B5_AES256_ECB_DEC</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ECB decryption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="58" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_modes_1ga3e837386acbd4a8b0de7908eda9d4615" prot="public" static="no">
+        <name>B5_AES256_CBC_ENC</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CBC encryption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="59" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_modes_1ga2fd07638d5700e2c86ed99d768af5b64" prot="public" static="no">
+        <name>B5_AES256_CBC_DEC</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CBC decryption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="60" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_modes_1ga1778510b0460d082eb81882fe4b801ab" prot="public" static="no">
+        <name>B5_AES256_CFB_ENC</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CFB decryption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="61" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_modes_1ga4eefc1defbce48425c854893666ee36a" prot="public" static="no">
+        <name>B5_AES256_CFB_DEC</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CFB decryption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="62" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__aes_modes_1gada09a78164ed48a74b4320a0a3ccf7dd" prot="public" static="no">
+        <name>B5_AES256_CTR</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CTR counter mode encryption-decryption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="63" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CMAC-AES Key, Block Sizes</header>
+      <memberdef kind="define" id="group__cmacaes_keys_1ga3d62be47b6ae3acb406589c8f6488ce6" prot="public" static="no">
+        <name>B5_CMAC_AES_256</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Key Size in Bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="152" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__cmacaes_keys_1ga65b3f56c5c5f16e0e54f2c02f6ae0a16" prot="public" static="no">
+        <name>B5_CMAC_AES_192</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Key Size in Bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="153" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__cmacaes_keys_1ga3101aac4d7dd544e8832937e66d1e275" prot="public" static="no">
+        <name>B5_CMAC_AES_128</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Key Size in Bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="154" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__cmacaes_keys_1ga30efa04404b1c5062c7e0cc62e019988" prot="public" static="no">
+        <name>B5_CMAC_AES_BLK_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block Size in Bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="155" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CMAC-AES return values</header>
+      <memberdef kind="define" id="group__cmacaes_return_1gadafde446f7d5fa67296a58dad6cd6a35" prot="public" static="no">
+        <name>B5_CMAC_AES256_RES_OK</name>
+        <initializer>( 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="165" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__cmacaes_return_1gad6f08cefa72adebe0920043e05f718ec" prot="public" static="no">
+        <name>B5_CMAC_AES256_RES_INVALID_CONTEXT</name>
+        <initializer>(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="166" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__cmacaes_return_1ga75e806521316e70770944327fdc3d50e" prot="public" static="no">
+        <name>B5_CMAC_AES256_RES_CANNOT_ALLOCATE_CONTEXT</name>
+        <initializer>(-2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="167" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__cmacaes_return_1gaea8254d60c26aa10faea0046a204d3bd" prot="public" static="no">
+        <name>B5_CMAC_AES256_RES_INVALID_KEY_SIZE</name>
+        <initializer>(-3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="168" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__cmacaes_return_1ga81b2a672e055c4b0ef629b45257f8590" prot="public" static="no">
+        <name>B5_CMAC_AES256_RES_INVALID_ARGUMENT</name>
+        <initializer>(-4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="169" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>AES functions</header>
+      <memberdef kind="function" id="group__aes_func_1ga53e5e4bce089a65bb66b3ba172d12804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Aes256_Init</definition>
+        <argsstring>(B5_tAesCtx *ctx, const uint8_t *Key, int16_t keySize, uint8_t aesMode)</argsstring>
+        <name>B5_Aes256_Init</name>
+        <param>
+          <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>keySize</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>aesMode</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the AES data structure to be initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Key that must be used for encryption/decryption. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keySize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key size. See <ref refid="group__aes_keys" kindref="compound">AES Key, IV, Block Sizes</ref> for supported sizes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aesMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AES mode. See <ref refid="group__aes_modes" kindref="compound">AES modes</ref> for supported modes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__aes_return" kindref="compound">AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="110" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1193" bodyend="1239"/>
+      </memberdef>
+      <memberdef kind="function" id="group__aes_func_1gac2f5c3921592486df230fec302629a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Aes256_SetIV</definition>
+        <argsstring>(B5_tAesCtx *ctx, const uint8_t *IV)</argsstring>
+        <name>B5_Aes256_SetIV</name>
+        <param>
+          <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>IV</declname>
+        </param>
+        <briefdescription>
+<para>Set the IV for the current AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the AES data structure to be initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the IV. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__aes_return" kindref="compound">AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="119" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1245" bodyend="1262"/>
+      </memberdef>
+      <memberdef kind="function" id="group__aes_func_1ga5fd1cd91caa7b0dfccb7f735d120a5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Aes256_Update</definition>
+        <argsstring>(B5_tAesCtx *ctx, uint8_t *encData, uint8_t *clrData, int16_t nBlk)</argsstring>
+        <name>B5_Aes256_Update</name>
+        <param>
+          <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>encData</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>clrData</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>nBlk</declname>
+        </param>
+        <briefdescription>
+<para>Encrypt/Decrypt data based on the status of current AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the current AES context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encrypted data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clrData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clear data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nBlk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of AES blocks to process. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__aes_return" kindref="compound">AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="130" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1268" bodyend="1450"/>
+      </memberdef>
+      <memberdef kind="function" id="group__aes_func_1ga6d6ad2c832065507fd0d106f8c919623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_Aes256_Finit</definition>
+        <argsstring>(B5_tAesCtx *ctx)</argsstring>
+        <name>B5_Aes256_Finit</name>
+        <param>
+          <type><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>De-initialize the current AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the AES context to de-initialize. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__aes_return" kindref="compound">AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="138" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1455" bodyend="1458"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CMAC-AES functions</header>
+      <memberdef kind="function" id="group__cmacaes_func_1gae6f89895e340f9aecab79db450e4a185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_CmacAes256_Init</definition>
+        <argsstring>(B5_tCmacAesCtx *ctx, const uint8_t *Key, int16_t keySize)</argsstring>
+        <name>B5_CmacAes256_Init</name>
+        <param>
+          <type><ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>keySize</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the CMAC-AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the CMAC-AES data structure to be initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Key that must be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keySize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key size. See <ref refid="group__cmacaes_keys" kindref="compound">CMAC-AES Key, Blk Sizes</ref> for supported sizes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__cmacaes_return" kindref="compound">CMAC-AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="208" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1565" bodyend="1615"/>
+      </memberdef>
+      <memberdef kind="function" id="group__cmacaes_func_1ga4c80b95f59e134548b2a3c678df533f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_CmacAes256_Update</definition>
+        <argsstring>(B5_tCmacAesCtx *ctx, const uint8_t *data, int32_t dataLen)</argsstring>
+        <name>B5_CmacAes256_Update</name>
+        <param>
+          <type><ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dataLen</declname>
+        </param>
+        <briefdescription>
+<para>Compute the CMAC-AES algorithm on input data depending on the current status of the CMAC-AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the current CMAC-AES context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the input data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes to be processed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__cmacaes_return" kindref="compound">CMAC-AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="218" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1621" bodyend="1676"/>
+      </memberdef>
+      <memberdef kind="function" id="group__cmacaes_func_1ga5507419d1c00777a9c3c942d13636178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_CmacAes256_Finit</definition>
+        <argsstring>(B5_tCmacAesCtx *ctx, uint8_t *rSignature)</argsstring>
+        <name>B5_CmacAes256_Finit</name>
+        <param>
+          <type><ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rSignature</declname>
+        </param>
+        <briefdescription>
+<para>De-initialize the current CMAC-AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the CMAC-AES context to de-initialize. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rSignature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a blank memory area that can store the computed output signature. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__cmacaes_return" kindref="compound">CMAC-AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="227" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1682" bodyend="1719"/>
+      </memberdef>
+      <memberdef kind="function" id="group__cmacaes_func_1gaa939a0bb0cf5bb09d83d1d08163b346e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_CmacAes256_Reset</definition>
+        <argsstring>(B5_tCmacAesCtx *ctx)</argsstring>
+        <name>B5_CmacAes256_Reset</name>
+        <param>
+          <type><ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>Reset the current CMAC-AES context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the CMAC-AES context to reset. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__cmacaes_return" kindref="compound">CMAC-AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="235" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1725" bodyend="1734"/>
+      </memberdef>
+      <memberdef kind="function" id="group__cmacaes_func_1ga4df2c9dc0b4f5d54ebc023fc791632ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t B5_CmacAes256_Sign</definition>
+        <argsstring>(const uint8_t *data, int32_t dataLen, const uint8_t *Key, int16_t keySize, uint8_t *rSignature)</argsstring>
+        <name>B5_CmacAes256_Sign</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>dataLen</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>keySize</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rSignature</declname>
+        </param>
+        <briefdescription>
+<para>Compute the signature through the CMAC-AES algorithm. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the input data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input data length (in Bytes). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Key that must be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keySize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key size. See <ref refid="group__cmacaes_keys" kindref="compound">CMAC-AES Key, Blk Sizes</ref> for supported sizes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rSignature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a blank memory area that can store the computed output signature. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>See <ref refid="group__cmacaes_return" kindref="compound">CMAC-AES return values</ref> . </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="247" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.c" bodystart="1473" bodyend="1559"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/><sp/>LICENSE<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor">#define<sp/>B5_AES256_RES_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>0)</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B5_AES256_RES_INVALID_CONTEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-1)</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B5_AES256_RES_CANNOT_ALLOCATE_CONTEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-2)</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B5_AES256_RES_INVALID_KEY_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-3)</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B5_AES256_RES_INVALID_ARGUMENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-4)</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B5_AES256_RES_INVALID_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-5)</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor">#define<sp/>B5_AES_256<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>32<sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="group__aes_keys_1ga2c5c2d32e434e577808b530494dbf45a" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES_192<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>24<sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="group__aes_keys_1ga4219b772a2b3f05a3160ae82a1440519" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES_128<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16<sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="group__aes_keys_1gacdb3619e3b9cfdf86bd929b2ad3786ad" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES_IV_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16<sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="group__aes_keys_1ga64a33b32fc1ab72a27a36a63a66c5774" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES_BLK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16<sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor">#define<sp/>B5_AES256_OFB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="group__aes_modes_1gaa10e7bc21ff6269423c0843ab06523de" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES256_ECB_ENC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="group__aes_modes_1ga7cc574715866041d7702bc928392b34d" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES256_ECB_DEC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="group__aes_modes_1ga3e837386acbd4a8b0de7908eda9d4615" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES256_CBC_ENC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="group__aes_modes_1ga2fd07638d5700e2c86ed99d768af5b64" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES256_CBC_DEC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>5<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="group__aes_modes_1ga1778510b0460d082eb81882fe4b801ab" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES256_CFB_ENC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>6<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="group__aes_modes_1ga4eefc1defbce48425c854893666ee36a" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES256_CFB_DEC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>7<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="group__aes_modes_1gada09a78164ed48a74b4320a0a3ccf7dd" refkind="member"><highlight class="preprocessor">#define<sp/>B5_AES256_CTR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor">typedef<sp/>struct<sp/>{</highlight></codeline>
+<codeline lineno="76" refid="struct_b5__t_aes_ctx_1a79225f883cd68df87bf30ca2907650c9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>rk[4*(14<sp/>+<sp/>1)];<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="struct_b5__t_aes_ctx_1a303f5a1ec9e11ea7633068db3c05dbe7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="struct_b5__t_aes_ctx_1a303f5a1ec9e11ea7633068db3c05dbe7" kindref="member">Nr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="struct_b5__t_aes_ctx_1add6ae748bf9387dd58185afc39ee4f4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>InitVector[16];<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="struct_b5__t_aes_ctx_1abee6909cfc704092d6fbfa9dea6f0e6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="struct_b5__t_aes_ctx_1abee6909cfc704092d6fbfa9dea6f0e6d" kindref="member">mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*Te0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*Te1;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*Te2;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*Te3;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*Te4;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*Td0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*Td1;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*Td2;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*Td3;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*Td4;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}<sp/><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref>;</highlight></codeline>
+<codeline lineno="92"></codeline>
+<codeline lineno="99"></codeline>
+<codeline lineno="110"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/><ref refid="group__aes_func_1ga53e5e4bce089a65bb66b3ba172d12804" kindref="member">B5_Aes256_Init</ref><sp/><sp/><sp/>(<ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*Key,<sp/>int16_t<sp/>keySize,<sp/>uint8_t<sp/>aesMode);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/><ref refid="group__aes_func_1gac2f5c3921592486df230fec302629a41" kindref="member">B5_Aes256_SetIV</ref><sp/><sp/>(<ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*IV);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/><ref refid="group__aes_func_1ga5fd1cd91caa7b0dfccb7f735d120a5e9" kindref="member">B5_Aes256_Update</ref><sp/>(<ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref><sp/>*ctx,<sp/>uint8_t<sp/>*encData,<sp/>uint8_t<sp/>*clrData,<sp/>int16_t<sp/>nBlk);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/><ref refid="group__aes_func_1ga6d6ad2c832065507fd0d106f8c919623" kindref="member">B5_Aes256_Finit</ref><sp/><sp/>(<ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"></codeline>
+<codeline lineno="151"><highlight class="preprocessor">#define<sp/>B5_CMAC_AES_256<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>32<sp/><sp/></highlight></codeline>
+<codeline lineno="153" refid="group__cmacaes_keys_1ga65b3f56c5c5f16e0e54f2c02f6ae0a16" refkind="member"><highlight class="preprocessor">#define<sp/>B5_CMAC_AES_192<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>24<sp/><sp/></highlight></codeline>
+<codeline lineno="154" refid="group__cmacaes_keys_1ga3101aac4d7dd544e8832937e66d1e275" refkind="member"><highlight class="preprocessor">#define<sp/>B5_CMAC_AES_128<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16<sp/><sp/></highlight></codeline>
+<codeline lineno="155" refid="group__cmacaes_keys_1ga30efa04404b1c5062c7e0cc62e019988" refkind="member"><highlight class="preprocessor">#define<sp/>B5_CMAC_AES_BLK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16<sp/><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor">#define<sp/>B5_CMAC_AES256_RES_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>0)</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B5_CMAC_AES256_RES_INVALID_CONTEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-1)</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B5_CMAC_AES256_RES_CANNOT_ALLOCATE_CONTEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-2)</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B5_CMAC_AES256_RES_INVALID_KEY_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-3)</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B5_CMAC_AES256_RES_INVALID_ARGUMENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-4)</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="178"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_b5__t_aes_ctx" kindref="compound">B5_tAesCtx</ref><sp/><sp/>aesCtx;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>K1[32];</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>K2[32];</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpBlk[<ref refid="group__aes_keys_1ga64a33b32fc1ab72a27a36a63a66c5774" kindref="member">B5_AES_BLK_SIZE</ref>];</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpBlkLen;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>C[<ref refid="group__aes_keys_1ga64a33b32fc1ab72a27a36a63a66c5774" kindref="member">B5_AES_BLK_SIZE</ref>];</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}<sp/><ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref>;</highlight></codeline>
+<codeline lineno="191"></codeline>
+<codeline lineno="199"></codeline>
+<codeline lineno="208"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/><ref refid="group__cmacaes_func_1gae6f89895e340f9aecab79db450e4a185" kindref="member">B5_CmacAes256_Init</ref><sp/>(<ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*Key,<sp/>int16_t<sp/>keySize);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/><ref refid="group__cmacaes_func_1ga4c80b95f59e134548b2a3c678df533f4" kindref="member">B5_CmacAes256_Update</ref><sp/>(<ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data,<sp/>int32_t<sp/>dataLen);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/><ref refid="group__cmacaes_func_1ga5507419d1c00777a9c3c942d13636178" kindref="member">B5_CmacAes256_Finit</ref><sp/>(<ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref><sp/>*ctx,<sp/>uint8_t<sp/>*rSignature);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/><ref refid="group__cmacaes_func_1gaa939a0bb0cf5bb09d83d1d08163b346e" kindref="member">B5_CmacAes256_Reset</ref><sp/>(<ref refid="struct_b5__t_cmac_aes_ctx" kindref="compound">B5_tCmacAesCtx</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">int32_t<sp/><sp/><sp/><sp/><ref refid="group__cmacaes_func_1ga4df2c9dc0b4f5d54ebc023fc791632ba" kindref="member">B5_CmacAes256_Sign</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data,<sp/>int32_t<sp/>dataLen,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*Key,<sp/>int16_t<sp/>keySize,<sp/>uint8_t<sp/>*rSignature);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"></codeline>
+<codeline lineno="254"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h"/>
+  </compounddef>
+</doxygen>

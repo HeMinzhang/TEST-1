@@ -1,0 +1,15 @@
+[Unit]
+Description=SELink gateway daemon
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/selinkgw.pid
+ExecStart=/opt/selink/selinkgw -p soft -c /opt/selink/selinkgw.json -k /opt/selink/keys.json
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStop=/bin/kill -INT $MAINPID
+
+[Install]
+WantedBy=multiuser.agent
+

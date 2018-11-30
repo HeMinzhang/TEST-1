@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_b5__t_aes_ctx" kind="struct" prot="public">
+    <compoundname>B5_tAesCtx</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1a79225f883cd68df87bf30ca2907650c9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t B5_tAesCtx::rk[4 *(14+1)]</definition>
+        <argsstring>[4 *(14+1)]</argsstring>
+        <name>rk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Precomputed round keys </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="76" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1a303f5a1ec9e11ea7633068db3c05dbe7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tAesCtx::Nr</definition>
+        <argsstring></argsstring>
+        <name>Nr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of rounds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="77" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1add6ae748bf9387dd58185afc39ee4f4f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tAesCtx::InitVector[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>InitVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IV for OFB, CBC, CTR </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="78" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1abee6909cfc704092d6fbfa9dea6f0e6d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tAesCtx::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Active mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="79" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1af4cb0ebdabba082529bedda4638e820f" prot="public" static="no" mutable="no">
+        <type>uint32_t const *</type>
+        <definition>uint32_t const* B5_tAesCtx::Te0</definition>
+        <argsstring></argsstring>
+        <name>Te0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="80" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1a94c96c2c9aee07c1eb2bb37821c18123" prot="public" static="no" mutable="no">
+        <type>uint32_t const *</type>
+        <definition>uint32_t const* B5_tAesCtx::Te1</definition>
+        <argsstring></argsstring>
+        <name>Te1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="81" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1af5cd1285624916e55d6bec578eb5b840" prot="public" static="no" mutable="no">
+        <type>uint32_t const *</type>
+        <definition>uint32_t const* B5_tAesCtx::Te2</definition>
+        <argsstring></argsstring>
+        <name>Te2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="82" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1a1bc33b2c2fe914a0dda3783034323672" prot="public" static="no" mutable="no">
+        <type>uint32_t const *</type>
+        <definition>uint32_t const* B5_tAesCtx::Te3</definition>
+        <argsstring></argsstring>
+        <name>Te3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="83" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1a9691f97b37e98d4685102b893cf2c398" prot="public" static="no" mutable="no">
+        <type>uint32_t const *</type>
+        <definition>uint32_t const* B5_tAesCtx::Te4</definition>
+        <argsstring></argsstring>
+        <name>Te4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="84" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1a4401d59349f281412cc11a797e719b41" prot="public" static="no" mutable="no">
+        <type>uint32_t const *</type>
+        <definition>uint32_t const* B5_tAesCtx::Td0</definition>
+        <argsstring></argsstring>
+        <name>Td0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="85" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1a9ca20c572ae10b859adc99f8b572201b" prot="public" static="no" mutable="no">
+        <type>uint32_t const *</type>
+        <definition>uint32_t const* B5_tAesCtx::Td1</definition>
+        <argsstring></argsstring>
+        <name>Td1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="86" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1a3d7b693fe415a30686f04e8c46fcf7f9" prot="public" static="no" mutable="no">
+        <type>uint32_t const *</type>
+        <definition>uint32_t const* B5_tAesCtx::Td2</definition>
+        <argsstring></argsstring>
+        <name>Td2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="87" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1a61e210da517646199fb3bd2feb8009eb" prot="public" static="no" mutable="no">
+        <type>uint32_t const *</type>
+        <definition>uint32_t const* B5_tAesCtx::Td3</definition>
+        <argsstring></argsstring>
+        <name>Td3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="88" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_aes_ctx_1ad92ff97a275509ae44f6b86fdc7c49ad" prot="public" static="no" mutable="no">
+        <type>uint32_t const *</type>
+        <definition>uint32_t const* B5_tAesCtx::Td4</definition>
+        <argsstring></argsstring>
+        <name>Td4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="89" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" line="75" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/aes256.h" bodystart="75" bodyend="90"/>
+    <listofallmembers>
+      <member refid="struct_b5__t_aes_ctx_1add6ae748bf9387dd58185afc39ee4f4f" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>InitVector</name></member>
+      <member refid="struct_b5__t_aes_ctx_1abee6909cfc704092d6fbfa9dea6f0e6d" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>mode</name></member>
+      <member refid="struct_b5__t_aes_ctx_1a303f5a1ec9e11ea7633068db3c05dbe7" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Nr</name></member>
+      <member refid="struct_b5__t_aes_ctx_1a79225f883cd68df87bf30ca2907650c9" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>rk</name></member>
+      <member refid="struct_b5__t_aes_ctx_1a4401d59349f281412cc11a797e719b41" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Td0</name></member>
+      <member refid="struct_b5__t_aes_ctx_1a9ca20c572ae10b859adc99f8b572201b" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Td1</name></member>
+      <member refid="struct_b5__t_aes_ctx_1a3d7b693fe415a30686f04e8c46fcf7f9" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Td2</name></member>
+      <member refid="struct_b5__t_aes_ctx_1a61e210da517646199fb3bd2feb8009eb" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Td3</name></member>
+      <member refid="struct_b5__t_aes_ctx_1ad92ff97a275509ae44f6b86fdc7c49ad" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Td4</name></member>
+      <member refid="struct_b5__t_aes_ctx_1af4cb0ebdabba082529bedda4638e820f" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Te0</name></member>
+      <member refid="struct_b5__t_aes_ctx_1a94c96c2c9aee07c1eb2bb37821c18123" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Te1</name></member>
+      <member refid="struct_b5__t_aes_ctx_1af5cd1285624916e55d6bec578eb5b840" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Te2</name></member>
+      <member refid="struct_b5__t_aes_ctx_1a1bc33b2c2fe914a0dda3783034323672" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Te3</name></member>
+      <member refid="struct_b5__t_aes_ctx_1a9691f97b37e98d4685102b893cf2c398" prot="public" virt="non-virtual"><scope>B5_tAesCtx</scope><name>Te4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

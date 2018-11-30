@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group___sector_struct" kind="group">
+    <compoundname>SectorStruct</compoundname>
+    <title>SectorStruct</title>
+    <innerclass refid="struct_s_e_f_i_l_e___h_e_a_d_e_r" prot="public">SEFILE_HEADER</innerclass>
+    <innerclass refid="struct_s_e_f_i_l_e___s_e_c_t_o_r" prot="public">SEFILE_SECTOR</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

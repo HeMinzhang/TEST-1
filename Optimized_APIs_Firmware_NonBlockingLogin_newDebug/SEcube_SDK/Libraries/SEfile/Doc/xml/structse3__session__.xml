@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structse3__session__" kind="struct" prot="public">
+    <compoundname>se3_session_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structse3__session___1a47eda616fbe326e294217d6474f95c89" prot="public" static="no" mutable="no">
+        <type><ref refid="structse3__device__" kindref="compound">se3_device</ref></type>
+        <definition>se3_device se3_session_::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="27" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__session___1a3f2d86098391689120b934a935b17b6b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t se3_session_::token[SE3_L1_TOKEN_SIZE]</definition>
+        <argsstring>[SE3_L1_TOKEN_SIZE]</argsstring>
+        <name>token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="28" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__session___1aa9b7c4bcfc9d69fe33b594abf807af99" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t se3_session_::key[SE3_L1_KEY_SIZE]</definition>
+        <argsstring>[SE3_L1_KEY_SIZE]</argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="29" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__session___1a1e66ac9150a3c3682508d988854d505d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t se3_session_::buf[SE3_COMM_N *SE3_COMM_BLOCK]</definition>
+        <argsstring>[SE3_COMM_N *SE3_COMM_BLOCK]</argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="30" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__session___1a173f729c0f7b4555658e90f355e61682" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool se3_session_::locked</definition>
+        <argsstring></argsstring>
+        <name>locked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="31" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__session___1ab8e73ac34f54c9ad0a442ac091aae351" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool se3_session_::logged_in</definition>
+        <argsstring></argsstring>
+        <name>logged_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="32" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__session___1a61346ef45921af556f96da5feada858c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t se3_session_::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="33" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__session___1a9ed3dacbd53aad1de2b90e9da5aeea1b" prot="public" static="no" mutable="no">
+        <type><ref refid="structse3__file" kindref="compound">se3_file</ref></type>
+        <definition>se3_file se3_session_::hfile</definition>
+        <argsstring></argsstring>
+        <name>hfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="34" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__session___1af51decff75d32eff75f3b657fca10cab" prot="public" static="no" mutable="no">
+        <type><ref refid="structse3__payload__cryptoctx__" kindref="compound">se3_payload_cryptoctx</ref></type>
+        <definition>se3_payload_cryptoctx se3_session_::cryptoctx</definition>
+        <argsstring></argsstring>
+        <name>cryptoctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="35" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structse3__session___1ad89a3ebfb1c85fe112dd348cf8fbb2ac" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool se3_session_::cryptoctx_initialized</definition>
+        <argsstring></argsstring>
+        <name>cryptoctx_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="36" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="39">
+        <label>se3_payload_cryptoctx_</label>
+        <link refid="structse3__payload__cryptoctx__"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>aesdec</edgelabel>
+          <edgelabel>aesenc</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>hmac</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>B5_tHmacSha256Ctx</label>
+        <link refid="struct_b5__t_hmac_sha256_ctx"/>
+        <childnode refid="42" relation="usage">
+          <edgelabel>shaCtx</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>se3_device_info_</label>
+        <link refid="structse3__device__info__"/>
+      </node>
+      <node id="40">
+        <label>B5_tAesCtx</label>
+        <link refid="struct_b5__t_aes_ctx"/>
+      </node>
+      <node id="38">
+        <label>se3_session_</label>
+        <link refid="structse3__session__"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>cryptoctx</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>hfile</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>device</edgelabel>
+        </childnode>
+      </node>
+      <node id="43">
+        <label>se3_file</label>
+        <link refid="structse3__file"/>
+      </node>
+      <node id="44">
+        <label>se3_device_</label>
+        <link refid="structse3__device__"/>
+        <childnode refid="45" relation="usage">
+          <edgelabel>info</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>B5_tSha256Ctx</label>
+        <link refid="struct_b5__t_sha256_ctx"/>
+      </node>
+    </collaborationgraph>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" line="26" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/L1.h" bodystart="26" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structse3__session___1a1e66ac9150a3c3682508d988854d505d" prot="public" virt="non-virtual"><scope>se3_session_</scope><name>buf</name></member>
+      <member refid="structse3__session___1af51decff75d32eff75f3b657fca10cab" prot="public" virt="non-virtual"><scope>se3_session_</scope><name>cryptoctx</name></member>
+      <member refid="structse3__session___1ad89a3ebfb1c85fe112dd348cf8fbb2ac" prot="public" virt="non-virtual"><scope>se3_session_</scope><name>cryptoctx_initialized</name></member>
+      <member refid="structse3__session___1a47eda616fbe326e294217d6474f95c89" prot="public" virt="non-virtual"><scope>se3_session_</scope><name>device</name></member>
+      <member refid="structse3__session___1a9ed3dacbd53aad1de2b90e9da5aeea1b" prot="public" virt="non-virtual"><scope>se3_session_</scope><name>hfile</name></member>
+      <member refid="structse3__session___1aa9b7c4bcfc9d69fe33b594abf807af99" prot="public" virt="non-virtual"><scope>se3_session_</scope><name>key</name></member>
+      <member refid="structse3__session___1a173f729c0f7b4555658e90f355e61682" prot="public" virt="non-virtual"><scope>se3_session_</scope><name>locked</name></member>
+      <member refid="structse3__session___1ab8e73ac34f54c9ad0a442ac091aae351" prot="public" virt="non-virtual"><scope>se3_session_</scope><name>logged_in</name></member>
+      <member refid="structse3__session___1a61346ef45921af556f96da5feada858c" prot="public" virt="non-virtual"><scope>se3_session_</scope><name>timeout</name></member>
+      <member refid="structse3__session___1a3f2d86098391689120b934a935b17b6b" prot="public" virt="non-virtual"><scope>se3_session_</scope><name>token</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

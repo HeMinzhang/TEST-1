@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="_c_r_c_s_w_8h" kind="file">
+    <compoundname>CRCSW.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="_c_r_c_s_w_8c" local="yes">/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.c</includedby>
+    <incdepgraph>
+      <node id="32">
+        <label>stdint.h</label>
+      </node>
+      <node id="31">
+        <label>/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h</label>
+        <link refid="CRCSW.h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_c_r_c16sw__" prot="public">CRC16sw_</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_c_r_c_s_w_8h_1ac28f8e9d77991c462bca204103fb5291" prot="public" static="no">
+        <name>_CRCSW_H_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" line="5" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_c_r_c_s_w_8h_1a1c4dbf04065186cf7222c6a31efbde75" prot="public" static="no">
+        <name>CRC16_POLY</name>
+        <initializer>0x1021</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" line="21" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_c_r_c_s_w_8h_1a81ed8c7862f3d6b4368fb42b82b00579" prot="public" static="no">
+        <type>struct <ref refid="struct_c_r_c16sw__" kindref="compound">CRC16sw_</ref></type>
+        <definition>typedef struct CRC16sw_  CRC16sw</definition>
+        <argsstring></argsstring>
+        <name>CRC16sw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" line="31" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_c_r_c_s_w_8h_1abdb9ee355c7578857d6cd48ddef8aac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void crc16Init</definition>
+        <argsstring>(CRC16sw *crc16)</argsstring>
+        <name>crc16Init</name>
+        <param>
+          <type><ref refid="struct_c_r_c16sw__" kindref="compound">CRC16sw</ref> *</type>
+          <declname>crc16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" line="38" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.c" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_r_c_s_w_8h_1aeda7ebe759fc3d807be386c0a27c81e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t crc16Update</definition>
+        <argsstring>(uint8_t *dataIn, uint16_t dataInLen, CRC16sw *crc16)</argsstring>
+        <name>crc16Update</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dataIn</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dataInLen</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_r_c16sw__" kindref="compound">CRC16sw</ref> *</type>
+          <declname>crc16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" line="39" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.c" bodystart="11" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_r_c_s_w_8h_1a95b15da817b48461176edbb4dd874498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t crc16Compute</definition>
+        <argsstring>(uint8_t *dataIn, uint16_t dataInLen, CRC16sw *crc16)</argsstring>
+        <name>crc16Compute</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dataIn</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dataInLen</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_r_c16sw__" kindref="compound">CRC16sw</ref> *</type>
+          <declname>crc16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" line="40" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.c" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_r_c_s_w_8h_1a9f92c4231befe83788e639388df13405" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t crc16Check</definition>
+        <argsstring>(uint16_t crc, uint8_t *dataIn, uint16_t dataLen)</argsstring>
+        <name>crc16Check</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dataIn</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dataLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" line="41" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.c" bodystart="36" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CRCSW_H_</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CRCSW_H_</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>END<sp/>-<sp/>includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRC16_POLY<sp/>0x1021<sp/><sp/>//<sp/>x^16<sp/>+<sp/>x^12<sp/>+<sp/>x^5<sp/>+<sp/>1</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>END<sp/>-<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>struct<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CRC<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="struct_c_r_c16sw__" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_c_r_c16sw__" kindref="compound">CRC16sw_</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>state;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(may<sp/>be<sp/>extended<sp/>in<sp/>the<sp/>future)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="struct_c_r_c16sw__" kindref="compound">CRC16sw</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>END<sp/>-<sp/>struct<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>prototypes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>crc16Init(<ref refid="struct_c_r_c16sw__" kindref="compound">CRC16sw</ref><sp/>*crc16);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>CRC<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">uint16_t<sp/>crc16Update(uint8_t*<sp/>dataIn,<sp/>uint16_t<sp/>dataInLen,<sp/><ref refid="struct_c_r_c16sw__" kindref="compound">CRC16sw</ref><sp/>*crc16);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Starting<sp/>from<sp/>the<sp/>current<sp/>CRC<sp/>state,<sp/>updates<sp/>it<sp/>by<sp/>computing<sp/>crc<sp/>of<sp/>dataIn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">uint16_t<sp/>crc16Compute(uint8_t*<sp/>dataIn,<sp/>uint16_t<sp/>dataInLen,<sp/><ref refid="struct_c_r_c16sw__" kindref="compound">CRC16sw</ref><sp/>*crc16);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>the<sp/>state<sp/>and<sp/>computes<sp/>the<sp/>CRC<sp/>of<sp/>dataIn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">int32_t<sp/>crc16Check(uint16_t<sp/>crc,<sp/>uint8_t*<sp/>dataIn,<sp/>uint16_t<sp/>dataLen);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Computes<sp/>the<sp/>CRC<sp/>of<sp/>dataIn<sp/>and<sp/>compares<sp/>it<sp/>to<sp/>crc<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>END<sp/>-<sp/>prototypes*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_CRCSW_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h"/>
+  </compounddef>
+</doxygen>

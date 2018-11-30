@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_b5__t_hmac_sha256_ctx" kind="struct" prot="public">
+    <compoundname>B5_tHmacSha256Ctx</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_b5__t_hmac_sha256_ctx_1a90517824f7b08087359ee98eff1a4c69" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_b5__t_sha256_ctx" kindref="compound">B5_tSha256Ctx</ref></type>
+        <definition>B5_tSha256Ctx B5_tHmacSha256Ctx::shaCtx</definition>
+        <argsstring></argsstring>
+        <name>shaCtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="105" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_hmac_sha256_ctx_1aa913d516ab08a0843a4f88cb836dea7d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tHmacSha256Ctx::iPad[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>iPad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="106" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b5__t_hmac_sha256_ctx_1a4acdef41ccf7885fc01fa74a2a5de4a1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t B5_tHmacSha256Ctx::oPad[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>oPad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="107" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>B5_tHmacSha256Ctx</label>
+        <link refid="struct_b5__t_hmac_sha256_ctx"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>shaCtx</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>B5_tSha256Ctx</label>
+        <link refid="struct_b5__t_sha256_ctx"/>
+      </node>
+    </collaborationgraph>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" line="104" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/sha256.h" bodystart="103" bodyend="108"/>
+    <listofallmembers>
+      <member refid="struct_b5__t_hmac_sha256_ctx_1aa913d516ab08a0843a4f88cb836dea7d" prot="public" virt="non-virtual"><scope>B5_tHmacSha256Ctx</scope><name>iPad</name></member>
+      <member refid="struct_b5__t_hmac_sha256_ctx_1a4acdef41ccf7885fc01fa74a2a5de4a1" prot="public" virt="non-virtual"><scope>B5_tHmacSha256Ctx</scope><name>oPad</name></member>
+      <member refid="struct_b5__t_hmac_sha256_ctx_1a90517824f7b08087359ee98eff1a4c69" prot="public" virt="non-virtual"><scope>B5_tHmacSha256Ctx</scope><name>shaCtx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,63 @@
+{
+    "description": "Root node",
+    "type": "object",
+    "properties": {
+        "rules": {
+            "description" : "List of filter rules",
+            "type": "array",
+            "items": {
+                "description": "Filter rule list entry",
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "A short description",
+                        "type": "string",
+                        "maxLength": 64
+                    },
+                    "path": {
+                        "description": "Path to an executable file",
+                        "type": "string"
+                    },
+                    "address": {
+                        "description": "Destination IP address",
+                        "type": "string",
+                        "anyOf": [
+                            { "format": "ipv4" },
+                            { "format": "ipv6" }
+                        ]
+                    },
+                    "port-first": {
+                        "description": "First port of destination port range",
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 65535
+                    },
+                    "port-last": {
+                        "description": "Last port of destination port range",
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 65535
+                    },
+                    "action": {
+                        "description": "Action to be taken",
+                        "enum": [ "allow", "block", "encrypt" ]
+                    },
+                    "key-id": {
+                        "description": "The key id to use for encryption",
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 4294967295
+                    }
+                },
+                "required": [
+                    "description",                    
+                    "action",
+                    "key-id"
+                ],
+                "additionalProperties": false
+            }
+        }        
+    },
+    "required": ["rules"],
+    "additionalProperties": false
+}

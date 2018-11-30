@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group___algorithm_avail" kind="group">
+    <compoundname>AlgorithmAvail</compoundname>
+    <title>AlgorithmAvail</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___algorithm_avail_1gae4d5251432e1a9e6803c0240cc492e18" prot="public" static="no">
+        <name>@25</name>
+        <enumvalue id="group___algorithm_avail_1ggae4d5251432e1a9e6803c0240cc492e18ace41ebb9afed9003f5f9351f34c50ec2" prot="public">
+          <name>SE3_ALGO_AES</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>AES. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___algorithm_avail_1ggae4d5251432e1a9e6803c0240cc492e18a33d7aad6188bbd41f98528fdc672d003" prot="public">
+          <name>SE3_ALGO_SHA256</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>SHA256. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___algorithm_avail_1ggae4d5251432e1a9e6803c0240cc492e18a08386119db321e989e1912d27baea464" prot="public">
+          <name>SE3_ALGO_HMACSHA256</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>HMAC-SHA256. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___algorithm_avail_1ggae4d5251432e1a9e6803c0240cc492e18a5fac4b7b6331499a7277298a8a2edbf4" prot="public">
+          <name>SE3_ALGO_AES_HMACSHA256</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>AES + HMAC-SHA256. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___algorithm_avail_1ggae4d5251432e1a9e6803c0240cc492e18adaed4c5a46ddce535c2c0614e1f88c4f" prot="public">
+          <name>SE3_ALGO_AES_HMAC</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>AES 256 + HMAC Auth TODO remove. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___algorithm_avail_1ggae4d5251432e1a9e6803c0240cc492e18a5216865d26823b2605f63cce52073ae5" prot="public">
+          <name>SE3_ALGO_MAX</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c1def.h" line="190" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/se3c1def.h" bodystart="190" bodyend="198"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

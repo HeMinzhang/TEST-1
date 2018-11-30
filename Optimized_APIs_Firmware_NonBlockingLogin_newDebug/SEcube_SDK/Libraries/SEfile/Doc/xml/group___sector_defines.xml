@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="group___sector_defines" kind="group">
+    <compoundname>SectorDefines</compoundname>
+    <title>SectorDefines</title>
+      <sectiondef kind="user-defined">
+      <header>Constant used to define sector structure.</header>
+      <description><para>Do not change this unless you know what you are doing. </para></description>
+      <memberdef kind="define" id="group___sector_defines_1gad205a758c315675de3ad9f5f1cbf962d" prot="public" static="no">
+        <name>SEFILE_SECTOR_SIZE</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actual sector size. Use only power of 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="234" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___sector_defines_1ga6961ed45e472749b587136d18eb74b4d" prot="public" static="no">
+        <name>SEFILE_SECTOR_DATA_SIZE</name>
+        <initializer>(<ref refid="group___sector_defines_1gad205a758c315675de3ad9f5f1cbf962d" kindref="member">SEFILE_SECTOR_SIZE</ref>-B5_SHA256_DIGEST_SIZE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual valid data may be as much as this, since the signature is coded on 32 bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="236" column="10" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___sector_defines_1ga9344350dc20df5bbdc5693775c54afcb" prot="public" static="no">
+        <name>SEFILE_BLOCK_SIZE</name>
+        <initializer>B5_AES_BLK_SIZE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cipher block algorithm requires to encrypt data whose size is a multiple of this block size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="238" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___sector_defines_1ga460525481b728a7bbad706019c7f2156" prot="public" static="no">
+        <name>SEFILE_LOGIC_DATA</name>
+        <initializer>(<ref refid="group___sector_defines_1ga6961ed45e472749b587136d18eb74b4d" kindref="member">SEFILE_SECTOR_DATA_SIZE</ref>-2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The largest multiple of <ref refid="group___sector_defines_1ga9344350dc20df5bbdc5693775c54afcb" kindref="member">SEFILE_BLOCK_SIZE</ref> that can fit in <ref refid="group___sector_defines_1ga6961ed45e472749b587136d18eb74b4d" kindref="member">SEFILE_SECTOR_DATA_SIZE</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="240" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___sector_defines_1ga70a387176632325441aebca4839e19fc" prot="public" static="no">
+        <name>SEFILE_SECTOR_OVERHEAD</name>
+        <initializer>(<ref refid="group___sector_defines_1gad205a758c315675de3ad9f5f1cbf962d" kindref="member">SEFILE_SECTOR_SIZE</ref>-<ref refid="group___sector_defines_1ga460525481b728a7bbad706019c7f2156" kindref="member">SEFILE_LOGIC_DATA</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The amount of Overhead created by <ref refid="struct_s_e_f_i_l_e___s_e_c_t_o_r_1a7a0bf13d497fbcd2a5ac99511209bff0" kindref="member">SEFILE_SECTOR::len</ref>, SEFILE_SECTOR::padding and SEFILE_SECTOR::signature </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" line="242" column="9" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/SEfile.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

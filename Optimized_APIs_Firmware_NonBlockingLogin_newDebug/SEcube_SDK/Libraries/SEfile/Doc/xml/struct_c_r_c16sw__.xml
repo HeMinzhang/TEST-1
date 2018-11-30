@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_c_r_c16sw__" kind="struct" prot="public">
+    <compoundname>CRC16sw_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_r_c16sw___1a7af8b8a6b11c0431a37369634a913285" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CRC16sw_::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" line="29" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" line="28" column="1" bodyfile="/run/media/scaglia/5B106C33792E4440/polito/MAGISTRALE/current/tesi/SEfile_library/se3/CRCSW.h" bodystart="28" bodyend="31"/>
+    <listofallmembers>
+      <member refid="struct_c_r_c16sw___1a7af8b8a6b11c0431a37369634a913285" prot="public" virt="non-virtual"><scope>CRC16sw_</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

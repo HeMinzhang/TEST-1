@@ -1,0 +1,83 @@
+﻿<Window x:Class="tray.CubeSelectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tray"
+        xmlns:k="clr-namespace:tray.Resources"
+        mc:Ignorable="d"
+        Title="{x:Static k:strings.wc_title}" Initialized="Window_Initialized" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight" Closing="Window_Closing" Background="White">
+    <Grid>
+        
+        <Grid VerticalAlignment="Top">
+            
+            <StackPanel Margin="0" Orientation="Vertical" FlowDirection="LeftToRight" VerticalAlignment="Top">
+                <StatusBar VerticalAlignment="Top" Height="22" Background="White">
+                    <StatusBarItem Padding="3,3,3,3" Foreground="Gray">
+                        <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Stretch">
+                            <TextBlock Text=" &#xf05a; " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                            <TextBlock FontSize="12" Name="lblStatus" />
+                        </StackPanel>
+                    </StatusBarItem>
+                </StatusBar>
+                <Grid Height="5"></Grid>
+                <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight">
+                    <Label x:Name="label" VerticalAlignment="Center" Height="26" Width="80" Padding="0,5,5,5" FlowDirection="RightToLeft">
+                        <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Stretch">
+                            <TextBlock Text="{x:Static k:strings.wc_device}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                            <TextBlock Text="   &#xf1b2;  " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Label>
+                    <ComboBox x:Name="comboDevice" FontSize="12" Padding="5,4,0,0" VerticalAlignment="Center" Width="350" Height="26" SelectionChanged="comboDevice_SelectionChanged"/>
+                    <Grid Width="5"></Grid>
+                    <Button x:Name="btnRefresh" VerticalAlignment="Center" HorizontalAlignment="Right" Width="26" Height="26" Click="btnRefresh_Click" Margin="0,0,5,0" >
+                        <TextBlock Text="&#xf021;" Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                    </Button>
+                </StackPanel>
+                <Grid Height="5"></Grid>
+                <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" Height="26">
+                    <Label VerticalAlignment="Top" Height="26" Width="80" Padding="0,5,5,5" FlowDirection="RightToLeft">
+                        <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Stretch">
+                            <TextBlock Text="" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                            <TextBlock Text="   &#xf120;  " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Label>
+                    <Grid Width="5"></Grid>
+                    <TextBlock x:Name="txtCubeInfo" FontSize="12" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,6,0,0" Width="350" MaxHeight="26"/>
+                </StackPanel>
+                <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" Height="52">
+                    <Label VerticalAlignment="Top" Height="26" Width="80" Padding="0,5,5,5" FlowDirection="RightToLeft">
+                        <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Stretch">
+                            <TextBlock Text="" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                            <TextBlock Text="   &#xf02b;  " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Label>
+                    <Grid Width="5"></Grid>
+                    <TextBlock x:Name="txtCubeSn" FontSize="12"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,6,0,0" Width="350" MaxHeight="52"/>
+                </StackPanel>
+                <Grid Height="5"></Grid>
+                <StackPanel Orientation="Horizontal" FlowDirection="RightToLeft" >
+                    <Grid Width="5"></Grid>
+                    <Button x:Name="btnDisconnect" Width="110" Height="30" Click="btnDisconnect_Click" >
+                        <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Stretch">
+                            <TextBlock Text="&#xf011; " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                            <TextBlock Text="{x:Static k:strings.btn_disconnect}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Grid Width="5"></Grid>
+                    <Button x:Name="btnConnect" Width="110" Height="30" Click="btnConnect_Click" IsEnabled="False">
+                        <StackPanel Margin="0" Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Stretch">
+                            <TextBlock Text="&#xf00c; " Margin="0,1,0,0" FontFamily="{StaticResource FontAwesome}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                            <TextBlock Text="{x:Static k:strings.btn_connect}" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button>
+
+                </StackPanel>
+                <Grid Height="5"></Grid>
+
+            </StackPanel>
+        </Grid>
+        
+
+    </Grid>
+</Window>

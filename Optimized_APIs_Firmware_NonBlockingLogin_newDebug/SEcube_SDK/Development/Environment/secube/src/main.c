@@ -87,6 +87,7 @@ int main(void)
 	/* Configure the system clock */
 	SystemClock_Config();
 
+
 	/* Initialize all configured peripherals */
 	MX_GPIO_Init();
 	MX_DMA_Init();

@@ -87,13 +87,6 @@ int main(void)
 	/* Configure the system clock */
 	SystemClock_Config();
 
-	/*
-	 * OK QUESTO è UN BEL BRANCH CHE PROVIAMO AD UPLODARE SU GITHUB
-	 *
-	 */
-
-
-
 	/* Initialize all configured peripherals */
 	MX_GPIO_Init();
 	MX_DMA_Init();

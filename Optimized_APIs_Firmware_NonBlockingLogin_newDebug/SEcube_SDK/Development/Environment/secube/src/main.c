@@ -44,7 +44,8 @@
 #include "usb_device.h"
 #include "gpio.h"
 #include "fmc.h"
-
+#include "Fpgaipm.h"
+#include "Fpga.h"
 /* USER CODE BEGIN Includes */
 #include "se3_core.h"
 

@@ -44,7 +44,8 @@
 #include "usb_device.h"
 #include "gpio.h"
 #include "fmc.h"
-
+#include "Fpgaipm.h"
+#include "Fpga.h"
 /* USER CODE BEGIN Includes */
 #include "se3_core.h"
 
@@ -86,12 +87,6 @@ int main(void)
 
 	/* Configure the system clock */
 	SystemClock_Config();
-
-	/*
-	 * OK QUESTO è UN BEL BRANCH CHE PROVIAMO AD UPLODARE SU GITHUB
-	 *
-	 */
-
 
 
 	/* Initialize all configured peripherals */
